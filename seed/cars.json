@@ -1,0 +1,10 @@
+[
+  { "manufacturer_slug": "porsche", "model": "911 GT3 RS", "image_url": null },
+  { "manufacturer_slug": "porsche", "model": "718 Cayman GT4", "image_url": null },
+  { "manufacturer_slug": "ferrari", "model": "488 Pista", "image_url": null },
+  { "manufacturer_slug": "ferrari", "model": "SF90 Stradale", "image_url": null },
+  { "manufacturer_slug": "mclaren", "model": "720S", "image_url": null },
+  { "manufacturer_slug": "mclaren", "model": "Senna", "image_url": null },
+  { "manufacturer_slug": "lamborghini", "model": "Huracán STO", "image_url": null },
+  { "manufacturer_slug": "ford", "model": "Mustang Dark Horse", "image_url": null }
+]

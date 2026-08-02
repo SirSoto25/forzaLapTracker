@@ -1,0 +1,7 @@
+[
+  { "name": "Porsche", "slug": "porsche", "icon": "brands/placeholder.svg" },
+  { "name": "Ferrari", "slug": "ferrari", "icon": "brands/placeholder.svg" },
+  { "name": "McLaren", "slug": "mclaren", "icon": "brands/placeholder.svg" },
+  { "name": "Lamborghini", "slug": "lamborghini", "icon": "brands/placeholder.svg" },
+  { "name": "Ford", "slug": "ford", "icon": "brands/placeholder.svg" }
+]
