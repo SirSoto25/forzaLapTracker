@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "node .cursor/hooks/session-start-context.js"
+      }
+    ],
+    "preCompact": [
+      {
+        "type": "prompt",
+        "prompt": "Context is about to compact (~full). Before continuing: (1) write a new dump to docs/context/dumps/ using docs/context/DUMP_TEMPLATE.md, (2) update docs/context/LEDGER.md, (3) run graphify update . if code changed, (4) reset docs/context/CURRENT.md. Follow skill context-continuity. Reply with the dump path. Hook input: $ARGUMENTS",
+        "timeout": 30
+      }
+    ]
+  }
+}
