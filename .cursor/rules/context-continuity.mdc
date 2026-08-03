@@ -1,0 +1,23 @@
+---
+description: Graphify is the project graph; dump context at ~90%; keep graphify-out updated.
+alwaysApply: true
+---
+
+# Graphify + context dump
+
+## Graph (code as context)
+
+- Source of truth: `graphify-out/` via skill **graphify**.
+- Before broad exploration: `graphify query` / `path` / `explain` (see `.cursor/rules/graphify.mdc`).
+- After non-trivial code or docs changes: `graphify update .`
+
+## Context ≈ 90%
+
+Follow skill **context-continuity**:
+
+1. New file under `docs/context/dumps/`
+2. Update `docs/context/LEDGER.md`
+3. Reset `docs/context/CURRENT.md`
+4. Continue in a fresh chat (graph + latest dump)
+
+Do not overwrite old dumps. Do not put secrets in dumps.
