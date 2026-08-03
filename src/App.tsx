@@ -78,11 +78,11 @@ function App() {
           ]);
         const localVersion = await getVersion();
         const dismissed = await getSetting("update_dismissed_version");
-        const info = await checkForAppUpdate({
+        const result = await checkForAppUpdate({
           localVersion,
           dismissedVersion: dismissed,
         });
-        if (info) setUpdateInfo(info);
+        if (result.status === "available") setUpdateInfo(result.info);
       } catch {
         // silent
       }
@@ -146,7 +146,14 @@ function App() {
         ) : null}
         <main>
           {route === "settings" ? (
-            <SettingsPage locale={locale} onLocaleChange={changeLocale} />
+            <SettingsPage
+              locale={locale}
+              onLocaleChange={changeLocale}
+              onUpdateDismissed={(kind) => {
+                if (kind === "session") setUpdateDismissedSession(true);
+                else setUpdateInfo(null);
+              }}
+            />
           ) : route === "circuits" ? (
             <CircuitsPage
               onNavigate={(next, circuitId) => {

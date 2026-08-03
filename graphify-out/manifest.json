@@ -35,8 +35,8 @@
     "semantic_hash": ""
   },
   "src/App.tsx": {
-    "mtime": 1785782261.117552,
-    "ast_hash": "c98afaed6058e0c0b551fd7f1e20d4a4",
+    "mtime": 1785783764.5312848,
+    "ast_hash": "ebc2b8cd89ebc519e21e1562b98fdad0",
     "semantic_hash": ""
   },
   "src/main.tsx": {
@@ -745,8 +745,8 @@
     "semantic_hash": ""
   },
   "src/pages/SettingsPage.tsx": {
-    "mtime": 1785783198.2671192,
-    "ast_hash": "9144076e365cb782aee14200b31f8bbc",
+    "mtime": 1785783762.9607105,
+    "ast_hash": "997557dd76fec8b5053ed75446262a08",
     "semantic_hash": ""
   },
   "src/pages/CircuitsPage.tsx": {
@@ -1285,13 +1285,13 @@
     "semantic_hash": ""
   },
   "src/lib/updateCheck.test.ts": {
-    "mtime": 1785781654.0350883,
-    "ast_hash": "c92f9d6e9fdc7bddde84bb6067261c72",
+    "mtime": 1785783757.0780058,
+    "ast_hash": "674088f36e7354e5005137a7ce40381d",
     "semantic_hash": ""
   },
   "src/lib/updateCheck.ts": {
-    "mtime": 1785781689.623302,
-    "ast_hash": "764949a56bb0525c302fadf21d2aa880",
+    "mtime": 1785783752.382359,
+    "ast_hash": "0f2ef085fe4d2530e669ce483659d7cc",
     "semantic_hash": ""
   },
   "src/components/UpdateBanner.tsx": {

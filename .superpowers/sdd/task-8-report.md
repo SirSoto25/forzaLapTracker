@@ -1,40 +1,67 @@
-# Task 8 report: History page
+# Task 8 Report: Verification + graphify
 
-## Implemented
+## Status
+**DONE**
 
-- Added `src/pages/HistoryPage.tsx`: table (date, circuit, car, PI, class, time via `formatLapTime`); filters circuit / class / car (`CarPicker`) / date from–to; sort time ASC or date DESC via existing `listLaps`.
-- Honors App `selectedCircuitId` preselect (same pattern as Register).
-- Wired History into `App.tsx`; i18n `history.*` in `es.json` / `en.json`; filter/table styles in `App.css`.
-- `CarPicker` accepts optional `required` (false on History so car filter stays clearable).
+## Summary
+Full verification gates passed after a small ES2020-compat fix for i18n placeholder substitution. Knowledge graph refreshed and tracked graphify artifacts committed. Manual `tauri dev` smoke deferred (cannot run here).
 
 ## Verification
+| Gate | Result |
+| --- | --- |
+| `npm test` | PASS — 8 files, 40 tests |
+| `npx tsc --noEmit` | PASS (after fix) |
+| `graphify update .` | OK — 1321 nodes, 1685 edges, 122 communities |
 
-- `npm test`: 6 files passed, 27 tests passed.
-- `npm run typecheck`: passed.
+### Typecheck fix
+Initial `tsc` failed: `String.replaceAll` requires ES2021+, while `tsconfig.json` targets `ES2020`.
+Replaced with `split(...).join(...)` in:
+- `src/components/UpdateBanner.tsx`
+- `src/pages/SettingsPage.tsx`
 
-## Commit
+Re-ran typecheck + tests: both green.
 
-- `95b37d2db1ed085e6ae8cb30e98d7dc882b697b7` — `feat: lap history with filters` on `feat/mvp`
+## Graphify
+- Ran `graphify update .` from repo root.
+- Meaningful diffs in tracked artifacts; committed:
+  - `graphify-out/GRAPH_REPORT.md`
+  - `graphify-out/graph.json`
+  - `graphify-out/manifest.json`
+- Left untracked: `graph.html`, `.graphify_labels.json*`, `2026-08-03/` backup, helper scripts under `scripts/`.
+
+## Manual smoke (deferred)
+Could not run `npm run tauri dev` in this environment. Deferred local checks:
+1. Boot with no newer release → no banner (or mock localVersion `"0.0.1"` then revert).
+2. Settings → Check for updates → up-to-date or available.
+3. Post-merge: `workflow_dispatch` or push `v0.1.1` and confirm four asset types on the Release.
+
+## Commits
+1. `150e940` — `fix: avoid String.replaceAll for ES2020 typecheck`
+2. `d3805a9` — `chore: refresh graphify after releases workflow`
+
+## Spec coverage checklist (from brief)
+All prior-task items remain covered as listed in the task brief; this task adds green CI-local gates + refreshed graph. No updater plugin / no signing still honored.
 
 ---
 
-## Manufacturer filter (2026-08-03)
+## Final-branch Important fixes (post-review)
 
-### Changes
+### 1. Settings: failure vs up-to-date
+`checkForAppUpdate` now returns a discriminated `UpdateCheckResult`:
+- `available` + `info`
+- `upToDate` (fetch OK, no notify)
+- `failed` (network/API/parse failure)
 
-- `LapFilters.manufacturerId` optional; `listLaps` adds `car.manufacturer_id = ?` (AND with `carId` when both set).
-- `HistoryPage`: manufacturer `<select>` alongside existing `CarPicker`; loads via `listManufacturers`.
+Settings maps each status explicitly (no longer treats fetch null as up-to-date). App boot only shows banner on `available`.
 
-### Verification
+### 2. Settings dismiss clears App boot banner (same session)
+`SettingsPage` accepts `onUpdateDismissed?: (kind: "session" | "version") => void`.
+App wires it to `setUpdateDismissedSession(true)` / `setUpdateInfo(null)` so Settings dismiss hides the boot `UpdateBanner` in the same session.
 
-- `npm test`: 6 files passed, 27 tests passed.
-- `npm run typecheck`: passed.
-
-### Concerns
-
-- Resolved prior concern: manufacturer alone now filters laps without picking a car.
-- Mismatch (manufacturer filter + car from another brand) correctly returns empty via AND.
-
-### Commit
-
-- `2019889569d938cadbc68776e0846df47d7b4b6e` — `feat: history manufacturer filter` on `feat/mvp`
+### Test evidence
+| Gate | Result |
+| --- | --- |
+| `npm test -- src/lib/updateCheck.test.ts` | PASS — 6 tests (added upToDate + failed cases) |
+| `npm test` | PASS — 8 files, 42 tests |
+| `npx tsc --noEmit` | PASS |
+| `graphify update .` | OK — 1322 nodes, 1686 edges |

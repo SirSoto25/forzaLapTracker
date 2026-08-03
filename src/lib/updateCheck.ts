@@ -7,6 +7,11 @@ export type UpdateInfo = {
   releaseUrl: string;
 };
 
+export type UpdateCheckResult =
+  | { status: "available"; info: UpdateInfo }
+  | { status: "upToDate" }
+  | { status: "failed" };
+
 export function shouldNotifyUpdate(
   localVersion: string,
   remoteTag: string,
@@ -51,9 +56,9 @@ export async function checkForAppUpdate(options: {
   localVersion: string;
   dismissedVersion: string | null;
   fetchImpl?: typeof fetch;
-}): Promise<UpdateInfo | null> {
+}): Promise<UpdateCheckResult> {
   const latest = await fetchLatestRelease(options.fetchImpl);
-  if (!latest) return null;
+  if (!latest) return { status: "failed" };
   if (
     !shouldNotifyUpdate(
       options.localVersion,
@@ -61,13 +66,16 @@ export async function checkForAppUpdate(options: {
       options.dismissedVersion,
     )
   ) {
-    return null;
+    return { status: "upToDate" };
   }
   const parsed = parseSemver(latest.tagName);
-  if (!parsed) return null;
+  if (!parsed) return { status: "failed" };
   return {
-    localVersion: options.localVersion,
-    remoteVersion: `${parsed.major}.${parsed.minor}.${parsed.patch}`,
-    releaseUrl: latest.htmlUrl,
+    status: "available",
+    info: {
+      localVersion: options.localVersion,
+      remoteVersion: `${parsed.major}.${parsed.minor}.${parsed.patch}`,
+      releaseUrl: latest.htmlUrl,
+    },
   };
 }

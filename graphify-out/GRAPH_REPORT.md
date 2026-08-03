@@ -1,16 +1,16 @@
 # Graph Report - forzaLapTracker  (2026-08-03)
 
 ## Corpus Check
-- 148 files · ~163,854 words
+- 148 files · ~163,999 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1321 nodes · 1685 edges · 122 communities (104 shown, 18 thin omitted)
+- 1322 nodes · 1686 edges · 123 communities (105 shown, 18 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 15 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `2cd14f63`
+- Built from commit: `d3805a98`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -128,6 +128,7 @@
 - semver.ts
 - 1. THE THREE DIALS (Core Configuration)
 - validate_data.py
+- updateCheck.ts
 
 ## God Nodes (most connected - your core abstractions)
 1. `DesignSystemGenerator` - 29 edges
@@ -156,7 +157,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (122 total, 18 thin omitted)
+## Communities (123 total, 18 thin omitted)
 
 ### Community 0 - "compilerOptions"
 Cohesion: 0.09
@@ -219,7 +220,7 @@ Cohesion: 0.17
 Nodes (8): DesignSystemGenerator, Generates design system recommendations from aggregated searches., Load reasoning rules from CSV., Find matching reasoning rule for a category., Apply reasoning rules to search results., TestReasoningMatch, The exact reproduction from issue #428., TestEndToEndCoherence
 
 ### Community 21 - "Expected Behaviors by Scenario"
-Cohesion: 0.09
+Cohesion: 0.10
 Nodes (21): Critical Failures (Any Model), Expected Behaviors by Scenario, For Haiku Optimization, For Opus Optimization, For Sonnet Optimization, Haiku (Fast, Lightweight), Minimum Pass Thresholds, Model Characteristics (+13 more)
 
 ### Community 22 - "check_staleness.py"
@@ -383,8 +384,8 @@ Cohesion: 0.29
 Nodes (6): ADR shape, Layout, Living project docs (template), Project specialization, Rules of thumb, When to write
 
 ### Community 63 - "api.ts"
-Cohesion: 0.05
-Nodes (86): App(), BootState, Route, routes, CarPicker(), CarPickerProps, TimeInput(), TimeInputProps (+78 more)
+Cohesion: 0.06
+Nodes (79): App(), BootState, Route, routes, CarPicker(), CarPickerProps, TimeInput(), TimeInputProps (+71 more)
 
 ### Community 64 - "Context continuity (Forza Lap Tracker)"
 Cohesion: 0.29
@@ -538,8 +539,12 @@ Nodes (6): _detect_page_type(), format_page_override_md(), _generate_intelligent
 Cohesion: 0.50
 Nodes (4): 7. DIAL DEFINITIONS (Technical Reference), DESIGN_VARIANCE (Level 1-10), MOTION_INTENSITY (Level 1-10), VISUAL_DENSITY (Level 1-10)
 
+### Community 122 - "updateCheck.ts"
+Cohesion: 0.31
+Nodes (8): githubReleasesLatestApiUrl(), compareSemver(), parseSemver(), Semver, checkForAppUpdate(), fetchLatestRelease(), shouldNotifyUpdate(), UpdateCheckResult
+
 ## Knowledge Gaps
-- **701 isolated node(s):** `fs`, `path`, `name`, `private`, `version` (+696 more)
+- **702 isolated node(s):** `fs`, `path`, `name`, `private`, `version` (+697 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **18 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -550,13 +555,13 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.009) - this node is a cross-community bridge._
 - **Why does `DesignSystemGenerator` connect `DesignSystemGenerator` to `BM25`, `design_system.py`, `design_system.py`, `detect_domain`, `semver.ts`, `test_design_system_mode.py`, `_palette_is_dark`?**
   _High betweenness centrality (0.005) - this node is a cross-community bridge._
-- **Why does `shadcn CLI Reference` connect `Commands` to `shadcn/SKILL.md`?**
-  _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **Are the 10 inferred relationships involving `DesignSystemGenerator` (e.g. with `TestDomainDetection` and `TestPersistence`) actually correct?**
   _`DesignSystemGenerator` has 10 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 5 inferred relationships involving `BM25` (e.g. with `TestDomainDetection` and `TestPersistence`) actually correct?**
   _`BM25` has 5 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `fs`, `path`, `name` to the rest of the system?**
-  _701 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _702 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._
+- **Should `tauri.conf.json` be split into smaller, more focused modules?**
+  _Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected._

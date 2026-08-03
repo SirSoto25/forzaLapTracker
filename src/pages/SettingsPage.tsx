@@ -8,6 +8,7 @@ import { checkForAppUpdate, type UpdateInfo } from "../lib/updateCheck";
 type SettingsPageProps = {
   locale: Locale;
   onLocaleChange: (locale: Locale) => Promise<void>;
+  onUpdateDismissed?: (kind: "session" | "version") => void;
 };
 
 type ManualUpdateStatus =
@@ -27,6 +28,7 @@ function tf(key: string, vars: Record<string, string>): string {
 export function SettingsPage({
   locale,
   onLocaleChange,
+  onUpdateDismissed,
 }: SettingsPageProps) {
   const [status, setStatus] = useState<ManualUpdateStatus>("idle");
   const [manualInfo, setManualInfo] = useState<UpdateInfo | null>(null);
@@ -38,18 +40,22 @@ export function SettingsPage({
       const version = await getVersion();
       setLocalVersion(version);
       const dismissed = await getSetting("update_dismissed_version");
-      const info = await checkForAppUpdate({
+      const result = await checkForAppUpdate({
         localVersion: version,
         dismissedVersion: dismissed,
       });
-      if (info) {
-        setManualInfo(info);
+      if (result.status === "available") {
+        setManualInfo(result.info);
         setStatus("available");
-      } else {
+      } else if (result.status === "upToDate") {
         setManualInfo(null);
         setStatus("upToDate");
+      } else {
+        setManualInfo(null);
+        setStatus("failed");
       }
     } catch {
+      setManualInfo(null);
       setStatus("failed");
     }
   }
@@ -100,6 +106,7 @@ export function SettingsPage({
           onDismissSession={() => {
             setManualInfo(null);
             setStatus("idle");
+            onUpdateDismissed?.("session");
           }}
           onDismissVersion={() => {
             void setSetting(
@@ -108,6 +115,7 @@ export function SettingsPage({
             );
             setManualInfo(null);
             setStatus("idle");
+            onUpdateDismissed?.("version");
           }}
         />
       ) : null}

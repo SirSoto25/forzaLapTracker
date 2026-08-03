@@ -43,7 +43,7 @@ it("fetchLatestRelease returns null on failure", async () => {
   await expect(fetchLatestRelease(fetchImpl)).resolves.toBeNull();
 });
 
-it("checkForAppUpdate returns UpdateInfo when newer", async () => {
+it("checkForAppUpdate returns available when newer", async () => {
   const fetchImpl = vi.fn().mockResolvedValue({
     ok: true,
     json: async () => ({
@@ -58,8 +58,39 @@ it("checkForAppUpdate returns UpdateInfo when newer", async () => {
       fetchImpl,
     }),
   ).resolves.toEqual({
-    localVersion: "0.1.0",
-    remoteVersion: "0.1.1",
-    releaseUrl: "https://github.com/SirSoto25/forzaLapTracker/releases/tag/v0.1.1",
+    status: "available",
+    info: {
+      localVersion: "0.1.0",
+      remoteVersion: "0.1.1",
+      releaseUrl: "https://github.com/SirSoto25/forzaLapTracker/releases/tag/v0.1.1",
+    },
   });
+});
+
+it("checkForAppUpdate returns upToDate when remote is not newer", async () => {
+  const fetchImpl = vi.fn().mockResolvedValue({
+    ok: true,
+    json: async () => ({
+      tag_name: "v0.1.0",
+      html_url: "https://github.com/SirSoto25/forzaLapTracker/releases/tag/v0.1.0",
+    }),
+  });
+  await expect(
+    checkForAppUpdate({
+      localVersion: "0.1.0",
+      dismissedVersion: null,
+      fetchImpl,
+    }),
+  ).resolves.toEqual({ status: "upToDate" });
+});
+
+it("checkForAppUpdate returns failed on network/API error", async () => {
+  const fetchImpl = vi.fn().mockRejectedValue(new Error("offline"));
+  await expect(
+    checkForAppUpdate({
+      localVersion: "0.1.0",
+      dismissedVersion: null,
+      fetchImpl,
+    }),
+  ).resolves.toEqual({ status: "failed" });
 });
