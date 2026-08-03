@@ -274,6 +274,44 @@ main {
   font-size: 0.85rem;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.car-picker-add {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.car-picker-add input {
+  flex: 1 1 160px;
+  padding: 8px 10px;
+  color: #e9edf2;
+  background: #191f26;
+  border: 1px solid #39434e;
+  border-radius: 7px;
+  font: inherit;
+}
+
+.car-picker-add button {
+  padding: 8px 12px;
+  color: #11151a;
+  background: #f4b942;
+  border: 1px solid #f4b942;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
 .field-label {
   display: block;
   margin-bottom: 8px;

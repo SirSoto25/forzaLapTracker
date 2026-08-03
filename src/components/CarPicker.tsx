@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import { convertFileSrc } from "@tauri-apps/api/core";
 import type { Car, Manufacturer } from "../db/types";
 import { t } from "../i18n";
-import { ensureCarImage, listCars, listManufacturers } from "../lib/api";
+import { createCar, ensureCarImage, listCars, listManufacturers } from "../lib/api";
 
 type CarPickerProps = {
   carId: number | null;
@@ -35,6 +35,7 @@ export function CarPicker({
   const [manufacturers, setManufacturers] = useState<Manufacturer[]>([]);
   const [cars, setCars] = useState<Car[]>([]);
   const [manufacturerId, setManufacturerId] = useState<number | null>(null);
+  const [newModel, setNewModel] = useState("");
   const [thumbPath, setThumbPath] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const carIdRef = useRef(carId);
@@ -82,6 +83,7 @@ export function CarPicker({
   async function selectManufacturer(id: number) {
     setError(null);
     setManufacturerId(id);
+    setNewModel("");
     setThumbPath(null);
     onChange(null);
   }
@@ -95,6 +97,21 @@ export function CarPicker({
     // Download is best-effort; null → placeholder. Never blocks lap save.
     const path = await ensureCarImage(id);
     if (path && carIdRef.current === id) setThumbPath(path);
+  }
+
+  async function onAddCar(event: FormEvent) {
+    event.preventDefault();
+    if (manufacturerId === null) return;
+    setError(null);
+    try {
+      const id = await createCar(manufacturerId, newModel);
+      setNewModel("");
+      const rows = await listCars(manufacturerId);
+      setCars(rows);
+      await selectCar(id);
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : String(err));
+    }
   }
 
   const selectedManufacturer =
@@ -130,29 +147,44 @@ export function CarPicker({
       </fieldset>
 
       {manufacturerId !== null ? (
-        <label className="car-picker-model">
-          <span>{t("register.model")}</span>
-          <select
-            value={carId ?? ""}
-            onChange={(e) => {
-              const next = e.target.value;
-              if (!next) {
-                onChange(null);
-                setThumbPath(null);
-                return;
-              }
-              void selectCar(Number(next));
-            }}
-            required={required}
-          >
-            <option value="">{t("register.selectCar")}</option>
-            {cars.map((car) => (
-              <option key={car.id} value={car.id}>
-                {car.model}
-              </option>
-            ))}
-          </select>
-        </label>
+        <>
+          <label className="car-picker-model">
+            <span>{t("register.model")}</span>
+            <select
+              value={carId ?? ""}
+              onChange={(e) => {
+                const next = e.target.value;
+                if (!next) {
+                  onChange(null);
+                  setThumbPath(null);
+                  return;
+                }
+                void selectCar(Number(next));
+              }}
+              required={required}
+            >
+              <option value="">{t("register.selectCar")}</option>
+              {cars.map((car) => (
+                <option key={car.id} value={car.id}>
+                  {car.model}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          <form className="car-picker-add" onSubmit={(e) => void onAddCar(e)}>
+            <label>
+              <span className="sr-only">{t("register.addCar")}</span>
+              <input
+                value={newModel}
+                onChange={(e) => setNewModel(e.target.value)}
+                placeholder={t("register.modelPlaceholder")}
+                required
+              />
+            </label>
+            <button type="submit">{t("register.addCar")}</button>
+          </form>
+        </>
       ) : null}
 
       {selectedCar ? (

@@ -7,30 +7,6 @@
     "core:default",
     "opener:default",
     "sql:default",
-    "sql:allow-execute",
-    "fs:default",
-    {
-      "identifier": "fs:allow-mkdir",
-      "allow": [{ "path": "$APPDATA/images/**" }, { "path": "$APPLOCALDATA/images/**" }]
-    },
-    {
-      "identifier": "fs:allow-write-file",
-      "allow": [{ "path": "$APPDATA/images/**" }, { "path": "$APPLOCALDATA/images/**" }]
-    },
-    {
-      "identifier": "fs:allow-read-file",
-      "allow": [{ "path": "$APPDATA/images/**" }, { "path": "$APPLOCALDATA/images/**" }]
-    },
-    {
-      "identifier": "fs:allow-exists",
-      "allow": [{ "path": "$APPDATA/images/**" }, { "path": "$APPLOCALDATA/images/**" }]
-    },
-    {
-      "identifier": "fs:scope",
-      "allow": [
-        { "path": "$APPDATA/images/**" },
-        { "path": "$APPLOCALDATA/images/**" }
-      ]
-    }
+    "sql:allow-execute"
   ]
 }

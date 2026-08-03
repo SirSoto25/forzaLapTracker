@@ -25,5 +25,6 @@ it("loads the app database and seeds an empty catalog once", async () => {
 
   expect(load).toHaveBeenCalledOnce();
   expect(load).toHaveBeenCalledWith("sqlite:forza_lap_tracker.db");
-  expect(execute).toHaveBeenCalledTimes(19);
+  expect(execute).toHaveBeenCalledWith("PRAGMA foreign_keys = ON");
+  expect(execute).toHaveBeenCalledTimes(20);
 });

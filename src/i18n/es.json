@@ -42,6 +42,8 @@
   "register.manufacturer": "Marca",
   "register.model": "Modelo",
   "register.selectCar": "Selecciona un coche",
+  "register.addCar": "Añadir coche",
+  "register.modelPlaceholder": "Nombre del modelo",
   "register.pi": "PI",
   "register.class": "Clase",
   "register.piInvalid": "El PI debe ser un entero entre 0 y 999",

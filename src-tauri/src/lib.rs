@@ -23,7 +23,6 @@ pub fn run() {
                 .add_migrations("sqlite:forza_lap_tracker.db", migrations)
                 .build(),
         )
-        .plugin(tauri_plugin_fs::init())
         .plugin(tauri_plugin_opener::init())
         .invoke_handler(tauri::generate_handler![greet, images::ensure_car_image])
         .run(tauri::generate_context!())

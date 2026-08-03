@@ -43,6 +43,7 @@ export function initDb(): Promise<void> {
   if (!initPromise) {
     initPromise = (async () => {
       const db = await (dbPromise ??= Database.load(DB_URL));
+      await db.execute("PRAGMA foreign_keys = ON");
       const [{ count }] = await db.select<Array<{ count: number }>>(
         "SELECT COUNT(*) AS count FROM circuit",
       );

@@ -42,6 +42,8 @@
   "register.manufacturer": "Manufacturer",
   "register.model": "Model",
   "register.selectCar": "Select a car",
+  "register.addCar": "Add car",
+  "register.modelPlaceholder": "Model name",
   "register.pi": "PI",
   "register.class": "Class",
   "register.piInvalid": "PI must be an integer from 0 to 999",
