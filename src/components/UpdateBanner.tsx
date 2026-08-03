@@ -10,7 +10,7 @@ type Props = {
 
 function tf(key: string, vars: Record<string, string>): string {
   return Object.entries(vars).reduce(
-    (s, [k, v]) => s.replaceAll(`{${k}}`, v),
+    (s, [k, v]) => s.split(`{${k}}`).join(v),
     t(key),
   );
 }
