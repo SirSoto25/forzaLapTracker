@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { CarPicker } from "../components/CarPicker";
-import type { Circuit, Lap, LapFilters } from "../db/types";
+import type { Circuit, Lap, LapFilters, Manufacturer } from "../db/types";
 import { formatLapTime } from "../domain/lapTime";
 import type { CarClass } from "../domain/piClass";
 import { t } from "../i18n";
-import { listCircuits, listLaps } from "../lib/api";
+import { listCircuits, listLaps, listManufacturers } from "../lib/api";
 
 const CLASSES: CarClass[] = ["D", "C", "B", "A", "S1", "S2", "R", "X"];
 
@@ -19,7 +19,9 @@ function formatRecordedDate(iso: string): string {
 
 export function HistoryPage({ selectedCircuitId }: HistoryPageProps) {
   const [circuits, setCircuits] = useState<Circuit[]>([]);
+  const [manufacturers, setManufacturers] = useState<Manufacturer[]>([]);
   const [circuitId, setCircuitId] = useState<number | null>(selectedCircuitId);
+  const [manufacturerId, setManufacturerId] = useState<number | null>(null);
   const [carId, setCarId] = useState<number | null>(null);
   const [carClass, setCarClass] = useState<CarClass | "">("");
   const [dateFrom, setDateFrom] = useState("");
@@ -30,8 +32,11 @@ export function HistoryPage({ selectedCircuitId }: HistoryPageProps) {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    void listCircuits()
-      .then(setCircuits)
+    void Promise.all([listCircuits(), listManufacturers()])
+      .then(([circuitRows, manufacturerRows]) => {
+        setCircuits(circuitRows);
+        setManufacturers(manufacturerRows);
+      })
       .catch((err: unknown) => {
         setError(err instanceof Error ? err.message : String(err));
       });
@@ -46,6 +51,7 @@ export function HistoryPage({ selectedCircuitId }: HistoryPageProps) {
     setLoading(true);
     const filters: LapFilters = { sort };
     if (circuitId !== null) filters.circuitId = circuitId;
+    if (manufacturerId !== null) filters.manufacturerId = manufacturerId;
     if (carId !== null) filters.carId = carId;
     if (carClass !== "") filters.class = carClass;
     if (dateFrom) filters.dateFrom = dateFrom;
@@ -69,7 +75,7 @@ export function HistoryPage({ selectedCircuitId }: HistoryPageProps) {
     return () => {
       active = false;
     };
-  }, [circuitId, carId, carClass, dateFrom, dateTo, sort]);
+  }, [circuitId, manufacturerId, carId, carClass, dateFrom, dateTo, sort]);
 
   return (
     <section className="page">
@@ -106,6 +112,23 @@ export function HistoryPage({ selectedCircuitId }: HistoryPageProps) {
             {CLASSES.map((cls) => (
               <option key={cls} value={cls}>
                 {cls}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <label>
+          <span>{t("register.manufacturer")}</span>
+          <select
+            value={manufacturerId ?? ""}
+            onChange={(e) =>
+              setManufacturerId(e.target.value ? Number(e.target.value) : null)
+            }
+          >
+            <option value="">{t("history.all")}</option>
+            {manufacturers.map((m) => (
+              <option key={m.id} value={m.id}>
+                {m.name}
               </option>
             ))}
           </select>

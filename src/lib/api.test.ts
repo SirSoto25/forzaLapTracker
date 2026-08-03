@@ -38,6 +38,7 @@ it("builds lap filters with bound parameters", async () => {
   await listLaps({
     circuitId: 1,
     carId: 2,
+    manufacturerId: 3,
     class: "S2",
     dateFrom: "2026-08-01",
     dateTo: "2026-08-02",
@@ -46,9 +47,9 @@ it("builds lap filters with bound parameters", async () => {
 
   expect(select).toHaveBeenCalledWith(
     expect.stringMatching(
-      /circuit_id = \$1.*car_id = \$2.*class = \$3.*date\(lap\.recorded_at\) >= \$4.*date\(lap\.recorded_at\) <= \$5.*recorded_at DESC/s,
+      /circuit_id = \$1.*car_id = \$2.*car\.manufacturer_id = \$3.*class = \$4.*date\(lap\.recorded_at\) >= \$5.*date\(lap\.recorded_at\) <= \$6.*recorded_at DESC/s,
     ),
-    [1, 2, "S2", "2026-08-01", "2026-08-02"],
+    [1, 2, 3, "S2", "2026-08-01", "2026-08-02"],
   );
 });
 

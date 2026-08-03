@@ -100,6 +100,9 @@ export async function listLaps(filters: LapFilters = {}): Promise<Lap[]> {
 
   if (filters.circuitId !== undefined) add("lap.circuit_id =", filters.circuitId);
   if (filters.carId !== undefined) add("lap.car_id =", filters.carId);
+  if (filters.manufacturerId !== undefined) {
+    add("car.manufacturer_id =", filters.manufacturerId);
+  }
   if (filters.class !== undefined) add("lap.class =", filters.class);
   if (filters.dateFrom !== undefined) {
     add("date(lap.recorded_at) >=", filters.dateFrom);

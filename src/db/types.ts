@@ -43,6 +43,7 @@ export interface Lap {
 export interface LapFilters {
   circuitId?: number;
   carId?: number;
+  manufacturerId?: number;
   class?: CarClass;
   dateFrom?: string;
   dateTo?: string;
