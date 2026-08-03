@@ -389,6 +389,77 @@ main {
   font-weight: 700;
 }
 
+.history-filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  margin: 28px 0 24px;
+  padding: 0;
+  border: 0;
+}
+
+.history-filters legend {
+  margin-bottom: 12px;
+  color: #8f9aa6;
+  font-size: 0.85rem;
+}
+
+.history-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #8f9aa6;
+  font-size: 0.85rem;
+}
+
+.history-filters select,
+.history-filters input[type="date"] {
+  padding: 10px 12px;
+  color: #e9edf2;
+  background: #191f26;
+  border: 1px solid #39434e;
+  border-radius: 7px;
+  font: inherit;
+}
+
+.history-car-filter {
+  grid-column: 1 / -1;
+}
+
+.history-table-wrap {
+  overflow-x: auto;
+  margin-top: 8px;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.history-table th,
+.history-table td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid #2c343e;
+}
+
+.history-table th {
+  color: #8f9aa6;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.history-table td {
+  color: #e9edf2;
+}
+
+.history-table tbody tr:hover td {
+  color: #f4b942;
+}
+
 .locale-picker {
   display: flex;
   gap: 10px;

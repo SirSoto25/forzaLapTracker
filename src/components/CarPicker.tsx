@@ -6,6 +6,7 @@ import { ensureCarImage, listCars, listManufacturers } from "../lib/api";
 type CarPickerProps = {
   carId: number | null;
   onChange: (carId: number | null) => void;
+  required?: boolean;
 };
 
 function assetUrl(path: string | null | undefined): string | null {
@@ -13,7 +14,11 @@ function assetUrl(path: string | null | undefined): string | null {
   return path.startsWith("/") ? path : `/${path}`;
 }
 
-export function CarPicker({ carId, onChange }: CarPickerProps) {
+export function CarPicker({
+  carId,
+  onChange,
+  required = true,
+}: CarPickerProps) {
   const [manufacturers, setManufacturers] = useState<Manufacturer[]>([]);
   const [cars, setCars] = useState<Car[]>([]);
   const [manufacturerId, setManufacturerId] = useState<number | null>(null);
@@ -122,7 +127,7 @@ export function CarPicker({ carId, onChange }: CarPickerProps) {
               }
               void selectCar(Number(next));
             }}
-            required
+            required={required}
           >
             <option value="">{t("register.selectCar")}</option>
             {cars.map((car) => (

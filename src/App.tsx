@@ -9,6 +9,7 @@ import {
   type Locale,
 } from "./i18n";
 import { CircuitsPage } from "./pages/CircuitsPage";
+import { HistoryPage } from "./pages/HistoryPage";
 import { RegisterLapPage } from "./pages/RegisterLapPage";
 import { SettingsPage } from "./pages/SettingsPage";
 
@@ -26,7 +27,7 @@ function PlaceholderPage({
   route,
   selectedCircuitId,
 }: {
-  route: Exclude<Route, "settings" | "circuits" | "register">;
+  route: Exclude<Route, "settings" | "circuits" | "register" | "history">;
   selectedCircuitId: number | null;
 }) {
   return (
@@ -123,6 +124,8 @@ function App() {
           />
         ) : route === "register" ? (
           <RegisterLapPage selectedCircuitId={selectedCircuitId} />
+        ) : route === "history" ? (
+          <HistoryPage selectedCircuitId={selectedCircuitId} />
         ) : (
           <PlaceholderPage
             route={route}

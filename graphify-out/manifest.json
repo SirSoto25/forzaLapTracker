@@ -35,8 +35,8 @@
     "semantic_hash": ""
   },
   "src/App.tsx": {
-    "mtime": 1785762295.3412626,
-    "ast_hash": "1c0e5d0e669cc043bd0e01857255d0f4",
+    "mtime": 1785763220.8343973,
+    "ast_hash": "75fe8f2b32a55b0700a8cced32e7b1f7",
     "semantic_hash": ""
   },
   "src/main.tsx": {
@@ -710,8 +710,8 @@
     "semantic_hash": ""
   },
   "src/lib/api.ts": {
-    "mtime": 1785702344.9327092,
-    "ast_hash": "93b5a9d0bb547f8ebfa5f83573bd7272",
+    "mtime": 1785762928.7537758,
+    "ast_hash": "e50eaed2c1dfb891633dfa841f09267a",
     "semantic_hash": ""
   },
   "vitest.config.ts": {
@@ -725,13 +725,13 @@
     "semantic_hash": ""
   },
   "src/i18n/en.json": {
-    "mtime": 1785762289.9095273,
-    "ast_hash": "1196b164cf8c3c86ff141362ab9e67fc",
+    "mtime": 1785763228.1858635,
+    "ast_hash": "8f2a1d878a443cb417a757ebde474bd6",
     "semantic_hash": ""
   },
   "src/i18n/es.json": {
-    "mtime": 1785762284.617859,
-    "ast_hash": "bb8164cd0a1b462cfcae6d9d8d05288c",
+    "mtime": 1785763223.0808077,
+    "ast_hash": "79689b7c9737b46825234f9f888ab042",
     "semantic_hash": ""
   },
   "src/i18n/index.test.ts": {
@@ -750,8 +750,28 @@
     "semantic_hash": ""
   },
   "src/pages/CircuitsPage.tsx": {
-    "mtime": 1785762298.3667543,
-    "ast_hash": "7cf6b58cbe46a26b226e33b0e0c402f7",
+    "mtime": 1785762603.036337,
+    "ast_hash": "ebf3efe73b2e64f1ca8b955a22d63e5e",
+    "semantic_hash": ""
+  },
+  "src/components/CarPicker.tsx": {
+    "mtime": 1785763234.5201187,
+    "ast_hash": "43ba6b9b3ca76787aa8485ec2564652d",
+    "semantic_hash": ""
+  },
+  "src/components/TimeInput.tsx": {
+    "mtime": 1785762916.9831967,
+    "ast_hash": "077b6c0b142582b2b5e67b84aa840109",
+    "semantic_hash": ""
+  },
+  "src/pages/RegisterLapPage.tsx": {
+    "mtime": 1785762925.281837,
+    "ast_hash": "ba73b5cef8d63c497d077938ef8c9d69",
+    "semantic_hash": ""
+  },
+  "src/pages/HistoryPage.tsx": {
+    "mtime": 1785763234.61204,
+    "ast_hash": "11d1aff9728f07e4ec79ed629c508aae",
     "semantic_hash": ""
   }
 }
