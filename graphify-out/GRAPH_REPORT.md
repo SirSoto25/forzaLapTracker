@@ -1,16 +1,16 @@
 # Graph Report - forzaLapTracker  (2026-08-03)
 
 ## Corpus Check
-- 133 files · ~93,260 words
+- 138 files · ~158,707 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1232 nodes · 1512 edges · 115 communities (97 shown, 18 thin omitted)
+- 1263 nodes · 1591 edges · 115 communities (97 shown, 18 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 15 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `58ab3635`
+- Built from commit: `4ee36461`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -20,13 +20,13 @@
 - devDependencies
 - BM25
 - Evaluation Test Scenarios
-- permissions
+- default.json
 - SQLite Database Expert
 - compilerOptions
 - Agentic Council — Orchestrator Map (RESTRICTED)
 - What You Must Do When Invoked
 - lib.rs
-- 7. DIAL DEFINITIONS (Technical Reference)
+- design_system.py
 - Handoff: [TASK_TITLE]
 - Session Handoff Skill
 - Appendix B - Canonical Sources (read these before reinventing)
@@ -42,8 +42,8 @@
 - Commands
 - UI/UX Pro Max - Design Intelligence
 - React Composition Patterns
-- format_ascii_box
 - _palette_is_dark
+- _select_palette_for_mode
 - list_handoffs.py
 - Customization & Theming
 - Forza Horizon 6 Lap Tracker — Design Spec
@@ -67,7 +67,7 @@
 - Chat & Messaging
 - 9. AI TELLS (Forbidden Patterns)
 - Forms & Inputs
-- _filter_anti_patterns_for_mode
+- test_design_system_mode.py
 - 11. REDESIGN PROTOCOL
 - 3. DEFAULT ARCHITECTURE & CONVENTIONS
 - 6. PERFORMANCE & ACCESSIBILITY GUARDRAILS
@@ -87,7 +87,7 @@
 - E2E / smoke author
 - Unit test author
 - session-start-context.js
-- .generate
+- build_fh6_seed.py
 - graphify reference: add a URL and watch a folder
 - graphify reference: commit hook and native AGENTS.md integration
 - graphify reference: incremental update and cluster-only
@@ -115,7 +115,7 @@
 - compare.ts
 - client.test.ts
 - api.test.ts
-- _select_palette_for_mode
+- rescrape_cars.py
 - Project knowledge graph → **Graphify**
 - Orchestrator
 - LEDGER.md
@@ -126,13 +126,13 @@
 
 ## God Nodes (most connected - your core abstractions)
 1. `DesignSystemGenerator` - 29 edges
-2. `t()` - 18 edges
-3. `BM25` - 17 edges
-4. `compilerOptions` - 16 edges
-5. `tasteskill: Anti-Slop Frontend Skill` - 16 edges
-6. `search()` - 15 edges
-7. `Appendix B - Canonical Sources (read these before reinventing)` - 15 edges
-8. `getDb()` - 14 edges
+2. `getDb()` - 21 edges
+3. `t()` - 20 edges
+4. `BM25` - 17 edges
+5. `compilerOptions` - 16 edges
+6. `tasteskill: Anti-Slop Frontend Skill` - 16 edges
+7. `search()` - 15 edges
+8. `Appendix B - Canonical Sources (read these before reinventing)` - 15 edges
 9. `Session Handoff Skill` - 13 edges
 10. `Component Composition` - 13 edges
 
@@ -166,14 +166,14 @@ Cohesion: 0.05
 Nodes (37): dependencies, react, react-dom, @tauri-apps/api, @tauri-apps/plugin-opener, @tauri-apps/plugin-sql, devDependencies, @tauri-apps/cli (+29 more)
 
 ### Community 3 - "BM25"
-Cohesion: 0.06
-Nodes (38): BM25, detect_domain(), _domain_keywords(), _get_bm25(), _load_csv(), _load_product_keywords(), _normalize(), Apply synonym substitution before tokenizing. (+30 more)
+Cohesion: 0.05
+Nodes (44): BM25, detect_domain(), _domain_keywords(), _get_bm25(), _load_csv(), _load_product_keywords(), _normalize(), Apply synonym substitution before tokenizing. (+36 more)
 
 ### Community 4 - "Evaluation Test Scenarios"
 Cohesion: 0.04
 Nodes (41): Evaluation Test Scenarios, Results Template, Scenario 1: Basic Handoff Creation, Scenario 2: Handoff with Chaining, Scenario 3: Resume from Handoff, Scenario 4: Proactive Handoff Suggestion, Scenario 5: Validation Flow, Scenario 6: Staleness Check (+33 more)
 
-### Community 5 - "permissions"
+### Community 5 - "default.json"
 Cohesion: 0.18
 Nodes (10): core:default, main, opener:default, sql:allow-execute, sql:default, description, identifier, permissions (+2 more)
 
@@ -189,9 +189,9 @@ Nodes (8): vite.config.ts, compilerOptions, allowSyntheticDefaultImports, compos
 Cohesion: 0.08
 Nodes (24): For /graphify add and --watch, For /graphify query, For the commit hook and native AGENTS.md integration, For --update and --cluster-only, /graphify, Honesty Rules, Interpreter guard for subcommands, Part A - Structural extraction for code files (+16 more)
 
-### Community 11 - "7. DIAL DEFINITIONS (Technical Reference)"
-Cohesion: 0.25
-Nodes (8): ansi_ljust(), format_ascii_box(), hex_to_ansi(), Convert hex color to ANSI True Color swatch (██) with fallback., Like str.ljust but accounts for zero-width ANSI escape sequences., Create a Unicode section separator: ├─── NAME ───...┤, Format design system as Unicode box with ANSI color swatches., section_header()
+### Community 11 - "design_system.py"
+Cohesion: 0.18
+Nodes (14): ansi_ljust(), _detect_page_type(), format_ascii_box(), format_page_override_md(), _generate_intelligent_overrides(), hex_to_ansi(), Format a page-specific override file with intelligent AI-generated content., Generate intelligent overrides based on page type using layered search. Uses… (+6 more)
 
 ### Community 16 - "Handoff: [TASK_TITLE]"
 Cohesion: 0.08
@@ -210,11 +210,11 @@ Cohesion: 0.09
 Nodes (19): ADR Format, Numbering, Optional sections, Template, What qualifies, When to offer an ADR, CONTEXT.md Format, Rules (+11 more)
 
 ### Community 20 - "DesignSystemGenerator"
-Cohesion: 0.16
-Nodes (8): DesignSystemGenerator, Generates design system recommendations from aggregated searches., Load reasoning rules from CSV., Find matching reasoning rule for a category., Apply reasoning rules to search results., TestReasoningMatch, The exact reproduction from issue #428., TestEndToEndCoherence
+Cohesion: 0.13
+Nodes (12): DesignSystemGenerator, Generates design system recommendations from aggregated searches., Load reasoning rules from CSV., Execute searches across multiple domains., Find matching reasoning rule for a category., Apply reasoning rules to search results., Select best matching result based on priority keywords., Extract results list from search result dict. (+4 more)
 
 ### Community 21 - "Expected Behaviors by Scenario"
-Cohesion: 0.10
+Cohesion: 0.09
 Nodes (21): Critical Failures (Any Model), Expected Behaviors by Scenario, For Haiku Optimization, For Opus Optimization, For Sonnet Optimization, Haiku (Fast, Lightweight), Minimum Pass Thresholds, Model Characteristics (+13 more)
 
 ### Community 22 - "check_staleness.py"
@@ -253,13 +253,13 @@ Nodes (16): Before Delivering App UI, Example Workflow, If a search returns 0 re
 Cohesion: 0.12
 Nodes (16): 1.1 Avoid Boolean Prop Proliferation, 1.2 Use Compound Components, 1. Component Architecture, 2.1 Decouple State Management from UI, 2.2 Define Generic Context Interfaces for Dependency Injection, 2.3 Lift State into Provider Components, 2. State Management, 3.1 Create Explicit Component Variants (+8 more)
 
-### Community 31 - "format_ascii_box"
-Cohesion: 0.31
-Nodes (5): _palette_is_dark(), WCAG relative luminance of a #RRGGBB string, or None if unparseable., True when a colors.csv row's Background is a dark surface., _relative_luminance(), TestLuminance
+### Community 31 - "_palette_is_dark"
+Cohesion: 0.18
+Nodes (7): _palette_is_dark(), WCAG relative luminance of a #RRGGBB string, or None if unparseable., True when a colors.csv row's Background is a dark surface., _relative_luminance(), The exact reproduction from issue #428., TestEndToEndCoherence, TestLuminance
 
-### Community 32 - "_palette_is_dark"
+### Community 32 - "_select_palette_for_mode"
 Cohesion: 0.43
-Nodes (3): Pick the highest-ranked palette matching the resolved mode.      Only the dark, _select_palette_for_mode(), TestPaletteSelection
+Nodes (3): Pick the highest-ranked palette matching the resolved mode. Only the dark case…, _select_palette_for_mode(), TestPaletteSelection
 
 ### Community 33 - "list_handoffs.py"
 Cohesion: 0.24
@@ -310,8 +310,8 @@ Cohesion: 0.18
 Nodes (10): Areas Working Well, Detailed Observations, How to Run Tests with Other Models, Potential Improvements Noted, Recommendations, Scenario Test Results, Script Verification Tests, Strengths (Opus) (+2 more)
 
 ### Community 45 - "design_system.py"
-Cohesion: 0.16
-Nodes (13): format_markdown(), format_master_md(), _query_wants_dark(), True when a styles.csv row describes itself as dark-first., True when the query explicitly asks for a dark theme., Resolve the mode the rest of the output has to agree with., Format design system as markdown., Slugify a name into a single safe path segment.      Only [a-z0-9_-] survives; (+5 more)
+Cohesion: 0.24
+Nodes (7): _query_wants_dark(), True when a styles.csv row describes itself as dark-first., True when the query explicitly asks for a dark theme., Resolve the mode the rest of the output has to agree with., _resolve_color_mode(), _style_is_dark_primary(), TestModeResolution
 
 ### Community 46 - "React Composition Patterns"
 Cohesion: 0.18
@@ -323,7 +323,7 @@ Nodes (10): 10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know), Anim
 
 ### Community 48 - "tasteskill: Anti-Slop Frontend Skill"
 Cohesion: 0.20
-Nodes (10): 13. OUT OF SCOPE, 14. FINAL PRE-FLIGHT CHECK, 2.A When to reach for a real design system (use official packages), 2.B When the brief is an aesthetic, not a system, 2. BRIEF → DESIGN SYSTEM MAP, 7. DIAL DEFINITIONS (Technical Reference), DESIGN_VARIANCE (Level 1-10), MOTION_INTENSITY (Level 1-10) (+2 more)
+Nodes (10): 13. OUT OF SCOPE, 14. FINAL PRE-FLIGHT CHECK, 1.A Dial Inference (design read → dial values), 1.B Use-Case Presets, 1.C How the Dials Drive Output, 1. THE THREE DIALS (Core Configuration), 2.A When to reach for a real design system (use official packages), 2.B When the brief is an aesthetic, not a system (+2 more)
 
 ### Community 49 - "React Composition Patterns"
 Cohesion: 0.20
@@ -353,8 +353,8 @@ Nodes (8): 9.A Visual & CSS, 9. AI TELLS (Forbidden Patterns), 9.B Typography, 9
 Cohesion: 0.25
 Nodes (8): Buttons inside inputs use InputGroup + InputGroupAddon, Contents, Field validation and disabled states, FieldSet + FieldLegend for grouping related fields, Forms & Inputs, Forms use FieldGroup + Field, InputGroup requires InputGroupInput/InputGroupTextarea, Option sets (2–7 choices) use ToggleGroup
 
-### Community 57 - "_filter_anti_patterns_for_mode"
-Cohesion: 0.43
+### Community 57 - "test_design_system_mode.py"
+Cohesion: 0.39
 Nodes (3): _filter_anti_patterns_for_mode(), Drop "avoid dark mode" advice once dark mode is the resolved answer., TestAntiPatternGating
 
 ### Community 58 - "11. REDESIGN PROTOCOL"
@@ -378,8 +378,8 @@ Cohesion: 0.29
 Nodes (6): ADR shape, Layout, Living project docs (template), Project specialization, Rules of thumb, When to write
 
 ### Community 63 - "api.ts"
-Cohesion: 0.07
-Nodes (59): App(), BootState, Route, routes, assetUrl(), CarPicker(), CarPickerProps, TimeInput() (+51 more)
+Cohesion: 0.06
+Nodes (73): App(), BootState, Route, routes, CarPicker(), CarPickerProps, TimeInput(), TimeInputProps (+65 more)
 
 ### Community 64 - "Context continuity (Forza Lap Tracker)"
 Cohesion: 0.29
@@ -433,9 +433,9 @@ Nodes (4): Mandatory constraints, Out of scope, Unit test author, Workflow
 Cohesion: 0.50
 Nodes (4): exists(), fs, main(), path
 
-### Community 77 - ".generate"
-Cohesion: 0.20
-Nodes (6): Execute searches across multiple domains., Select best matching result based on priority keywords., Extract results list from search result dict., Generate complete design system recommendation.          variance/motion/densi, Bucket a 1-10 dial value into its tier config. Returns None if value is None., _resolve_dial()
+### Community 77 - "build_fh6_seed.py"
+Cohesion: 0.36
+Nodes (9): download_logo(), fetch(), fetch_text(), main(), parse_make_cars(), Extract car models from forzagarage make page (JSON-LD + /cars/ links)., Download webp logo; fallback to generated SVG. Returns public-relative path., slugify() (+1 more)
 
 ### Community 78 - "graphify reference: add a URL and watch a folder"
 Cohesion: 0.50
@@ -481,9 +481,9 @@ Nodes (8): Agentic Council — Orchestrator Map (RESTRICTED), Failure handling, 
 Cohesion: 0.29
 Nodes (7): Agent council, Continuity, Development, Forza Lap Tracker, Skills, Specs, Status
 
-### Community 107 - "_select_palette_for_mode"
-Cohesion: 0.50
-Nodes (4): 1.A Dial Inference (design read → dial values), 1.B Use-Case Presets, 1.C How the Dials Drive Output, 1. THE THREE DIALS (Core Configuration)
+### Community 107 - "rescrape_cars.py"
+Cohesion: 0.70
+Nodes (4): fetch_text(), main(), parse_make_cars(), title_from_slug()
 
 ### Community 108 - "Project knowledge graph → **Graphify**"
 Cohesion: 0.33
@@ -498,8 +498,8 @@ Cohesion: 0.40
 Nodes (3): Dumps directory, Context dump ledger, Protocol
 
 ### Community 111 - "7. DIAL DEFINITIONS (Technical Reference)"
-Cohesion: 0.33
-Nodes (6): _detect_page_type(), format_page_override_md(), _generate_intelligent_overrides(), Format a page-specific override file with intelligent AI-generated content., Generate intelligent overrides based on page type using layered search., Detect page type from context and search results.
+Cohesion: 0.50
+Nodes (4): 7. DIAL DEFINITIONS (Technical Reference), DESIGN_VARIANCE (Level 1-10), MOTION_INTENSITY (Level 1-10), VISUAL_DENSITY (Level 1-10)
 
 ### Community 112 - "Active context (scratch)"
 Cohesion: 0.50
@@ -514,23 +514,23 @@ Cohesion: 0.50
 Nodes (4): 3.1 PI → class, 3.2 Lap time, 3.3 Catalog, 3. Domain model
 
 ## Knowledge Gaps
-- **668 isolated node(s):** `fs`, `path`, `name`, `private`, `version` (+663 more)
+- **670 isolated node(s):** `fs`, `path`, `name`, `private`, `version` (+665 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **18 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `tasteskill: Anti-Slop Frontend Skill` connect `tasteskill: Anti-Slop Frontend Skill` to `0. BRIEF INFERENCE (Read the Room Before Anything Else)`, `12. THE BLOCK LIBRARY (Contract - Implementations Land Here Iteratively)`, `5. CONTEXT-AWARE PROACTIVITY`, `8. DARK MODE PROTOCOL`, `4. DESIGN ENGINEERING DIRECTIVES (Bias Correction)`, `_select_palette_for_mode`, `10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know)`, `Appendix B - Canonical Sources (read these before reinventing)`, `9. AI TELLS (Forbidden Patterns)`, `11. REDESIGN PROTOCOL`, `3. DEFAULT ARCHITECTURE & CONVENTIONS`, `6. PERFORMANCE & ACCESSIBILITY GUARDRAILS`?**
-  _High betweenness centrality (0.011) - this node is a cross-community bridge._
-- **Why does `DesignSystemGenerator` connect `DesignSystemGenerator` to `_palette_is_dark`, `BM25`, `.generate`, `design_system.py`, `_filter_anti_patterns_for_mode`, `format_ascii_box`?**
-  _High betweenness centrality (0.006) - this node is a cross-community bridge._
+- **Why does `tasteskill: Anti-Slop Frontend Skill` connect `tasteskill: Anti-Slop Frontend Skill` to `0. BRIEF INFERENCE (Read the Room Before Anything Else)`, `12. THE BLOCK LIBRARY (Contract - Implementations Land Here Iteratively)`, `5. CONTEXT-AWARE PROACTIVITY`, `8. DARK MODE PROTOCOL`, `4. DESIGN ENGINEERING DIRECTIVES (Bias Correction)`, `10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know)`, `7. DIAL DEFINITIONS (Technical Reference)`, `Appendix B - Canonical Sources (read these before reinventing)`, `9. AI TELLS (Forbidden Patterns)`, `11. REDESIGN PROTOCOL`, `3. DEFAULT ARCHITECTURE & CONVENTIONS`, `6. PERFORMANCE & ACCESSIBILITY GUARDRAILS`?**
+  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+- **Why does `DesignSystemGenerator` connect `DesignSystemGenerator` to `_select_palette_for_mode`, `BM25`, `design_system.py`, `design_system.py`, `test_design_system_mode.py`, `_palette_is_dark`?**
+  _High betweenness centrality (0.005) - this node is a cross-community bridge._
 - **Are the 10 inferred relationships involving `DesignSystemGenerator` (e.g. with `TestDomainDetection` and `TestPersistence`) actually correct?**
   _`DesignSystemGenerator` has 10 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 5 inferred relationships involving `BM25` (e.g. with `TestDomainDetection` and `TestPersistence`) actually correct?**
   _`BM25` has 5 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `fs`, `path`, `name` to the rest of the system?**
-  _668 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _670 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._
 - **Should `tauri.conf.json` be split into smaller, more focused modules?**

@@ -1,8 +1,366 @@
 [
-  { "name": "Horizon Mexico Circuit", "slug": "horizon-mexico-circuit" },
-  { "name": "Road Atlanta", "slug": "road-atlanta" },
-  { "name": "Suzuka Circuit", "slug": "suzuka-circuit" },
-  { "name": "Nürburgring GP", "slug": "nurburgring-gp" },
-  { "name": "Laguna Seca", "slug": "laguna-seca" },
-  { "name": "Maple Valley", "slug": "maple-valley" }
+  {
+    "name": "Coastline Sprint",
+    "slug": "coastline-sprint"
+  },
+  {
+    "name": "Daikoku Circuit",
+    "slug": "daikoku-circuit"
+  },
+  {
+    "name": "Electric Town Circuit",
+    "slug": "electric-town-circuit"
+  },
+  {
+    "name": "Festival Sprint",
+    "slug": "festival-sprint"
+  },
+  {
+    "name": "Highway Circuit",
+    "slug": "highway-circuit"
+  },
+  {
+    "name": "Hokubu Circuit",
+    "slug": "hokubu-circuit"
+  },
+  {
+    "name": "Irokawa Circuit",
+    "slug": "irokawa-circuit"
+  },
+  {
+    "name": "Ito Sprint",
+    "slug": "ito-sprint"
+  },
+  {
+    "name": "Legend Island Circuit",
+    "slug": "legend-island-circuit"
+  },
+  {
+    "name": "Narai-Juku Circuit",
+    "slug": "narai-juku-circuit"
+  },
+  {
+    "name": "Satta Sprint",
+    "slug": "satta-sprint"
+  },
+  {
+    "name": "Seaside Park Sprint",
+    "slug": "seaside-park-sprint"
+  },
+  {
+    "name": "Sekibe Circuit",
+    "slug": "sekibe-circuit"
+  },
+  {
+    "name": "Shikisai Sprint",
+    "slug": "shikisai-sprint"
+  },
+  {
+    "name": "Shimanoyama Circuit",
+    "slug": "shimanoyama-circuit"
+  },
+  {
+    "name": "Shimanoyama Drift Circuit",
+    "slug": "shimanoyama-drift-circuit"
+  },
+  {
+    "name": "Shimanoyama Sprint",
+    "slug": "shimanoyama-sprint"
+  },
+  {
+    "name": "Shirakawa Circuit",
+    "slug": "shirakawa-circuit"
+  },
+  {
+    "name": "Soni Circuit",
+    "slug": "soni-circuit"
+  },
+  {
+    "name": "Tateyama Kurobe Sprint",
+    "slug": "tateyama-kurobe-sprint"
+  },
+  {
+    "name": "The Colossus",
+    "slug": "the-colossus"
+  },
+  {
+    "name": "The Goliath",
+    "slug": "the-goliath"
+  },
+  {
+    "name": "Venus Sprint",
+    "slug": "venus-sprint"
+  },
+  {
+    "name": "Cedar Run Street Race",
+    "slug": "cedar-run-street-race"
+  },
+  {
+    "name": "Daikoku Chase Street Race",
+    "slug": "daikoku-chase-street-race"
+  },
+  {
+    "name": "Festival Chase Street Race",
+    "slug": "festival-chase-street-race"
+  },
+  {
+    "name": "Hokubu Ascent Street Race",
+    "slug": "hokubu-ascent-street-race"
+  },
+  {
+    "name": "Kita Ine Street Race",
+    "slug": "kita-ine-street-race"
+  },
+  {
+    "name": "Matsumi Climb Street Race",
+    "slug": "matsumi-climb-street-race"
+  },
+  {
+    "name": "Minami Chase Street Race",
+    "slug": "minami-chase-street-race"
+  },
+  {
+    "name": "Nachi Run Street Race",
+    "slug": "nachi-run-street-race"
+  },
+  {
+    "name": "Norikura Descent Street Race",
+    "slug": "norikura-descent-street-race"
+  },
+  {
+    "name": "Okishinaimura Run Street Race",
+    "slug": "okishinaimura-run-street-race"
+  },
+  {
+    "name": "Rainbow Bridge Descent Street Race",
+    "slug": "rainbow-bridge-descent-street-race"
+  },
+  {
+    "name": "River Descent Street Race",
+    "slug": "river-descent-street-race"
+  },
+  {
+    "name": "Shimanoyama Charge Street Race",
+    "slug": "shimanoyama-charge-street-race"
+  },
+  {
+    "name": "Sunflower Charge Street Race",
+    "slug": "sunflower-charge-street-race"
+  },
+  {
+    "name": "Tokyo City Docks Charge Street Race",
+    "slug": "tokyo-city-docks-charge-street-race"
+  },
+  {
+    "name": "Arashiyama Takao Touge",
+    "slug": "arashiyama-takao-touge"
+  },
+  {
+    "name": "Bandai Azuma Touge",
+    "slug": "bandai-azuma-touge"
+  },
+  {
+    "name": "Hakone Nanamagari Touge",
+    "slug": "hakone-nanamagari-touge"
+  },
+  {
+    "name": "Mt. Haruna Touge",
+    "slug": "mt-haruna-touge"
+  },
+  {
+    "name": "Norikura Skyline Touge",
+    "slug": "norikura-skyline-touge"
+  },
+  {
+    "name": "Horizon Festival Drag Strip",
+    "slug": "horizon-festival-drag-strip"
+  },
+  {
+    "name": "Irokawa Space Center Drag Strip",
+    "slug": "irokawa-space-center-drag-strip"
+  },
+  {
+    "name": "Ito Airfield Drag Strip",
+    "slug": "ito-airfield-drag-strip"
+  },
+  {
+    "name": "Airfield Trail",
+    "slug": "airfield-trail"
+  },
+  {
+    "name": "Bamboo Forest Scramble",
+    "slug": "bamboo-forest-scramble"
+  },
+  {
+    "name": "Cherry Field Trail",
+    "slug": "cherry-field-trail"
+  },
+  {
+    "name": "Chiheisen Scramble",
+    "slug": "chiheisen-scramble"
+  },
+  {
+    "name": "Hirosaki Scramble",
+    "slug": "hirosaki-scramble"
+  },
+  {
+    "name": "Hokubu Trail",
+    "slug": "hokubu-trail"
+  },
+  {
+    "name": "Horizon Stadium Scramble",
+    "slug": "horizon-stadium-scramble"
+  },
+  {
+    "name": "Ine Scramble",
+    "slug": "ine-scramble"
+  },
+  {
+    "name": "Ito Trail",
+    "slug": "ito-trail"
+  },
+  {
+    "name": "Kawazu Nanadaru Scramble",
+    "slug": "kawazu-nanadaru-scramble"
+  },
+  {
+    "name": "Kinkaku-ji Trail",
+    "slug": "kinkaku-ji-trail"
+  },
+  {
+    "name": "Legend Island Trail",
+    "slug": "legend-island-trail"
+  },
+  {
+    "name": "Nukabira Trail",
+    "slug": "nukabira-trail"
+  },
+  {
+    "name": "Oyashirazu Trail",
+    "slug": "oyashirazu-trail"
+  },
+  {
+    "name": "Sekibe Scramble",
+    "slug": "sekibe-scramble"
+  },
+  {
+    "name": "Sotoyama Scramble",
+    "slug": "sotoyama-scramble"
+  },
+  {
+    "name": "Sunflower Scramble",
+    "slug": "sunflower-scramble"
+  },
+  {
+    "name": "Taiyaki Scramble",
+    "slug": "taiyaki-scramble"
+  },
+  {
+    "name": "Takashiro Trail",
+    "slug": "takashiro-trail"
+  },
+  {
+    "name": "The Gauntlet",
+    "slug": "the-gauntlet"
+  },
+  {
+    "name": "City Docks Cross Country Circuit",
+    "slug": "city-docks-cross-country-circuit"
+  },
+  {
+    "name": "Edogawa Cross Country Circuit",
+    "slug": "edogawa-cross-country-circuit"
+  },
+  {
+    "name": "Izu Cross Country",
+    "slug": "izu-cross-country"
+  },
+  {
+    "name": "Legend Island Cross Country Circuit",
+    "slug": "legend-island-cross-country-circuit"
+  },
+  {
+    "name": "Nangan Cross Country Circuit",
+    "slug": "nangan-cross-country-circuit"
+  },
+  {
+    "name": "Naruo Cross Country Circuit",
+    "slug": "naruo-cross-country-circuit"
+  },
+  {
+    "name": "Oka Cross Country Circuit",
+    "slug": "oka-cross-country-circuit"
+  },
+  {
+    "name": "Ruriko-ji Cross Country",
+    "slug": "ruriko-ji-cross-country"
+  },
+  {
+    "name": "Shimanoyama Cross Country",
+    "slug": "shimanoyama-cross-country"
+  },
+  {
+    "name": "Shinjuku Gyoen Cross Country",
+    "slug": "shinjuku-gyoen-cross-country"
+  },
+  {
+    "name": "Snow Forest Cross Country Circuit",
+    "slug": "snow-forest-cross-country-circuit"
+  },
+  {
+    "name": "Soni Highlands Cross Country",
+    "slug": "soni-highlands-cross-country"
+  },
+  {
+    "name": "Takashiro Cross Country",
+    "slug": "takashiro-cross-country"
+  },
+  {
+    "name": "Tateyama Alpine Cross Country",
+    "slug": "tateyama-alpine-cross-country"
+  },
+  {
+    "name": "Temple Cross Country",
+    "slug": "temple-cross-country"
+  },
+  {
+    "name": "The Titan",
+    "slug": "the-titan"
+  },
+  {
+    "name": "Wind Farm Cross Country",
+    "slug": "wind-farm-cross-country"
+  },
+  {
+    "name": "Yahikoyama Cross Country",
+    "slug": "yahikoyama-cross-country"
+  },
+  {
+    "name": "Flight Club",
+    "slug": "flight-club"
+  },
+  {
+    "name": "Horizon Invitational",
+    "slug": "horizon-invitational"
+  },
+  {
+    "name": "Horizon Legend",
+    "slug": "horizon-legend"
+  },
+  {
+    "name": "Launch Control",
+    "slug": "launch-control"
+  },
+  {
+    "name": "Mech My Day",
+    "slug": "mech-my-day"
+  },
+  {
+    "name": "Off Piste",
+    "slug": "off-piste"
+  },
+  {
+    "name": "Pier Pressure",
+    "slug": "pier-pressure"
+  }
 ]

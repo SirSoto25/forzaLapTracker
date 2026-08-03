@@ -1,7 +1,437 @@
 [
-  { "name": "Porsche", "slug": "porsche", "icon": "brands/placeholder.svg" },
-  { "name": "Ferrari", "slug": "ferrari", "icon": "brands/placeholder.svg" },
-  { "name": "McLaren", "slug": "mclaren", "icon": "brands/placeholder.svg" },
-  { "name": "Lamborghini", "slug": "lamborghini", "icon": "brands/placeholder.svg" },
-  { "name": "Ford", "slug": "ford", "icon": "brands/placeholder.svg" }
+  {
+    "name": "Abarth",
+    "slug": "abarth",
+    "icon": "brands/abarth.webp"
+  },
+  {
+    "name": "Acura",
+    "slug": "acura",
+    "icon": "brands/acura.webp"
+  },
+  {
+    "name": "Alfa Romeo",
+    "slug": "alfa-romeo",
+    "icon": "brands/alfa-romeo.webp"
+  },
+  {
+    "name": "Alumicraft",
+    "slug": "alumicraft",
+    "icon": "brands/alumicraft.webp"
+  },
+  {
+    "name": "AMG Transport Dynamics",
+    "slug": "amg-transport-dynamics",
+    "icon": "brands/amg-transport-dynamics.webp"
+  },
+  {
+    "name": "Apollo",
+    "slug": "apollo",
+    "icon": "brands/apollo.webp"
+  },
+  {
+    "name": "Ariel",
+    "slug": "ariel",
+    "icon": "brands/ariel.webp"
+  },
+  {
+    "name": "Aston Martin",
+    "slug": "aston-martin",
+    "icon": "brands/aston-martin.webp"
+  },
+  {
+    "name": "Audi",
+    "slug": "audi",
+    "icon": "brands/audi.webp"
+  },
+  {
+    "name": "Austin-Healey",
+    "slug": "austin-healey",
+    "icon": "brands/austin-healey.webp"
+  },
+  {
+    "name": "Autozam",
+    "slug": "autozam",
+    "icon": "brands/autozam.webp"
+  },
+  {
+    "name": "BAC",
+    "slug": "bac",
+    "icon": "brands/bac.webp"
+  },
+  {
+    "name": "Bentley",
+    "slug": "bentley",
+    "icon": "brands/bentley.webp"
+  },
+  {
+    "name": "BMW",
+    "slug": "bmw",
+    "icon": "brands/bmw.webp"
+  },
+  {
+    "name": "Buick",
+    "slug": "buick",
+    "icon": "brands/buick.webp"
+  },
+  {
+    "name": "Cadillac",
+    "slug": "cadillac",
+    "icon": "brands/cadillac.webp"
+  },
+  {
+    "name": "Can-Am",
+    "slug": "can-am",
+    "icon": "brands/can-am.webp"
+  },
+  {
+    "name": "Casey Currie Motorsports",
+    "slug": "casey-currie-motorsports",
+    "icon": "brands/casey-currie-motorsports.webp"
+  },
+  {
+    "name": "Chevrolet",
+    "slug": "chevrolet",
+    "icon": "brands/chevrolet.webp"
+  },
+  {
+    "name": "Datsun",
+    "slug": "datsun",
+    "icon": "brands/datsun.webp"
+  },
+  {
+    "name": "DeBerti",
+    "slug": "deberti",
+    "icon": "brands/deberti.webp"
+  },
+  {
+    "name": "DeLorean",
+    "slug": "delorean",
+    "icon": "brands/delorean.webp"
+  },
+  {
+    "name": "Dodge",
+    "slug": "dodge",
+    "icon": "brands/dodge.webp"
+  },
+  {
+    "name": "Ferrari",
+    "slug": "ferrari",
+    "icon": "brands/ferrari.webp"
+  },
+  {
+    "name": "Ford",
+    "slug": "ford",
+    "icon": "brands/ford.webp"
+  },
+  {
+    "name": "Formula Drift",
+    "slug": "formula-drift",
+    "icon": "brands/formula-drift.webp"
+  },
+  {
+    "name": "Funco Motorsports",
+    "slug": "funco-motorsports",
+    "icon": "brands/funco-motorsports.webp"
+  },
+  {
+    "name": "GMC",
+    "slug": "gmc",
+    "icon": "brands/gmc.webp"
+  },
+  {
+    "name": "Gordon Murray Automotive",
+    "slug": "gordon-murray-automotive",
+    "icon": "brands/gordon-murray-automotive.webp"
+  },
+  {
+    "name": "GR",
+    "slug": "gr",
+    "icon": "brands/gr.webp"
+  },
+  {
+    "name": "Hennessey",
+    "slug": "hennessey",
+    "icon": "brands/hennessey.webp"
+  },
+  {
+    "name": "Holden",
+    "slug": "holden",
+    "icon": "brands/holden.webp"
+  },
+  {
+    "name": "Honda",
+    "slug": "honda",
+    "icon": "brands/honda.webp"
+  },
+  {
+    "name": "HSV",
+    "slug": "hsv",
+    "icon": "brands/hsv.webp"
+  },
+  {
+    "name": "Hyundai",
+    "slug": "hyundai",
+    "icon": "brands/hyundai.webp"
+  },
+  {
+    "name": "Jaguar",
+    "slug": "jaguar",
+    "icon": "brands/jaguar.webp"
+  },
+  {
+    "name": "Jeep",
+    "slug": "jeep",
+    "icon": "brands/jeep.webp"
+  },
+  {
+    "name": "Jimco",
+    "slug": "jimco",
+    "icon": "brands/jimco.webp"
+  },
+  {
+    "name": "Koenigsegg",
+    "slug": "koenigsegg",
+    "icon": "brands/koenigsegg.webp"
+  },
+  {
+    "name": "KTM",
+    "slug": "ktm",
+    "icon": "brands/ktm.webp"
+  },
+  {
+    "name": "Lamborghini",
+    "slug": "lamborghini",
+    "icon": "brands/lamborghini.webp"
+  },
+  {
+    "name": "Lancia",
+    "slug": "lancia",
+    "icon": "brands/lancia.webp"
+  },
+  {
+    "name": "Land Rover",
+    "slug": "land-rover",
+    "icon": "brands/land-rover.webp"
+  },
+  {
+    "name": "Lexus",
+    "slug": "lexus",
+    "icon": "brands/lexus.webp"
+  },
+  {
+    "name": "Lincoln",
+    "slug": "lincoln",
+    "icon": "brands/lincoln.webp"
+  },
+  {
+    "name": "Lotus",
+    "slug": "lotus",
+    "icon": "brands/lotus.webp"
+  },
+  {
+    "name": "Lucid",
+    "slug": "lucid",
+    "icon": "brands/lucid.webp"
+  },
+  {
+    "name": "Maserati",
+    "slug": "maserati",
+    "icon": "brands/maserati.webp"
+  },
+  {
+    "name": "Mazda",
+    "slug": "mazda",
+    "icon": "brands/mazda.webp"
+  },
+  {
+    "name": "McLaren",
+    "slug": "mclaren",
+    "icon": "brands/mclaren.webp"
+  },
+  {
+    "name": "Mercedes-AMG",
+    "slug": "mercedes-amg",
+    "icon": "brands/mercedes-amg.webp"
+  },
+  {
+    "name": "Mercedes-Benz",
+    "slug": "mercedes-benz",
+    "icon": "brands/mercedes-benz.webp"
+  },
+  {
+    "name": "Meyers",
+    "slug": "meyers",
+    "icon": "brands/meyers.webp"
+  },
+  {
+    "name": "MG",
+    "slug": "mg",
+    "icon": "brands/mg.webp"
+  },
+  {
+    "name": "MINI",
+    "slug": "mini",
+    "icon": "brands/mini.webp"
+  },
+  {
+    "name": "Mitsubishi",
+    "slug": "mitsubishi",
+    "icon": "brands/mitsubishi.webp"
+  },
+  {
+    "name": "Nissan",
+    "slug": "nissan",
+    "icon": "brands/nissan.webp"
+  },
+  {
+    "name": "Noble",
+    "slug": "noble",
+    "icon": "brands/noble.webp"
+  },
+  {
+    "name": "Opel",
+    "slug": "opel",
+    "icon": "brands/opel.webp"
+  },
+  {
+    "name": "Pagani",
+    "slug": "pagani",
+    "icon": "brands/pagani.webp"
+  },
+  {
+    "name": "Peel",
+    "slug": "peel",
+    "icon": "brands/peel.webp"
+  },
+  {
+    "name": "Penhall",
+    "slug": "penhall",
+    "icon": "brands/penhall.webp"
+  },
+  {
+    "name": "Peugeot",
+    "slug": "peugeot",
+    "icon": "brands/peugeot.webp"
+  },
+  {
+    "name": "Plymouth",
+    "slug": "plymouth",
+    "icon": "brands/plymouth.webp"
+  },
+  {
+    "name": "Polaris",
+    "slug": "polaris",
+    "icon": "brands/polaris.webp"
+  },
+  {
+    "name": "Pontiac",
+    "slug": "pontiac",
+    "icon": "brands/pontiac.webp"
+  },
+  {
+    "name": "Porsche",
+    "slug": "porsche",
+    "icon": "brands/porsche.webp"
+  },
+  {
+    "name": "Radical",
+    "slug": "radical",
+    "icon": "brands/radical.webp"
+  },
+  {
+    "name": "Ram",
+    "slug": "ram",
+    "icon": "brands/ram.webp"
+  },
+  {
+    "name": "Reliant",
+    "slug": "reliant",
+    "icon": "brands/reliant.webp"
+  },
+  {
+    "name": "Renault",
+    "slug": "renault",
+    "icon": "brands/renault.webp"
+  },
+  {
+    "name": "Rimac",
+    "slug": "rimac",
+    "icon": "brands/rimac.webp"
+  },
+  {
+    "name": "RIVIAN",
+    "slug": "rivian",
+    "icon": "brands/rivian.webp"
+  },
+  {
+    "name": "RJ Anderson",
+    "slug": "rj-anderson",
+    "icon": "brands/rj-anderson.webp"
+  },
+  {
+    "name": "Saleen",
+    "slug": "saleen",
+    "icon": "brands/saleen.webp"
+  },
+  {
+    "name": "Schuppan",
+    "slug": "schuppan",
+    "icon": "brands/schuppan.webp"
+  },
+  {
+    "name": "Shelby",
+    "slug": "shelby",
+    "icon": "brands/shelby.webp"
+  },
+  {
+    "name": "SIERRA Cars",
+    "slug": "sierra-cars",
+    "icon": "brands/sierra-cars.webp"
+  },
+  {
+    "name": "SRT",
+    "slug": "srt",
+    "icon": "brands/srt.webp"
+  },
+  {
+    "name": "Subaru",
+    "slug": "subaru",
+    "icon": "brands/subaru.webp"
+  },
+  {
+    "name": "Toyota",
+    "slug": "toyota",
+    "icon": "brands/toyota.webp"
+  },
+  {
+    "name": "TVR",
+    "slug": "tvr",
+    "icon": "brands/tvr.webp"
+  },
+  {
+    "name": "Ultima",
+    "slug": "ultima",
+    "icon": "brands/ultima.webp"
+  },
+  {
+    "name": "Volkswagen",
+    "slug": "volkswagen",
+    "icon": "brands/volkswagen.webp"
+  },
+  {
+    "name": "Volvo",
+    "slug": "volvo",
+    "icon": "brands/volvo.webp"
+  },
+  {
+    "name": "Wuling",
+    "slug": "wuling",
+    "icon": "brands/wuling.webp"
+  },
+  {
+    "name": "Zenvo",
+    "slug": "zenvo",
+    "icon": "brands/zenvo.webp"
+  }
 ]

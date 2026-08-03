@@ -35,8 +35,8 @@
     "semantic_hash": ""
   },
   "src/App.tsx": {
-    "mtime": 1785763998.4292603,
-    "ast_hash": "f824d5c8b28f442d5e865930314334db",
+    "mtime": 1785778374.7166831,
+    "ast_hash": "2d45993428c8539d249ed17f2050401d",
     "semantic_hash": ""
   },
   "src/main.tsx": {
@@ -640,28 +640,28 @@
     "semantic_hash": ""
   },
   "seed/cars.json": {
-    "mtime": 1785765708.4029295,
-    "ast_hash": "cfacbc15e643baa34bc45b9bae8e2f5e",
+    "mtime": 1785778198.0147676,
+    "ast_hash": "f99ba7d18d854713dfb0608aa5d48db6",
     "semantic_hash": ""
   },
   "seed/circuits.json": {
-    "mtime": 1785702017.279523,
-    "ast_hash": "10456dfa0aca87d850c9723cd39e7deb",
+    "mtime": 1785778069.6758,
+    "ast_hash": "b3f14ee6f7b3d2a0dfb8bb6eb17368db",
     "semantic_hash": ""
   },
   "seed/manufacturers.json": {
-    "mtime": 1785702017.279523,
-    "ast_hash": "33cbb29c6881b0c26429be47e3236abe",
+    "mtime": 1785778069.6746595,
+    "ast_hash": "5b1193470604f2e811e76065f077ca9d",
     "semantic_hash": ""
   },
   "src/db/client.test.ts": {
-    "mtime": 1785768631.4871678,
-    "ast_hash": "c5fb914d76f2e0a51dd044d1be07a8b9",
+    "mtime": 1785778477.2883055,
+    "ast_hash": "88977ae975945417931cec227f2f15ff",
     "semantic_hash": ""
   },
   "src/db/client.ts": {
-    "mtime": 1785766786.6517627,
-    "ast_hash": "ab3820914f7c65dc656e4c7ab5e5f81e",
+    "mtime": 1785778251.9024975,
+    "ast_hash": "65669e12f6a3ade46eb3bdfbfe4ae373",
     "semantic_hash": ""
   },
   "src/db/migrations/001_init.sql": {
@@ -705,13 +705,13 @@
     "semantic_hash": ""
   },
   "src/lib/api.test.ts": {
-    "mtime": 1785765709.3058734,
-    "ast_hash": "a59b23665d96eaca6e0568f8a0711135",
+    "mtime": 1785778410.196216,
+    "ast_hash": "bf2490b3af97db84d25ec204322632da",
     "semantic_hash": ""
   },
   "src/lib/api.ts": {
-    "mtime": 1785765700.733785,
-    "ast_hash": "6ba1976be074d40bc3d5e44886f6feeb",
+    "mtime": 1785778276.709234,
+    "ast_hash": "fc439ee0b7a847043d4c35bfffa8b31a",
     "semantic_hash": ""
   },
   "vitest.config.ts": {
@@ -725,13 +725,13 @@
     "semantic_hash": ""
   },
   "src/i18n/en.json": {
-    "mtime": 1785766790.3393314,
-    "ast_hash": "57b603fa248f12b855d1f5175ff637a3",
+    "mtime": 1785778386.9439678,
+    "ast_hash": "d6bf90923aab86c0b944fac8be1c85c8",
     "semantic_hash": ""
   },
   "src/i18n/es.json": {
-    "mtime": 1785766790.804343,
-    "ast_hash": "228600d8d5a4934d6672f05acb06e42e",
+    "mtime": 1785778384.934188,
+    "ast_hash": "40d5e261a03b79d7c66331ac71ddeee9",
     "semantic_hash": ""
   },
   "src/i18n/index.test.ts": {
@@ -750,13 +750,13 @@
     "semantic_hash": ""
   },
   "src/pages/CircuitsPage.tsx": {
-    "mtime": 1785762603.036337,
-    "ast_hash": "ebf3efe73b2e64f1ca8b955a22d63e5e",
+    "mtime": 1785778379.153778,
+    "ast_hash": "0a2a6c9cb8214d93b5e2c1bbc79e83fa",
     "semantic_hash": ""
   },
   "src/components/CarPicker.tsx": {
-    "mtime": 1785766811.417172,
-    "ast_hash": "aa901bdca65a140d178d74b6c83aae8e",
+    "mtime": 1785778337.5915787,
+    "ast_hash": "154cba2bbba637b6bbc15d49630776f5",
     "semantic_hash": ""
   },
   "src/components/TimeInput.tsx": {
@@ -787,6 +787,466 @@
   "docs/qa/MVP_SMOKE.md": {
     "mtime": 1785766014.590837,
     "ast_hash": "a4950cb47545d169273ef9e5b7f3935e",
+    "semantic_hash": ""
+  },
+  "scripts/build_fh6_seed.py": {
+    "mtime": 1785778171.2757716,
+    "ast_hash": "cbef28d4d195f356d97c5e1b996f4051",
+    "semantic_hash": ""
+  },
+  "scripts/rescrape_cars.py": {
+    "mtime": 1785778161.5127065,
+    "ast_hash": "4ec1f3e1372c77873f3a5fc5e67a17d9",
+    "semantic_hash": ""
+  },
+  "seed/meta.json": {
+    "mtime": 1785778198.01626,
+    "ast_hash": "66b05c091e4c70f9415eded05a709cb2",
+    "semantic_hash": ""
+  },
+  "src/lib/assets.ts": {
+    "mtime": 1785778303.8166358,
+    "ast_hash": "04c55d70280f2f4c6450e2c2acf8fcf2",
+    "semantic_hash": ""
+  },
+  "src/pages/CatalogPage.tsx": {
+    "mtime": 1785778338.0711367,
+    "ast_hash": "98503664c1fb85a69174c2d97947b7c7",
+    "semantic_hash": ""
+  },
+  "public/brands/abarth.webp": {
+    "mtime": 1785778057.2480364,
+    "ast_hash": "7572229f74d071a4ac47b9902a15e9a3",
+    "semantic_hash": ""
+  },
+  "public/brands/acura.webp": {
+    "mtime": 1785778057.3845932,
+    "ast_hash": "5b30c505bff5a98ef48bd465530a1640",
+    "semantic_hash": ""
+  },
+  "public/brands/alfa-romeo.webp": {
+    "mtime": 1785778057.5156393,
+    "ast_hash": "d30b29e5dabae920ba2718084d845bf1",
+    "semantic_hash": ""
+  },
+  "public/brands/alumicraft.webp": {
+    "mtime": 1785778057.6476688,
+    "ast_hash": "e71cc9bb9347f7b6878addedf716ee6b",
+    "semantic_hash": ""
+  },
+  "public/brands/amg-transport-dynamics.webp": {
+    "mtime": 1785778057.784423,
+    "ast_hash": "eff707fde5dac9b38b15cff80510ac07",
+    "semantic_hash": ""
+  },
+  "public/brands/apollo.webp": {
+    "mtime": 1785778057.9117947,
+    "ast_hash": "5251f8902e2daa22f8f74d4aa31cc385",
+    "semantic_hash": ""
+  },
+  "public/brands/ariel.webp": {
+    "mtime": 1785778058.0340624,
+    "ast_hash": "b005b6584a4b67bb0dcfae976c092be7",
+    "semantic_hash": ""
+  },
+  "public/brands/aston-martin.webp": {
+    "mtime": 1785778058.1953862,
+    "ast_hash": "4de64c742c87c3663a2fc12609bf5a46",
+    "semantic_hash": ""
+  },
+  "public/brands/audi.webp": {
+    "mtime": 1785778058.3206837,
+    "ast_hash": "d64732da249270abeb317d4343d001b5",
+    "semantic_hash": ""
+  },
+  "public/brands/austin-healey.webp": {
+    "mtime": 1785778058.441703,
+    "ast_hash": "4b0b442e9599c92b9c4e5fd11abc2f4c",
+    "semantic_hash": ""
+  },
+  "public/brands/autozam.webp": {
+    "mtime": 1785778058.562534,
+    "ast_hash": "2572e7a5a6c7e2be5bac09b0807ed169",
+    "semantic_hash": ""
+  },
+  "public/brands/bac.webp": {
+    "mtime": 1785778058.7093956,
+    "ast_hash": "dbdce23515f1076ed3d16b21cabad7ac",
+    "semantic_hash": ""
+  },
+  "public/brands/bentley.webp": {
+    "mtime": 1785778058.85958,
+    "ast_hash": "ed97bc85dc03a61aafa99fc429ef4f23",
+    "semantic_hash": ""
+  },
+  "public/brands/bmw.webp": {
+    "mtime": 1785778058.9827223,
+    "ast_hash": "cee00f6cfef4942be866d0e5cf2841d1",
+    "semantic_hash": ""
+  },
+  "public/brands/buick.webp": {
+    "mtime": 1785778059.1416996,
+    "ast_hash": "6625e8e4cd7276e3ec57cd41df7124a8",
+    "semantic_hash": ""
+  },
+  "public/brands/cadillac.webp": {
+    "mtime": 1785778059.2784603,
+    "ast_hash": "c054f91b2b195c6b3ac3ff9707a45817",
+    "semantic_hash": ""
+  },
+  "public/brands/can-am.webp": {
+    "mtime": 1785778059.4048133,
+    "ast_hash": "d47f31b9b4db3bf441a76f2fa8bd0947",
+    "semantic_hash": ""
+  },
+  "public/brands/casey-currie-motorsports.webp": {
+    "mtime": 1785778059.5449758,
+    "ast_hash": "cafc71f971c7b53798d69101d13d8f17",
+    "semantic_hash": ""
+  },
+  "public/brands/chevrolet.webp": {
+    "mtime": 1785778059.6743543,
+    "ast_hash": "2952046860f6379110ca07ab6dcbcd79",
+    "semantic_hash": ""
+  },
+  "public/brands/datsun.webp": {
+    "mtime": 1785778059.8065078,
+    "ast_hash": "1e431eb2209734b721983571b119f542",
+    "semantic_hash": ""
+  },
+  "public/brands/deberti.webp": {
+    "mtime": 1785778059.9464092,
+    "ast_hash": "612e45b17c0ccf3005e781d45865a798",
+    "semantic_hash": ""
+  },
+  "public/brands/delorean.webp": {
+    "mtime": 1785778060.0881438,
+    "ast_hash": "0ff6517291653ca4cad4fa4ef00c8e2e",
+    "semantic_hash": ""
+  },
+  "public/brands/dodge.webp": {
+    "mtime": 1785778060.2120967,
+    "ast_hash": "5aff611303e22b7d544bbb9d8e849163",
+    "semantic_hash": ""
+  },
+  "public/brands/ferrari.webp": {
+    "mtime": 1785778060.3364,
+    "ast_hash": "4936c1b6e6c6262e8e1d05d80a5d5b14",
+    "semantic_hash": ""
+  },
+  "public/brands/ford.webp": {
+    "mtime": 1785778060.4705093,
+    "ast_hash": "fec552f433e13a0196dcbe8df5e31bc5",
+    "semantic_hash": ""
+  },
+  "public/brands/formula-drift.webp": {
+    "mtime": 1785778060.5978074,
+    "ast_hash": "34abeaab7eefa26d48b70a91c1692e25",
+    "semantic_hash": ""
+  },
+  "public/brands/funco-motorsports.webp": {
+    "mtime": 1785778060.7432323,
+    "ast_hash": "fee66f0d9d73dce8e97cc7c05fb6c06a",
+    "semantic_hash": ""
+  },
+  "public/brands/gmc.webp": {
+    "mtime": 1785778060.868935,
+    "ast_hash": "ee3cde10704c1b835e71d4b83730d01d",
+    "semantic_hash": ""
+  },
+  "public/brands/gordon-murray-automotive.webp": {
+    "mtime": 1785778060.9937642,
+    "ast_hash": "bb8ace293e86cdb3b6eb9d83831318ac",
+    "semantic_hash": ""
+  },
+  "public/brands/gr.webp": {
+    "mtime": 1785778061.1332498,
+    "ast_hash": "c030b339c1b29de0befe1d664de32155",
+    "semantic_hash": ""
+  },
+  "public/brands/hennessey.webp": {
+    "mtime": 1785778061.266739,
+    "ast_hash": "86df28a12f778864a74acbc3c2ee4dfa",
+    "semantic_hash": ""
+  },
+  "public/brands/holden.webp": {
+    "mtime": 1785778061.3870065,
+    "ast_hash": "954a32778a00d0abb0f305168f2fe533",
+    "semantic_hash": ""
+  },
+  "public/brands/honda.webp": {
+    "mtime": 1785778061.5525067,
+    "ast_hash": "1dbbf8d05acff7c4cb5698143942a611",
+    "semantic_hash": ""
+  },
+  "public/brands/hsv.webp": {
+    "mtime": 1785778061.7118034,
+    "ast_hash": "cfdd113a03f008637ac70a60eac94a70",
+    "semantic_hash": ""
+  },
+  "public/brands/hyundai.webp": {
+    "mtime": 1785778061.890715,
+    "ast_hash": "621315f31151f6e185552dce3b5704af",
+    "semantic_hash": ""
+  },
+  "public/brands/jaguar.webp": {
+    "mtime": 1785778062.0163667,
+    "ast_hash": "8222c1e88b7bfededb9fe4c8bd9224be",
+    "semantic_hash": ""
+  },
+  "public/brands/jeep.webp": {
+    "mtime": 1785778062.191693,
+    "ast_hash": "0b7076ea9f0572ef8cbcaafbe27ba7ba",
+    "semantic_hash": ""
+  },
+  "public/brands/jimco.webp": {
+    "mtime": 1785778062.3483424,
+    "ast_hash": "6601a6ad37ca5aae9225cb89eed0910b",
+    "semantic_hash": ""
+  },
+  "public/brands/koenigsegg.webp": {
+    "mtime": 1785778062.4780943,
+    "ast_hash": "699fa65bf5775b07d868074d2452a7e6",
+    "semantic_hash": ""
+  },
+  "public/brands/ktm.webp": {
+    "mtime": 1785778062.6185305,
+    "ast_hash": "47c727b5a24767ff4494a417114acfb4",
+    "semantic_hash": ""
+  },
+  "public/brands/lamborghini.webp": {
+    "mtime": 1785778062.7482457,
+    "ast_hash": "cb43e7d6b37d93a55acd0084fa1788cd",
+    "semantic_hash": ""
+  },
+  "public/brands/lancia.webp": {
+    "mtime": 1785778062.8706398,
+    "ast_hash": "829e282aeeafa2222d0b1973cf2de9f7",
+    "semantic_hash": ""
+  },
+  "public/brands/land-rover.webp": {
+    "mtime": 1785778063.0083253,
+    "ast_hash": "4784ca6c0ae65a19b25cac9afd41117c",
+    "semantic_hash": ""
+  },
+  "public/brands/lexus.webp": {
+    "mtime": 1785778063.149261,
+    "ast_hash": "10c6c3a9b2ebf3af6e87efff12b1460f",
+    "semantic_hash": ""
+  },
+  "public/brands/lincoln.webp": {
+    "mtime": 1785778063.2908459,
+    "ast_hash": "404bb44d01d053940fcf9320f2d0e364",
+    "semantic_hash": ""
+  },
+  "public/brands/lotus.webp": {
+    "mtime": 1785778063.4504795,
+    "ast_hash": "1c1f01e266e7466a239a5695e244a2da",
+    "semantic_hash": ""
+  },
+  "public/brands/lucid.webp": {
+    "mtime": 1785778063.584308,
+    "ast_hash": "226f2446e3baaac729c46dfe0fd0ef9d",
+    "semantic_hash": ""
+  },
+  "public/brands/maserati.webp": {
+    "mtime": 1785778063.7469263,
+    "ast_hash": "44bfd97432031060f96c7df702266dfb",
+    "semantic_hash": ""
+  },
+  "public/brands/mazda.webp": {
+    "mtime": 1785778063.88711,
+    "ast_hash": "758dd3fb55554d55d66671d2aefa7dcc",
+    "semantic_hash": ""
+  },
+  "public/brands/mclaren.webp": {
+    "mtime": 1785778064.0140257,
+    "ast_hash": "58216d5174b6ab5efe5fa8b511e10794",
+    "semantic_hash": ""
+  },
+  "public/brands/mercedes-amg.webp": {
+    "mtime": 1785778064.1376953,
+    "ast_hash": "2cbe75db7e6f7910d98c6e9dd4301376",
+    "semantic_hash": ""
+  },
+  "public/brands/mercedes-benz.webp": {
+    "mtime": 1785778064.2628798,
+    "ast_hash": "7b79c307cb704e2cf6b309a411036ab0",
+    "semantic_hash": ""
+  },
+  "public/brands/meyers.webp": {
+    "mtime": 1785778064.408752,
+    "ast_hash": "7ce750fc6996462980fb006b3b79fdd1",
+    "semantic_hash": ""
+  },
+  "public/brands/mg.webp": {
+    "mtime": 1785778064.5604897,
+    "ast_hash": "d1aa216ae584ece5badf0c460da600e3",
+    "semantic_hash": ""
+  },
+  "public/brands/mini.webp": {
+    "mtime": 1785778064.7145846,
+    "ast_hash": "710ee029d3ff46267bb1076397aebd2b",
+    "semantic_hash": ""
+  },
+  "public/brands/mitsubishi.webp": {
+    "mtime": 1785778064.9625032,
+    "ast_hash": "6606d00debf8bbb74b30ca003f97346c",
+    "semantic_hash": ""
+  },
+  "public/brands/nissan.webp": {
+    "mtime": 1785778065.0809138,
+    "ast_hash": "89625a9050af2c81e22daeae53f1dbdb",
+    "semantic_hash": ""
+  },
+  "public/brands/noble.webp": {
+    "mtime": 1785778065.2742324,
+    "ast_hash": "4fd983a9b84d5740839a7a53b971c7d8",
+    "semantic_hash": ""
+  },
+  "public/brands/opel.webp": {
+    "mtime": 1785778065.4088843,
+    "ast_hash": "21333e3a4dcff23d71b6c164753354e2",
+    "semantic_hash": ""
+  },
+  "public/brands/pagani.webp": {
+    "mtime": 1785778065.5573046,
+    "ast_hash": "d63d63fcfd04b81b358e9207dc68d0b6",
+    "semantic_hash": ""
+  },
+  "public/brands/peel.webp": {
+    "mtime": 1785778065.6815422,
+    "ast_hash": "392f1c48061383e99bb58a01e310569f",
+    "semantic_hash": ""
+  },
+  "public/brands/penhall.webp": {
+    "mtime": 1785778065.8058116,
+    "ast_hash": "12f1dca48b9b57c701d0ac57cdc1246b",
+    "semantic_hash": ""
+  },
+  "public/brands/peugeot.webp": {
+    "mtime": 1785778065.9752977,
+    "ast_hash": "506008bf7bfe100046da578e8dd1d413",
+    "semantic_hash": ""
+  },
+  "public/brands/plymouth.webp": {
+    "mtime": 1785778066.3369234,
+    "ast_hash": "f351a3f0faa526ccd2ef0c454a1fc61c",
+    "semantic_hash": ""
+  },
+  "public/brands/polaris.webp": {
+    "mtime": 1785778066.488863,
+    "ast_hash": "4154759adef275927fa85a1cd96e19fc",
+    "semantic_hash": ""
+  },
+  "public/brands/pontiac.webp": {
+    "mtime": 1785778066.6116555,
+    "ast_hash": "908a62230433671ba9526dc30c59c67b",
+    "semantic_hash": ""
+  },
+  "public/brands/porsche.webp": {
+    "mtime": 1785778066.7915814,
+    "ast_hash": "36b74ec4c7cd0b4af7d63b30017f0716",
+    "semantic_hash": ""
+  },
+  "public/brands/radical.webp": {
+    "mtime": 1785778066.9266615,
+    "ast_hash": "d74462bd2ae718f383b02743d5cf59f2",
+    "semantic_hash": ""
+  },
+  "public/brands/ram.webp": {
+    "mtime": 1785778067.0664542,
+    "ast_hash": "ee9116def3c502fe50f6776ea9c8c08a",
+    "semantic_hash": ""
+  },
+  "public/brands/reliant.webp": {
+    "mtime": 1785778067.1920335,
+    "ast_hash": "fb7cf22def74204906705dc7c8c2a96f",
+    "semantic_hash": ""
+  },
+  "public/brands/renault.webp": {
+    "mtime": 1785778067.3450863,
+    "ast_hash": "086f0d6e394c8456ed602f6cfce7c5c9",
+    "semantic_hash": ""
+  },
+  "public/brands/rimac.webp": {
+    "mtime": 1785778067.48356,
+    "ast_hash": "52066a48feb02c2aa86e42f8da564ae3",
+    "semantic_hash": ""
+  },
+  "public/brands/rivian.webp": {
+    "mtime": 1785778067.7342052,
+    "ast_hash": "a0a7b4a98ee0157b659cc5522aac3f1e",
+    "semantic_hash": ""
+  },
+  "public/brands/rj-anderson.webp": {
+    "mtime": 1785778067.8582654,
+    "ast_hash": "dc1b18cceacb24c7e84b43dd4a587fc2",
+    "semantic_hash": ""
+  },
+  "public/brands/saleen.webp": {
+    "mtime": 1785778067.9920983,
+    "ast_hash": "a5345d1c98d3a6e2073f231334cd2491",
+    "semantic_hash": ""
+  },
+  "public/brands/schuppan.webp": {
+    "mtime": 1785778068.146327,
+    "ast_hash": "36b74ec4c7cd0b4af7d63b30017f0716",
+    "semantic_hash": ""
+  },
+  "public/brands/shelby.webp": {
+    "mtime": 1785778068.2706628,
+    "ast_hash": "250af87788a1d309cf5c6eaba5b77822",
+    "semantic_hash": ""
+  },
+  "public/brands/sierra-cars.webp": {
+    "mtime": 1785778068.4164627,
+    "ast_hash": "67e0f9fc0126468b792163942c8b92e5",
+    "semantic_hash": ""
+  },
+  "public/brands/srt.webp": {
+    "mtime": 1785778068.5614078,
+    "ast_hash": "9d6becb1f785958499a23d3c10a56c9c",
+    "semantic_hash": ""
+  },
+  "public/brands/subaru.webp": {
+    "mtime": 1785778068.69912,
+    "ast_hash": "3c1d8432f2b8c7ce631ab0712f55e242",
+    "semantic_hash": ""
+  },
+  "public/brands/toyota.webp": {
+    "mtime": 1785778068.8388946,
+    "ast_hash": "8990a69ee73212241dc155a3b7f4c757",
+    "semantic_hash": ""
+  },
+  "public/brands/tvr.webp": {
+    "mtime": 1785778068.9617188,
+    "ast_hash": "b14a74292f131cafdfdbfb0591745650",
+    "semantic_hash": ""
+  },
+  "public/brands/ultima.webp": {
+    "mtime": 1785778069.0965898,
+    "ast_hash": "63967d25aa6300243d5a1da6344e32a1",
+    "semantic_hash": ""
+  },
+  "public/brands/volkswagen.webp": {
+    "mtime": 1785778069.234642,
+    "ast_hash": "2e6fb6abf9bcd6735d3b9f5be519dbd1",
+    "semantic_hash": ""
+  },
+  "public/brands/volvo.webp": {
+    "mtime": 1785778069.3642,
+    "ast_hash": "df6a80443c37029f32bf60958a1f4574",
+    "semantic_hash": ""
+  },
+  "public/brands/wuling.webp": {
+    "mtime": 1785778069.4917903,
+    "ast_hash": "4c4656b2d18eb91247b1bcebd2325c6b",
+    "semantic_hash": ""
+  },
+  "public/brands/zenvo.webp": {
+    "mtime": 1785778069.633324,
+    "ast_hash": "4a2e70f7e6d638668132689c9d407a0c",
     "semantic_hash": ""
   }
 }
