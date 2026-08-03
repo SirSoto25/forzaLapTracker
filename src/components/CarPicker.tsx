@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { convertFileSrc } from "@tauri-apps/api/core";
 import type { Car, Manufacturer } from "../db/types";
 import { t } from "../i18n";
 import { ensureCarImage, listCars, listManufacturers } from "../lib/api";
@@ -9,8 +10,20 @@ type CarPickerProps = {
   required?: boolean;
 };
 
+/** Relative public assets stay as `/…`; absolute app-data paths use asset protocol. */
 function assetUrl(path: string | null | undefined): string | null {
   if (!path) return null;
+  const isAppData =
+    /^[a-zA-Z]:[\\/]/.test(path) ||
+    path.includes("images/cars") ||
+    path.includes("images\\cars");
+  if (isAppData) {
+    try {
+      return convertFileSrc(path);
+    } catch {
+      return path;
+    }
+  }
   return path.startsWith("/") ? path : `/${path}`;
 }
 
@@ -73,12 +86,9 @@ export function CarPicker({
     onChange(id);
     const car = cars.find((c) => c.id === id);
     setThumbPath(car?.image_path ?? null);
-    try {
-      const path = await ensureCarImage(id);
-      if (path) setThumbPath(path);
-    } catch (err: unknown) {
-      setError(err instanceof Error ? err.message : String(err));
-    }
+    // Download is best-effort; null → placeholder. Never blocks lap save.
+    const path = await ensureCarImage(id);
+    if (path) setThumbPath(path);
   }
 
   const selectedManufacturer =

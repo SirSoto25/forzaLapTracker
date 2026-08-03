@@ -1,4 +1,6 @@
 // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
+mod images;
+
 use tauri_plugin_sql::{Migration, MigrationKind};
 
 #[tauri::command]
@@ -23,7 +25,7 @@ pub fn run() {
         )
         .plugin(tauri_plugin_fs::init())
         .plugin(tauri_plugin_opener::init())
-        .invoke_handler(tauri::generate_handler![greet])
+        .invoke_handler(tauri::generate_handler![greet, images::ensure_car_image])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }

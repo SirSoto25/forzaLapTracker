@@ -1,3 +1,4 @@
+import { invoke } from "@tauri-apps/api/core";
 import { getDb } from "../db/client";
 import type {
   Car,
@@ -65,9 +66,35 @@ export async function createCar(
   return result.lastInsertId!;
 }
 
-/** Stub until Task 10 wires Tauri download; never blocks lap save. */
-export async function ensureCarImage(_carId: number): Promise<string | null> {
-  return null;
+/**
+ * Ensure a local car image exists (download on demand).
+ * Returns absolute path or null; never throws — must not block lap save.
+ */
+export async function ensureCarImage(carId: number): Promise<string | null> {
+  try {
+    const db = await getDb();
+    const rows = await db.select<Car[]>("SELECT * FROM car WHERE id = $1", [
+      carId,
+    ]);
+    const car = rows[0];
+    if (!car) return null;
+
+    const path = await invoke<string | null>("ensure_car_image", {
+      carId,
+      imageUrl: car.image_url,
+    });
+    if (!path) return null;
+
+    if (car.image_path !== path) {
+      await db.execute("UPDATE car SET image_path = $1 WHERE id = $2", [
+        path,
+        carId,
+      ]);
+    }
+    return path;
+  } catch {
+    return null;
+  }
 }
 
 export async function insertLap(lap: NewLap): Promise<number> {
