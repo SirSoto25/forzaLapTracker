@@ -32,12 +32,21 @@ export function CircuitsPage({ onNavigate }: CircuitsPageProps) {
       setBest(undefined);
       return;
     }
+    let active = true;
+    const circuitId = selectedId;
     setBest(undefined);
-    void bestLap(selectedId)
-      .then(setBest)
+    void bestLap(circuitId)
+      .then((lap) => {
+        if (active) setBest(lap);
+      })
       .catch((err: unknown) => {
+        if (!active) return;
+        setBest(null);
         setError(err instanceof Error ? err.message : String(err));
       });
+    return () => {
+      active = false;
+    };
   }, [selectedId]);
 
   async function onAdd(event: FormEvent) {
