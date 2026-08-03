@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import { UpdateBanner } from "./components/UpdateBanner";
 import { initDb } from "./db/client";
 import {
   applyLocale,
@@ -8,6 +9,8 @@ import {
   t,
   type Locale,
 } from "./i18n";
+import { setSetting } from "./lib/api";
+import type { UpdateInfo } from "./lib/updateCheck";
 import { CatalogPage } from "./pages/CatalogPage";
 import { CircuitsPage } from "./pages/CircuitsPage";
 import { ComparePage } from "./pages/ComparePage";
@@ -42,6 +45,8 @@ function App() {
   const [locale, setLocale] = useState<Locale>("es");
   const [bootState, setBootState] = useState<BootState>("loading");
   const [bootError, setBootError] = useState<string | null>(null);
+  const [updateInfo, setUpdateInfo] = useState<UpdateInfo | null>(null);
+  const [updateDismissedSession, setUpdateDismissedSession] = useState(false);
 
   useEffect(() => {
     applyLocale(locale);
@@ -60,6 +65,29 @@ function App() {
         setBootState("error");
       });
   }, []);
+
+  useEffect(() => {
+    if (bootState !== "ready") return;
+    void (async () => {
+      try {
+        const [{ getVersion }, { checkForAppUpdate }, { getSetting }] =
+          await Promise.all([
+            import("@tauri-apps/api/app"),
+            import("./lib/updateCheck"),
+            import("./lib/api"),
+          ]);
+        const localVersion = await getVersion();
+        const dismissed = await getSetting("update_dismissed_version");
+        const info = await checkForAppUpdate({
+          localVersion,
+          dismissedVersion: dismissed,
+        });
+        if (info) setUpdateInfo(info);
+      } catch {
+        // silent
+      }
+    })();
+  }, [bootState]);
 
   async function changeLocale(nextLocale: Locale) {
     await persistLocale(nextLocale);
@@ -102,26 +130,41 @@ function App() {
           ))}
         </nav>
       </aside>
-      <main>
-        {route === "settings" ? (
-          <SettingsPage locale={locale} onLocaleChange={changeLocale} />
-        ) : route === "circuits" ? (
-          <CircuitsPage
-            onNavigate={(next, circuitId) => {
-              setSelectedCircuitId(circuitId);
-              setRoute(next);
+      <div className="app-content">
+        {updateInfo && !updateDismissedSession ? (
+          <UpdateBanner
+            info={updateInfo}
+            onDismissSession={() => setUpdateDismissedSession(true)}
+            onDismissVersion={() => {
+              void setSetting(
+                "update_dismissed_version",
+                updateInfo.remoteVersion,
+              );
+              setUpdateInfo(null);
             }}
           />
-        ) : route === "catalog" ? (
-          <CatalogPage />
-        ) : route === "register" ? (
-          <RegisterLapPage selectedCircuitId={selectedCircuitId} />
-        ) : route === "history" ? (
-          <HistoryPage selectedCircuitId={selectedCircuitId} />
-        ) : route === "compare" ? (
-          <ComparePage selectedCircuitId={selectedCircuitId} />
         ) : null}
-      </main>
+        <main>
+          {route === "settings" ? (
+            <SettingsPage locale={locale} onLocaleChange={changeLocale} />
+          ) : route === "circuits" ? (
+            <CircuitsPage
+              onNavigate={(next, circuitId) => {
+                setSelectedCircuitId(circuitId);
+                setRoute(next);
+              }}
+            />
+          ) : route === "catalog" ? (
+            <CatalogPage />
+          ) : route === "register" ? (
+            <RegisterLapPage selectedCircuitId={selectedCircuitId} />
+          ) : route === "history" ? (
+            <HistoryPage selectedCircuitId={selectedCircuitId} />
+          ) : route === "compare" ? (
+            <ComparePage selectedCircuitId={selectedCircuitId} />
+          ) : null}
+        </main>
+      </div>
     </div>
   );
 }
