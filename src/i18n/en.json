@@ -1,5 +1,7 @@
 {
   "app.name": "Forza Lap Tracker",
+  "app.boot.error.title": "Could not start the database",
+  "app.boot.error.message": "Restart the app. If the problem persists, check storage permissions.",
   "nav.circuits": "Circuits",
   "nav.register": "Register",
   "nav.history": "History",

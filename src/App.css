@@ -127,6 +127,36 @@ main {
   border-top: 1px solid #2c343e;
 }
 
+.boot-error {
+  min-height: 100vh;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: clamp(48px, 12vw, 120px) 24px;
+}
+
+.boot-error h1 {
+  margin: 0;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  letter-spacing: -0.04em;
+}
+
+.boot-error p {
+  margin: 16px 0 0;
+  color: #8f9aa6;
+}
+
+.boot-error-detail {
+  margin-top: 24px;
+  padding: 12px 14px;
+  overflow-x: auto;
+  color: #ffb4b4;
+  background: #251a1a;
+  border: 1px solid #5a3030;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+}
+
 .locale-picker {
   display: flex;
   gap: 10px;

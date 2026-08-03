@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import { initDb } from "./db/client";
 import {
+  applyLocale,
   loadLocale,
-  setLocale,
+  persistLocale,
   t,
   type Locale,
 } from "./i18n";
@@ -29,17 +30,50 @@ function PlaceholderPage({ route }: { route: Exclude<Route, "settings"> }) {
   );
 }
 
+type BootState = "loading" | "ready" | "error";
+
 function App() {
   const [route, setRoute] = useState<Route>("circuits");
-  const [locale, setCurrentLocale] = useState<Locale>("es");
+  const [locale, setLocale] = useState<Locale>("es");
+  const [bootState, setBootState] = useState<BootState>("loading");
+  const [bootError, setBootError] = useState<string | null>(null);
 
   useEffect(() => {
-    void initDb().then(loadLocale).then(setCurrentLocale);
+    applyLocale(locale);
+  }, [locale]);
+
+  useEffect(() => {
+    void initDb()
+      .then(() => loadLocale())
+      .then((loaded) => {
+        setLocale(loaded);
+        setBootState("ready");
+      })
+      .catch((error: unknown) => {
+        applyLocale("es");
+        setBootError(error instanceof Error ? error.message : String(error));
+        setBootState("error");
+      });
   }, []);
 
   async function changeLocale(nextLocale: Locale) {
-    await setLocale(nextLocale);
-    setCurrentLocale(nextLocale);
+    await persistLocale(nextLocale);
+    setLocale(nextLocale);
+  }
+
+  if (bootState === "error") {
+    return (
+      <div className="boot-error" role="alert">
+        <p className="eyebrow">{t("app.name")}</p>
+        <h1>{t("app.boot.error.title")}</h1>
+        <p>{t("app.boot.error.message")}</p>
+        {bootError ? <pre className="boot-error-detail">{bootError}</pre> : null}
+      </div>
+    );
+  }
+
+  if (bootState === "loading") {
+    return null;
   }
 
   return (
