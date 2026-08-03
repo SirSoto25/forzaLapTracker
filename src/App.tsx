@@ -1,50 +1,76 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import { invoke } from "@tauri-apps/api/core";
+import { useEffect, useState } from "react";
 import "./App.css";
+import { initDb } from "./db/client";
+import {
+  loadLocale,
+  setLocale,
+  t,
+  type Locale,
+} from "./i18n";
+import { SettingsPage } from "./pages/SettingsPage";
+
+type Route = "circuits" | "register" | "history" | "compare" | "settings";
+
+const routes: Route[] = [
+  "circuits",
+  "register",
+  "history",
+  "compare",
+  "settings",
+];
+
+function PlaceholderPage({ route }: { route: Exclude<Route, "settings"> }) {
+  return (
+    <section className="page">
+      <p className="eyebrow">{t(`nav.${route}`)}</p>
+      <h2>{t(`page.${route}.title`)}</h2>
+      <p className="placeholder">{t(`page.${route}.placeholder`)}</p>
+    </section>
+  );
+}
 
 function App() {
-  const [greetMsg, setGreetMsg] = useState("");
-  const [name, setName] = useState("");
+  const [route, setRoute] = useState<Route>("circuits");
+  const [locale, setCurrentLocale] = useState<Locale>("es");
 
-  async function greet() {
-    // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
-    setGreetMsg(await invoke("greet", { name }));
+  useEffect(() => {
+    void initDb().then(loadLocale).then(setCurrentLocale);
+  }, []);
+
+  async function changeLocale(nextLocale: Locale) {
+    await setLocale(nextLocale);
+    setCurrentLocale(nextLocale);
   }
 
   return (
-    <main className="container">
-      <h1>Welcome to Tauri + React</h1>
-
-      <div className="row">
-        <a href="https://vite.dev" target="_blank">
-          <img src="/vite.svg" className="logo vite" alt="Vite logo" />
-        </a>
-        <a href="https://tauri.app" target="_blank">
-          <img src="/tauri.svg" className="logo tauri" alt="Tauri logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <p>Click on the Tauri, Vite, and React logos to learn more.</p>
-
-      <form
-        className="row"
-        onSubmit={(e) => {
-          e.preventDefault();
-          greet();
-        }}
-      >
-        <input
-          id="greet-input"
-          onChange={(e) => setName(e.currentTarget.value)}
-          placeholder="Enter a name..."
-        />
-        <button type="submit">Greet</button>
-      </form>
-      <p>{greetMsg}</p>
-    </main>
+    <div className="app-shell">
+      <aside>
+        <header>
+          <span className="brand-mark">FL</span>
+          <h1>{t("app.name")}</h1>
+        </header>
+        <nav aria-label={t("app.name")}>
+          {routes.map((item) => (
+            <button
+              className={route === item ? "active" : ""}
+              key={item}
+              type="button"
+              aria-current={route === item ? "page" : undefined}
+              onClick={() => setRoute(item)}
+            >
+              {t(`nav.${item}`)}
+            </button>
+          ))}
+        </nav>
+      </aside>
+      <main>
+        {route === "settings" ? (
+          <SettingsPage locale={locale} onLocaleChange={changeLocale} />
+        ) : (
+          <PlaceholderPage route={route} />
+        )}
+      </main>
+    </div>
   );
 }
 

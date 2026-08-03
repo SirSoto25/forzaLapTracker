@@ -35,8 +35,8 @@
     "semantic_hash": ""
   },
   "src/App.tsx": {
-    "mtime": 1785699525.1423929,
-    "ast_hash": "00dfaa44eaf65c8c2133baa4b349d450",
+    "mtime": 1785752550.753626,
+    "ast_hash": "97ad6a95220bbc91a5d0797f767b9569",
     "semantic_hash": ""
   },
   "src/main.tsx": {
@@ -722,6 +722,31 @@
   "public/brands/placeholder.svg": {
     "mtime": 1785702017.922557,
     "ast_hash": "1a02d662724db29adaa9f051a8cc7f5b",
+    "semantic_hash": ""
+  },
+  "src/i18n/en.json": {
+    "mtime": 1785752402.7309732,
+    "ast_hash": "fc3f72f243bea6a4d6d747b2ca2b91f9",
+    "semantic_hash": ""
+  },
+  "src/i18n/es.json": {
+    "mtime": 1785752388.7703607,
+    "ast_hash": "0284c04b804cd866d0beaf07691bc2e0",
+    "semantic_hash": ""
+  },
+  "src/i18n/index.test.ts": {
+    "mtime": 1785752649.5740924,
+    "ast_hash": "6ff04af64d04db8ccf7fc60f2fd9bac6",
+    "semantic_hash": ""
+  },
+  "src/i18n/index.ts": {
+    "mtime": 1785752414.6052468,
+    "ast_hash": "bb2a94b0e668b9bb7882f088d348333a",
+    "semantic_hash": ""
+  },
+  "src/pages/SettingsPage.tsx": {
+    "mtime": 1785752509.4147434,
+    "ast_hash": "47a62337caa944b630213b1ab29439c8",
     "semantic_hash": ""
   }
 }
