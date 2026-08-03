@@ -73,6 +73,57 @@ it("creates custom catalog rows and upserts settings", async () => {
   ]);
 });
 
+it("updates and deletes catalog rows with lap guards", async () => {
+  const {
+    updateCircuit,
+    deleteCircuit,
+    updateCar,
+    deleteCar,
+    createManufacturer,
+    updateManufacturer,
+    deleteManufacturer,
+  } = await import("./api");
+
+  select.mockResolvedValueOnce([{ count: 0 }]);
+  await updateCircuit(4, "Hokubu Circuit");
+  await deleteCircuit(4);
+
+  await updateCar(9, { model: "GR Yaris", manufacturerId: 2 });
+  select.mockResolvedValueOnce([{ count: 0 }]);
+  await deleteCar(9);
+
+  expect(await createManufacturer("Custom Make")).toBe(7);
+  await updateManufacturer(7, { name: "Custom Make Renamed" });
+  select
+    .mockResolvedValueOnce([{ count: 0 }])
+    .mockResolvedValueOnce([{ cars: 0 }]);
+  await deleteManufacturer(7);
+
+  expect(execute).toHaveBeenCalledWith(
+    "UPDATE circuit SET name = $1 WHERE id = $2",
+    ["Hokubu Circuit", 4],
+  );
+  expect(execute).toHaveBeenCalledWith("DELETE FROM circuit WHERE id = $1", [
+    4,
+  ]);
+  expect(execute).toHaveBeenCalledWith(
+    "UPDATE car SET model = $1, manufacturer_id = $2 WHERE id = $3",
+    ["GR Yaris", 2, 9],
+  );
+  expect(execute).toHaveBeenCalledWith("DELETE FROM car WHERE id = $1", [9]);
+  expect(execute).toHaveBeenCalledWith(
+    expect.stringContaining("INSERT INTO manufacturer"),
+    ["Custom Make", "brands/placeholder.svg"],
+  );
+});
+
+it("blocks deleting circuits that still have laps", async () => {
+  const { deleteCircuit } = await import("./api");
+  select.mockResolvedValueOnce([{ count: 2 }]);
+  await expect(deleteCircuit(1)).rejects.toThrow(/laps/i);
+  expect(execute).not.toHaveBeenCalled();
+});
+
 it("ensureCarImage downloads via Tauri and updates image_path", async () => {
   const { ensureCarImage } = await import("./api");
   select.mockResolvedValueOnce([

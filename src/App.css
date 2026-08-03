@@ -193,6 +193,20 @@ main {
   cursor: pointer;
 }
 
+.circuit-add button.ghost,
+.circuit-actions button.ghost {
+  color: #e9edf2;
+  background: transparent;
+  border: 1px solid #39434e;
+}
+
+.circuit-add button.danger,
+.circuit-actions button.danger {
+  color: #ffb4b4;
+  background: transparent;
+  border: 1px solid #5a3030;
+}
+
 .circuit-list {
   list-style: none;
   margin: 28px 0 0;
@@ -308,6 +322,153 @@ main {
   color: #11151a;
   background: #f4b942;
   border: 1px solid #f4b942;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.car-picker-search {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #8f9aa6;
+  font-size: 0.85rem;
+}
+
+.car-picker-search input,
+.catalog-search input,
+.catalog-form input,
+.catalog-form select {
+  padding: 10px 12px;
+  color: #e9edf2;
+  background: #191f26;
+  border: 1px solid #39434e;
+  border-radius: 7px;
+  font: inherit;
+}
+
+.car-picker-model select[size] {
+  min-height: 7.5rem;
+}
+
+button.linkish {
+  align-self: flex-start;
+  padding: 0;
+  color: #f4b942;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  text-decoration: underline;
+}
+
+button.ghost,
+.circuit-actions button.ghost,
+.catalog-row-actions button.ghost {
+  color: #e9edf2;
+  background: transparent;
+  border: 1px solid #39434e;
+}
+
+button.danger,
+.circuit-actions button.danger,
+.catalog-row-actions button.danger {
+  color: #ffb4b4;
+  background: transparent;
+  border: 1px solid #5a3030;
+}
+
+.catalog-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0 16px;
+}
+
+.catalog-tabs button {
+  padding: 8px 14px;
+  color: #aeb7c2;
+  background: #191f26;
+  border: 1px solid #39434e;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.catalog-tabs button.active {
+  color: #11151a;
+  background: #f4b942;
+  border-color: #f4b942;
+}
+
+.catalog-search {
+  display: block;
+  margin: 0 0 16px;
+  max-width: 420px;
+}
+
+.catalog-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.catalog-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #8f9aa6;
+  font-size: 0.85rem;
+  min-width: 180px;
+}
+
+.catalog-form button[type="submit"] {
+  padding: 10px 14px;
+  color: #11151a;
+  background: #f4b942;
+  border: 1px solid #f4b942;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.catalog-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #2c343e;
+}
+
+.catalog-list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 4px;
+  border-bottom: 1px solid #2c343e;
+}
+
+.catalog-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.catalog-row img {
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.catalog-row-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.catalog-row-actions button {
+  padding: 6px 10px;
+  color: #e9edf2;
+  background: #191f26;
+  border: 1px solid #39434e;
   border-radius: 7px;
   cursor: pointer;
 }

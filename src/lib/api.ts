@@ -33,9 +33,108 @@ export async function createCircuit(name: string): Promise<number> {
   return result.lastInsertId!;
 }
 
+export async function updateCircuit(id: number, name: string): Promise<void> {
+  const value = name.trim();
+  if (!value) throw new Error("Circuit name is required");
+  const db = await getDb();
+  const result = await db.execute(
+    "UPDATE circuit SET name = $1 WHERE id = $2",
+    [value, id],
+  );
+  if (!result.rowsAffected) throw new Error("Circuit not found");
+}
+
+export async function deleteCircuit(id: number): Promise<void> {
+  const db = await getDb();
+  const [{ count }] = await db.select<Array<{ count: number }>>(
+    "SELECT COUNT(*) AS count FROM lap WHERE circuit_id = $1",
+    [id],
+  );
+  if (count > 0) {
+    throw new Error("Cannot delete a circuit that has recorded laps");
+  }
+  const result = await db.execute("DELETE FROM circuit WHERE id = $1", [id]);
+  if (!result.rowsAffected) throw new Error("Circuit not found");
+}
+
 export async function listManufacturers(): Promise<Manufacturer[]> {
   const db = await getDb();
   return db.select("SELECT * FROM manufacturer ORDER BY name");
+}
+
+export async function createManufacturer(
+  name: string,
+  iconPath = "brands/placeholder.svg",
+): Promise<number> {
+  const value = name.trim();
+  if (!value) throw new Error("Manufacturer name is required");
+  const db = await getDb();
+  const result = await db.execute(
+    `INSERT INTO manufacturer (name, icon_path, is_builtin)
+    VALUES ($1, $2, 0)`,
+    [value, iconPath.trim() || "brands/placeholder.svg"],
+  );
+  return result.lastInsertId!;
+}
+
+export async function updateManufacturer(
+  id: number,
+  fields: { name?: string; iconPath?: string },
+): Promise<void> {
+  const name = fields.name?.trim();
+  const iconPath = fields.iconPath?.trim();
+  if (name === undefined && iconPath === undefined) {
+    throw new Error("Nothing to update");
+  }
+  if (name !== undefined && !name) {
+    throw new Error("Manufacturer name is required");
+  }
+  const db = await getDb();
+  if (name !== undefined && iconPath !== undefined) {
+    const result = await db.execute(
+      "UPDATE manufacturer SET name = $1, icon_path = $2 WHERE id = $3",
+      [name, iconPath || "brands/placeholder.svg", id],
+    );
+    if (!result.rowsAffected) throw new Error("Manufacturer not found");
+    return;
+  }
+  if (name !== undefined) {
+    const result = await db.execute(
+      "UPDATE manufacturer SET name = $1 WHERE id = $2",
+      [name, id],
+    );
+    if (!result.rowsAffected) throw new Error("Manufacturer not found");
+    return;
+  }
+  const result = await db.execute(
+    "UPDATE manufacturer SET icon_path = $1 WHERE id = $2",
+    [iconPath || "brands/placeholder.svg", id],
+  );
+  if (!result.rowsAffected) throw new Error("Manufacturer not found");
+}
+
+export async function deleteManufacturer(id: number): Promise<void> {
+  const db = await getDb();
+  const [{ count }] = await db.select<Array<{ count: number }>>(
+    `SELECT COUNT(*) AS count FROM lap
+    JOIN car ON car.id = lap.car_id
+    WHERE car.manufacturer_id = $1`,
+    [id],
+  );
+  if (count > 0) {
+    throw new Error("Cannot delete a manufacturer that has recorded laps");
+  }
+  const [{ cars }] = await db.select<Array<{ cars: number }>>(
+    "SELECT COUNT(*) AS cars FROM car WHERE manufacturer_id = $1",
+    [id],
+  );
+  if (cars > 0) {
+    throw new Error("Delete the manufacturer's cars first");
+  }
+  const result = await db.execute("DELETE FROM manufacturer WHERE id = $1", [
+    id,
+  ]);
+  if (!result.rowsAffected) throw new Error("Manufacturer not found");
 }
 
 export async function listCars(manufacturerId?: number): Promise<Car[]> {
@@ -64,6 +163,52 @@ export async function createCar(
     [manufacturerId, value, imageUrl, imagePath],
   );
   return result.lastInsertId!;
+}
+
+export async function updateCar(
+  id: number,
+  fields: { model?: string; manufacturerId?: number },
+): Promise<void> {
+  const model = fields.model?.trim();
+  if (model === undefined && fields.manufacturerId === undefined) {
+    throw new Error("Nothing to update");
+  }
+  if (model !== undefined && !model) throw new Error("Car model is required");
+  const db = await getDb();
+  if (model !== undefined && fields.manufacturerId !== undefined) {
+    const result = await db.execute(
+      "UPDATE car SET model = $1, manufacturer_id = $2 WHERE id = $3",
+      [model, fields.manufacturerId, id],
+    );
+    if (!result.rowsAffected) throw new Error("Car not found");
+    return;
+  }
+  if (model !== undefined) {
+    const result = await db.execute("UPDATE car SET model = $1 WHERE id = $2", [
+      model,
+      id,
+    ]);
+    if (!result.rowsAffected) throw new Error("Car not found");
+    return;
+  }
+  const result = await db.execute(
+    "UPDATE car SET manufacturer_id = $1 WHERE id = $2",
+    [fields.manufacturerId, id],
+  );
+  if (!result.rowsAffected) throw new Error("Car not found");
+}
+
+export async function deleteCar(id: number): Promise<void> {
+  const db = await getDb();
+  const [{ count }] = await db.select<Array<{ count: number }>>(
+    "SELECT COUNT(*) AS count FROM lap WHERE car_id = $1",
+    [id],
+  );
+  if (count > 0) {
+    throw new Error("Cannot delete a car that has recorded laps");
+  }
+  const result = await db.execute("DELETE FROM car WHERE id = $1", [id]);
+  if (!result.rowsAffected) throw new Error("Car not found");
 }
 
 /**

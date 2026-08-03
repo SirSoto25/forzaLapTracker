@@ -8,16 +8,24 @@ import {
   t,
   type Locale,
 } from "./i18n";
+import { CatalogPage } from "./pages/CatalogPage";
 import { CircuitsPage } from "./pages/CircuitsPage";
 import { ComparePage } from "./pages/ComparePage";
 import { HistoryPage } from "./pages/HistoryPage";
 import { RegisterLapPage } from "./pages/RegisterLapPage";
 import { SettingsPage } from "./pages/SettingsPage";
 
-type Route = "circuits" | "register" | "history" | "compare" | "settings";
+type Route =
+  | "circuits"
+  | "catalog"
+  | "register"
+  | "history"
+  | "compare"
+  | "settings";
 
 const routes: Route[] = [
   "circuits",
+  "catalog",
   "register",
   "history",
   "compare",
@@ -104,6 +112,8 @@ function App() {
               setRoute(next);
             }}
           />
+        ) : route === "catalog" ? (
+          <CatalogPage />
         ) : route === "register" ? (
           <RegisterLapPage selectedCircuitId={selectedCircuitId} />
         ) : route === "history" ? (
