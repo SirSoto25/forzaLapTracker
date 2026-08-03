@@ -19,6 +19,22 @@ Build the frontend with `npm run build` or the desktop app with `npm run tauri b
 
 **Windows:** Native builds need [Visual Studio Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/) (MSVC + Windows SDK). Install the “Desktop development with C++” workload before `npm run tauri build`.
 
+## Releases
+
+Download installers from [GitHub Releases](https://github.com/SirSoto25/forzaLapTracker/releases).
+
+**Assets:** Windows MSI and NSIS setup; Linux `.deb` and AppImage.
+
+**Cut a release:**
+
+1. Bump `version` in `package.json` and `src-tauri/tauri.conf.json` (and `src-tauri/Cargo.toml` package version if it differs).
+2. Commit on `main`.
+3. Tag and push: `git tag vX.Y.Z && git push origin vX.Y.Z`, **or** run **Actions → Release → Run workflow**.
+
+The app shows an in-app notice when a newer release exists (link only). Unsigned Windows builds may trigger SmartScreen.
+
+Linux builds target Ubuntu 22.04 glibc.
+
 ## Specs
 
 See [docs/README.md](docs/README.md). Product design:
