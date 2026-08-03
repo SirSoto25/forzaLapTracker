@@ -37,4 +37,4 @@
 
 ### Commit
 
-- `11e62093af66e051f5aea2dd5309288e945a83f1` — `feat: history manufacturer filter` on `feat/mvp`
+- `2019889569d938cadbc68776e0846df47d7b4b6e` — `feat: history manufacturer filter` on `feat/mvp`
