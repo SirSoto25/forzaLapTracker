@@ -1440,8 +1440,8 @@
       "source_location": "L636",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_format_markdown",
-      "community": 77,
-      "community_name": "test_core.py",
+      "community": 45,
+      "community_name": "design_system.py",
       "norm_label": "format_markdown()"
     },
     {
@@ -1451,8 +1451,8 @@
       "source_location": "L776",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_generate_design_system",
-      "community": 77,
-      "community_name": "test_core.py",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "generate_design_system()"
     },
     {
@@ -1462,8 +1462,8 @@
       "source_location": "L818",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_safe_slug",
-      "community": 77,
-      "community_name": "test_core.py",
+      "community": 45,
+      "community_name": "design_system.py",
       "norm_label": "safe_slug()"
     },
     {
@@ -1473,8 +1473,8 @@
       "source_location": "L829",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_persist_design_system",
-      "community": 77,
-      "community_name": "test_core.py",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "persist_design_system()"
     },
     {
@@ -1484,8 +1484,8 @@
       "source_location": "L900",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_format_master_md",
-      "community": 77,
-      "community_name": "test_core.py",
+      "community": 45,
+      "community_name": "design_system.py",
       "norm_label": "format_master_md()"
     },
     {
@@ -1748,8 +1748,8 @@
       "source_location": "L637",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_637",
-      "community": 77,
-      "community_name": "test_core.py",
+      "community": 45,
+      "community_name": "design_system.py",
       "norm_label": "format design system as markdown."
     },
     {
@@ -1759,8 +1759,8 @@
       "source_location": "L780",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_780",
-      "community": 77,
-      "community_name": "test_core.py",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "main entry point for design system generation.      args:         query: sear"
     },
     {
@@ -1770,8 +1770,8 @@
       "source_location": "L819",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_819",
-      "community": 77,
-      "community_name": "test_core.py",
+      "community": 45,
+      "community_name": "design_system.py",
       "norm_label": "slugify a name into a single safe path segment.      only [a-z0-9_-] survives;"
     },
     {
@@ -1781,8 +1781,8 @@
       "source_location": "L831",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_831",
-      "community": 77,
-      "community_name": "test_core.py",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "persist design system to design-system/<project>/ folder using master + override"
     },
     {
@@ -1792,8 +1792,8 @@
       "source_location": "L901",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_901",
-      "community": 77,
-      "community_name": "test_core.py",
+      "community": 45,
+      "community_name": "design_system.py",
       "norm_label": "format design system as master.md with hierarchical override logic."
     },
     {
@@ -1869,8 +1869,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core",
-      "community": 77,
-      "community_name": "test_core.py",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "test_core.py"
     },
     {
@@ -2045,8 +2045,8 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testpersistence",
-      "community": 77,
-      "community_name": "test_core.py",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "testpersistence"
     },
     {
@@ -2056,8 +2056,8 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testpersistence_test_persist_then_skip_then_force",
-      "community": 77,
-      "community_name": "test_core.py",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": ".test_persist_then_skip_then_force()"
     },
     {
@@ -2067,8 +2067,8 @@
       "source_location": "L113",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testpersistence_test_persist_writes_only_under_output_dir",
-      "community": 77,
-      "community_name": "test_core.py",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": ".test_persist_writes_only_under_output_dir()"
     },
     {
@@ -2397,8 +2397,8 @@
       "source_location": "L153",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testendtoendcoherence_test_light_query_keeps_a_light_background",
-      "community": 32,
-      "community_name": "_palette_is_dark",
+      "community": 20,
+      "community_name": "DesignSystemGenerator",
       "norm_label": ".test_light_query_keeps_a_light_background()"
     },
     {
@@ -3417,7 +3417,7 @@
       "label": "Route",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L12",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "src_app_route",
       "community": 63,
@@ -3428,7 +3428,7 @@
       "label": "routes",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L14",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "src_app_routes",
       "community": 63,
@@ -3439,7 +3439,7 @@
       "label": "PlaceholderPage()",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L22",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "src_app_placeholderpage",
       "community": 63,
@@ -3447,10 +3447,21 @@
       "norm_label": "placeholderpage()"
     },
     {
+      "label": "BootState",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "src_app_bootstate",
+      "community": 63,
+      "community_name": "api.ts",
+      "norm_label": "bootstate"
+    },
+    {
       "label": "App()",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L32",
+      "source_location": "L45",
       "_origin": "ast",
       "id": "src_app_app",
       "community": 63,
@@ -3640,8 +3651,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_domain_laptime_test",
-      "community": 102,
-      "community_name": "lapTime.ts",
+      "community": 63,
+      "community_name": "api.ts",
       "norm_label": "laptime.test.ts"
     },
     {
@@ -3651,8 +3662,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_domain_laptime",
-      "community": 102,
-      "community_name": "lapTime.ts",
+      "community": 63,
+      "community_name": "api.ts",
       "norm_label": "laptime.ts"
     },
     {
@@ -3662,8 +3673,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "src_domain_laptime_parselaptime",
-      "community": 102,
-      "community_name": "lapTime.ts",
+      "community": 63,
+      "community_name": "api.ts",
       "norm_label": "parselaptime()"
     },
     {
@@ -3673,8 +3684,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "src_domain_laptime_formatlaptime",
-      "community": 102,
-      "community_name": "lapTime.ts",
+      "community": 63,
+      "community_name": "api.ts",
       "norm_label": "formatlaptime()"
     },
     {
@@ -3777,10 +3788,32 @@
       "norm_label": "catalogs"
     },
     {
-      "label": "t()",
+      "label": "getLocale()",
       "file_type": "code",
       "source_file": "src/i18n/index.ts",
       "source_location": "L10",
+      "_origin": "ast",
+      "id": "src_i18n_index_getlocale",
+      "community": 63,
+      "community_name": "api.ts",
+      "norm_label": "getlocale()"
+    },
+    {
+      "label": "applyLocale()",
+      "file_type": "code",
+      "source_file": "src/i18n/index.ts",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "src_i18n_index_applylocale",
+      "community": 63,
+      "community_name": "api.ts",
+      "norm_label": "applylocale()"
+    },
+    {
+      "label": "t()",
+      "file_type": "code",
+      "source_file": "src/i18n/index.ts",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "src_i18n_index_t",
       "community": 63,
@@ -3791,7 +3824,7 @@
       "label": "loadLocale()",
       "file_type": "code",
       "source_file": "src/i18n/index.ts",
-      "source_location": "L14",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "src_i18n_index_loadlocale",
       "community": 63,
@@ -3799,10 +3832,21 @@
       "norm_label": "loadlocale()"
     },
     {
+      "label": "persistLocale()",
+      "file_type": "code",
+      "source_file": "src/i18n/index.ts",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "src_i18n_index_persistlocale",
+      "community": 63,
+      "community_name": "api.ts",
+      "norm_label": "persistlocale()"
+    },
+    {
       "label": "setLocale()",
       "file_type": "code",
       "source_file": "src/i18n/index.ts",
-      "source_location": "L19",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "src_i18n_index_setlocale",
       "community": 63,
@@ -3962,6 +4006,50 @@
       "community": 63,
       "community_name": "api.ts",
       "norm_label": "main.tsx"
+    },
+    {
+      "label": "CircuitsPage.tsx",
+      "file_type": "code",
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_pages_circuitspage",
+      "community": 63,
+      "community_name": "api.ts",
+      "norm_label": "circuitspage.tsx"
+    },
+    {
+      "label": "NavTarget",
+      "file_type": "code",
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "src_pages_circuitspage_navtarget",
+      "community": 63,
+      "community_name": "api.ts",
+      "norm_label": "navtarget"
+    },
+    {
+      "label": "CircuitsPageProps",
+      "file_type": "code",
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "src_pages_circuitspage_circuitspageprops",
+      "community": 63,
+      "community_name": "api.ts",
+      "norm_label": "circuitspageprops"
+    },
+    {
+      "label": "CircuitsPage()",
+      "file_type": "code",
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "src_pages_circuitspage_circuitspage",
+      "community": 63,
+      "community_name": "api.ts",
+      "norm_label": "circuitspage()"
     },
     {
       "label": "SettingsPage.tsx",
@@ -4465,8 +4553,8 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "agents_skills_design_taste_frontend_skill_1_the_three_dials_core_configuration",
-      "community": 101,
-      "community_name": "1. THE THREE DIALS (Core Configuration)",
+      "community": 48,
+      "community_name": "tasteskill: Anti-Slop Frontend Skill",
       "norm_label": "1. the three dials (core configuration)"
     },
     {
@@ -4476,8 +4564,8 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "agents_skills_design_taste_frontend_skill_1_a_dial_inference_design_read_dial_values",
-      "community": 101,
-      "community_name": "1. THE THREE DIALS (Core Configuration)",
+      "community": 48,
+      "community_name": "tasteskill: Anti-Slop Frontend Skill",
       "norm_label": "1.a dial inference (design read \u2192 dial values)"
     },
     {
@@ -4487,8 +4575,8 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "agents_skills_design_taste_frontend_skill_1_b_use_case_presets",
-      "community": 101,
-      "community_name": "1. THE THREE DIALS (Core Configuration)",
+      "community": 48,
+      "community_name": "tasteskill: Anti-Slop Frontend Skill",
       "norm_label": "1.b use-case presets"
     },
     {
@@ -4498,8 +4586,8 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "agents_skills_design_taste_frontend_skill_1_c_how_the_dials_drive_output",
-      "community": 101,
-      "community_name": "1. THE THREE DIALS (Core Configuration)",
+      "community": 48,
+      "community_name": "tasteskill: Anti-Slop Frontend Skill",
       "norm_label": "1.c how the dials drive output"
     },
     {
@@ -4883,8 +4971,8 @@
       "source_location": "L552",
       "_origin": "ast",
       "id": "agents_skills_design_taste_frontend_skill_7_dial_definitions_technical_reference",
-      "community": 48,
-      "community_name": "tasteskill: Anti-Slop Frontend Skill",
+      "community": 11,
+      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
       "norm_label": "7. dial definitions (technical reference)"
     },
     {
@@ -4894,8 +4982,8 @@
       "source_location": "L554",
       "_origin": "ast",
       "id": "agents_skills_design_taste_frontend_skill_design_variance_level_1_10",
-      "community": 48,
-      "community_name": "tasteskill: Anti-Slop Frontend Skill",
+      "community": 11,
+      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
       "norm_label": "design_variance (level 1-10)"
     },
     {
@@ -4905,8 +4993,8 @@
       "source_location": "L560",
       "_origin": "ast",
       "id": "agents_skills_design_taste_frontend_skill_motion_intensity_level_1_10",
-      "community": 48,
-      "community_name": "tasteskill: Anti-Slop Frontend Skill",
+      "community": 11,
+      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
       "norm_label": "motion_intensity (level 1-10)"
     },
     {
@@ -4916,8 +5004,8 @@
       "source_location": "L565",
       "_origin": "ast",
       "id": "agents_skills_design_taste_frontend_skill_visual_density_level_1_10",
-      "community": 48,
-      "community_name": "tasteskill: Anti-Slop Frontend Skill",
+      "community": 11,
+      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
       "norm_label": "visual_density (level 1-10)"
     },
     {
@@ -11747,8 +11835,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "cursor_agents_flt_orchestrator",
-      "community": 112,
-      "community_name": "Orchestrator",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "flt-orchestrator.md"
     },
     {
@@ -11758,8 +11846,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "cursor_agents_flt_orchestrator_orchestrator",
-      "community": 112,
-      "community_name": "Orchestrator",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "orchestrator"
     },
     {
@@ -11769,8 +11857,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "cursor_agents_flt_orchestrator_rules",
-      "community": 112,
-      "community_name": "Orchestrator",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "rules"
     },
     {
@@ -11780,8 +11868,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "cursor_agents_flt_orchestrator_packet_template",
-      "community": 112,
-      "community_name": "Orchestrator",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "packet template"
     },
     {
@@ -11791,8 +11879,8 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "cursor_agents_flt_orchestrator_outputs_to_human",
-      "community": 112,
-      "community_name": "Orchestrator",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "outputs to human"
     },
     {
@@ -12133,7 +12221,7 @@
       "_origin": "ast",
       "id": "readme",
       "community": 8,
-      "community_name": "docs/README.md",
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "readme.md"
     },
     {
@@ -12143,8 +12231,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "readme_forza_lap_tracker",
-      "community": 108,
-      "community_name": "Forza Lap Tracker",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "forza lap tracker"
     },
     {
@@ -12154,8 +12242,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "readme_development",
-      "community": 108,
-      "community_name": "Forza Lap Tracker",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "development"
     },
     {
@@ -12165,8 +12253,8 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "readme_specs",
-      "community": 108,
-      "community_name": "Forza Lap Tracker",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "specs"
     },
     {
@@ -12176,8 +12264,8 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "readme_agent_council",
-      "community": 108,
-      "community_name": "Forza Lap Tracker",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "agent council"
     },
     {
@@ -12187,8 +12275,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "readme_skills",
-      "community": 108,
-      "community_name": "Forza Lap Tracker",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "skills"
     },
     {
@@ -12198,8 +12286,8 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "readme_continuity",
-      "community": 108,
-      "community_name": "Forza Lap Tracker",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "continuity"
     },
     {
@@ -12209,8 +12297,8 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "readme_status",
-      "community": 108,
-      "community_name": "Forza Lap Tracker",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "status"
     },
     {
@@ -12221,7 +12309,7 @@
       "_origin": "ast",
       "id": "docs_readme",
       "community": 8,
-      "community_name": "docs/README.md",
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "docs/readme.md"
     },
     {
@@ -12232,7 +12320,7 @@
       "_origin": "ast",
       "id": "docs_readme_docs_map",
       "community": 8,
-      "community_name": "docs/README.md",
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "docs map"
     },
     {
@@ -12243,7 +12331,7 @@
       "_origin": "ast",
       "id": "docs_context_current",
       "community": 8,
-      "community_name": "docs/README.md",
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "current.md"
     },
     {
@@ -12253,8 +12341,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_context_current_active_context_scratch",
-      "community": 114,
-      "community_name": "Active context (scratch)",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "active context (scratch)"
     },
     {
@@ -12264,8 +12352,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "docs_context_current_resume_pointers",
-      "community": 114,
-      "community_name": "Active context (scratch)",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "resume pointers"
     },
     {
@@ -12275,8 +12363,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "docs_context_current_in_flight_session",
-      "community": 114,
-      "community_name": "Active context (scratch)",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "in flight (session)"
     },
     {
@@ -12286,8 +12374,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "docs_context_current_do_not_store_here",
-      "community": 114,
-      "community_name": "Active context (scratch)",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "do not store here"
     },
     {
@@ -12319,8 +12407,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_context_ledger",
-      "community": 113,
-      "community_name": "LEDGER.md",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "ledger.md"
     },
     {
@@ -12330,8 +12418,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_context_ledger_context_dump_ledger",
-      "community": 113,
-      "community_name": "LEDGER.md",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "context dump ledger"
     },
     {
@@ -12341,8 +12429,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "docs_context_ledger_protocol",
-      "community": 113,
-      "community_name": "LEDGER.md",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "protocol"
     },
     {
@@ -12352,8 +12440,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_context_dumps_readme",
-      "community": 113,
-      "community_name": "LEDGER.md",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "dumps/readme.md"
     },
     {
@@ -12363,8 +12451,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_context_dumps_readme_dumps_directory",
-      "community": 113,
-      "community_name": "LEDGER.md",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "dumps directory"
     },
     {
@@ -12375,7 +12463,7 @@
       "_origin": "ast",
       "id": "docs_graph_project_graph",
       "community": 8,
-      "community_name": "docs/README.md",
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "project_graph.md"
     },
     {
@@ -12385,8 +12473,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_graph_project_graph_project_knowledge_graph_graphify",
-      "community": 110,
-      "community_name": "Project knowledge graph \u2192 **Graphify**",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "project knowledge graph \u2192 **graphify**"
     },
     {
@@ -12396,8 +12484,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "docs_graph_project_graph_outputs_source_of_truth",
-      "community": 110,
-      "community_name": "Project knowledge graph \u2192 **Graphify**",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "outputs (source of truth)"
     },
     {
@@ -12407,8 +12495,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "docs_graph_project_graph_commands",
-      "community": 110,
-      "community_name": "Project knowledge graph \u2192 **Graphify**",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "commands"
     },
     {
@@ -12418,8 +12506,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "docs_graph_project_graph_session_habit",
-      "community": 110,
-      "community_name": "Project knowledge graph \u2192 **Graphify**",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "session habit"
     },
     {
@@ -12429,8 +12517,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "docs_graph_project_graph_skill_rule",
-      "community": 110,
-      "community_name": "Project knowledge graph \u2192 **Graphify**",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "skill / rule"
     },
     {
@@ -12440,8 +12528,8 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "docs_graph_project_graph_legacy",
-      "community": 110,
-      "community_name": "Project knowledge graph \u2192 **Graphify**",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "legacy"
     },
     {
@@ -12452,7 +12540,7 @@
       "_origin": "ast",
       "id": "docs_skills",
       "community": 8,
-      "community_name": "docs/README.md",
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "skills.md"
     },
     {
@@ -12462,8 +12550,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_skills_project_skills_catalog",
-      "community": 115,
-      "community_name": "Project skills catalog",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "project skills catalog"
     },
     {
@@ -12473,8 +12561,8 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "docs_skills_packet_hints_orchestrator_only",
-      "community": 115,
-      "community_name": "Project skills catalog",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "packet hints (orchestrator only)"
     },
     {
@@ -12484,8 +12572,8 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "docs_skills_continuity",
-      "community": 115,
-      "community_name": "Project skills catalog",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "continuity"
     },
     {
@@ -12495,8 +12583,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "docs_skills_not_installed",
-      "community": 115,
-      "community_name": "Project skills catalog",
+      "community": 8,
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "not installed"
     },
     {
@@ -12506,8 +12594,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_superpowers_plans_2026_08_02_forza_lap_tracker_mvp",
-      "community": 111,
-      "community_name": "Forza Lap Tracker MVP \u2014 Implementation Plan",
+      "community": 26,
+      "community_name": "File map (target)",
       "norm_label": "2026-08-02-forza-lap-tracker-mvp.md"
     },
     {
@@ -12517,8 +12605,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_superpowers_plans_2026_08_02_forza_lap_tracker_mvp_forza_lap_tracker_mvp_implementation_plan",
-      "community": 111,
-      "community_name": "Forza Lap Tracker MVP \u2014 Implementation Plan",
+      "community": 26,
+      "community_name": "File map (target)",
       "norm_label": "forza lap tracker mvp \u2014 implementation plan"
     },
     {
@@ -12528,8 +12616,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "docs_superpowers_plans_2026_08_02_forza_lap_tracker_mvp_global_constraints",
-      "community": 111,
-      "community_name": "Forza Lap Tracker MVP \u2014 Implementation Plan",
+      "community": 26,
+      "community_name": "File map (target)",
       "norm_label": "global constraints"
     },
     {
@@ -12539,8 +12627,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "docs_superpowers_plans_2026_08_02_forza_lap_tracker_mvp_parallelism_orchestrator",
-      "community": 111,
-      "community_name": "Forza Lap Tracker MVP \u2014 Implementation Plan",
+      "community": 26,
+      "community_name": "File map (target)",
       "norm_label": "parallelism (orchestrator)"
     },
     {
@@ -12693,8 +12781,8 @@
       "source_location": "L600",
       "_origin": "ast",
       "id": "docs_superpowers_plans_2026_08_02_forza_lap_tracker_mvp_spec_coverage_check",
-      "community": 111,
-      "community_name": "Forza Lap Tracker MVP \u2014 Implementation Plan",
+      "community": 26,
+      "community_name": "File map (target)",
       "norm_label": "spec coverage check"
     },
     {
@@ -12704,8 +12792,8 @@
       "source_location": "L618",
       "_origin": "ast",
       "id": "docs_superpowers_plans_2026_08_02_forza_lap_tracker_mvp_post_mvp_do_not_implement_in_this_plan",
-      "community": 111,
-      "community_name": "Forza Lap Tracker MVP \u2014 Implementation Plan",
+      "community": 26,
+      "community_name": "File map (target)",
       "norm_label": "post-mvp (do not implement in this plan)"
     },
     {
@@ -12716,7 +12804,7 @@
       "_origin": "ast",
       "id": "docs_superpowers_specs_2026_08_02_agentic_council_design",
       "community": 8,
-      "community_name": "docs/README.md",
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "2026-08-02-agentic-council-design.md"
     },
     {
@@ -12726,7 +12814,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_superpowers_specs_2026_08_02_agentic_council_design_agentic_council_orchestrator_map_restricted",
-      "community": 11,
+      "community": 8,
       "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "agentic council \u2014 orchestrator map (restricted)"
     },
@@ -12737,7 +12825,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "docs_superpowers_specs_2026_08_02_agentic_council_design_isolation_law",
-      "community": 11,
+      "community": 8,
       "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "isolation law"
     },
@@ -12748,7 +12836,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "docs_superpowers_specs_2026_08_02_agentic_council_design_ponytail_skill_catalog",
-      "community": 11,
+      "community": 8,
       "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "ponytail + skill catalog"
     },
@@ -12759,7 +12847,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "docs_superpowers_specs_2026_08_02_agentic_council_design_roster_orchestrator_only",
-      "community": 11,
+      "community": 8,
       "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "roster (orchestrator only)"
     },
@@ -12770,7 +12858,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "docs_superpowers_specs_2026_08_02_agentic_council_design_parallel_waves_typical_feature",
-      "community": 11,
+      "community": 8,
       "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "parallel waves (typical feature)"
     },
@@ -12781,7 +12869,7 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "docs_superpowers_specs_2026_08_02_agentic_council_design_sealed_task_packet_template",
-      "community": 11,
+      "community": 8,
       "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "sealed task packet template"
     },
@@ -12792,7 +12880,7 @@
       "source_location": "L76",
       "_origin": "ast",
       "id": "docs_superpowers_specs_2026_08_02_agentic_council_design_failure_handling",
-      "community": 11,
+      "community": 8,
       "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "failure handling"
     },
@@ -12803,7 +12891,7 @@
       "source_location": "L81",
       "_origin": "ast",
       "id": "docs_superpowers_specs_2026_08_02_agentic_council_design_what_workers_must_never_receive",
-      "community": 11,
+      "community": 8,
       "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "what workers must never receive"
     },
@@ -12815,7 +12903,7 @@
       "_origin": "ast",
       "id": "docs_superpowers_specs_2026_08_02_forza_lap_tracker_design",
       "community": 8,
-      "community_name": "docs/README.md",
+      "community_name": "Agentic Council \u2014 Orchestrator Map (RESTRICTED)",
       "norm_label": "2026-08-02-forza-lap-tracker-design.md"
     },
     {
@@ -18304,7 +18392,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L32",
+      "source_location": "L45",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -18315,7 +18403,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L22",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app",
+      "target": "src_app_bootstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -18326,7 +18425,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L12",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -18337,7 +18436,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L14",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -18389,6 +18488,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
+      "target": "src_i18n_index_applylocale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app",
       "target": "src_i18n_index_loadlocale",
       "confidence_score": 1.0
     },
@@ -18413,7 +18524,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
-      "target": "src_i18n_index_setlocale",
+      "target": "src_i18n_index_persistlocale",
       "confidence_score": 1.0
     },
     {
@@ -18433,7 +18544,31 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app",
+      "target": "src_pages_circuitspage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app",
+      "target": "src_pages_circuitspage_circuitspage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -18445,7 +18580,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L10",
+      "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -18470,7 +18605,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/App.tsx",
-      "source_location": "L25",
+      "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app_placeholderpage",
@@ -18482,19 +18617,31 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/App.tsx",
-      "source_location": "L37",
+      "source_location": "L59",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app_app",
       "target": "src_db_client_initdb"
     },
     {
-      "relation": "indirect_call",
-      "context": "argument",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "src/App.tsx",
-      "source_location": "L37",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app_app",
+      "target": "src_i18n_index_applylocale"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/App.tsx",
+      "source_location": "L60",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app_app",
@@ -18506,7 +18653,19 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/App.tsx",
-      "source_location": "L50",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app_app",
+      "target": "src_i18n_index_setlocale"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/App.tsx",
+      "source_location": "L80",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app_app",
@@ -18827,6 +18986,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_circuitspage",
+      "target": "src_db_types",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -18863,6 +19034,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_circuitspage",
+      "target": "src_db_types_circuit",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "references",
       "context": "field",
       "confidence": "EXTRACTED",
@@ -18883,6 +19066,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_lib_api",
+      "target": "src_db_types_lap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_circuitspage",
       "target": "src_db_types_lap",
       "confidence_score": 1.0
     },
@@ -19019,6 +19214,42 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_circuitspage",
+      "target": "src_domain_laptime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_circuitspage",
+      "target": "src_domain_laptime_formatlaptime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_circuitspage_circuitspage",
+      "target": "src_domain_laptime_formatlaptime"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/domain/piClass.test.ts",
       "source_location": "L2",
       "weight": 1.0,
@@ -19118,7 +19349,31 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_i18n_index_test",
+      "target": "src_i18n_index_applylocale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/index.test.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_i18n_index_test",
       "target": "src_i18n_index_loadlocale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/index.test.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_i18n_index_test",
+      "target": "src_i18n_index_persistlocale",
       "confidence_score": 1.0
     },
     {
@@ -19160,6 +19415,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/i18n/index.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_i18n_index",
+      "target": "src_i18n_index_applylocale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/index.ts",
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
@@ -19171,7 +19437,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/i18n/index.ts",
-      "source_location": "L14",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_i18n_index",
+      "target": "src_i18n_index_getlocale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/index.ts",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_i18n_index",
@@ -19193,7 +19470,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/i18n/index.ts",
-      "source_location": "L19",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_i18n_index",
+      "target": "src_i18n_index_persistlocale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/index.ts",
+      "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_i18n_index",
@@ -19204,7 +19492,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/i18n/index.ts",
-      "source_location": "L10",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_i18n_index",
@@ -19251,6 +19539,18 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_circuitspage",
+      "target": "src_i18n_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/pages/SettingsPage.tsx",
       "source_location": "L1",
       "weight": 1.0,
@@ -19270,6 +19570,42 @@
       "source": "src_pages_settingspage",
       "target": "src_i18n_index_locale",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/index.ts",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_i18n_index_setlocale",
+      "target": "src_i18n_index_applylocale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_circuitspage",
+      "target": "src_i18n_index_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_circuitspage_circuitspage",
+      "target": "src_i18n_index_t"
     },
     {
       "relation": "imports",
@@ -19301,7 +19637,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/i18n/index.ts",
-      "source_location": "L15",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_i18n_index_loadlocale",
@@ -19313,11 +19649,23 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/i18n/index.ts",
-      "source_location": "L20",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_i18n_index_persistlocale",
+      "target": "src_lib_api_setsetting"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/index.ts",
+      "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_i18n_index_setlocale",
-      "target": "src_lib_api_setsetting"
+      "target": "src_i18n_index_persistlocale",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -19438,6 +19786,99 @@
       "_origin": "ast",
       "source": "src_lib_api",
       "target": "src_lib_api_setsetting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_circuitspage",
+      "target": "src_lib_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_circuitspage",
+      "target": "src_lib_api_listcircuits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_circuitspage",
+      "target": "src_lib_api_createcircuit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_circuitspage",
+      "target": "src_lib_api_bestlap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_circuitspage_circuitspage",
+      "target": "src_lib_api_bestlap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_circuitspage",
+      "target": "src_pages_circuitspage_circuitspage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_circuitspage",
+      "target": "src_pages_circuitspage_circuitspageprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/CircuitsPage.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_circuitspage",
+      "target": "src_pages_circuitspage_navtarget",
       "confidence_score": 1.0
     },
     {
@@ -28005,5 +28446,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4309d99369b7321f97ee2483638a8103624148a6"
+  "built_at_commit": "0c153138ba90c3e499f781bd25f55cf51d7cbdd9"
 }

@@ -35,8 +35,8 @@
     "semantic_hash": ""
   },
   "src/App.tsx": {
-    "mtime": 1785752550.753626,
-    "ast_hash": "97ad6a95220bbc91a5d0797f767b9569",
+    "mtime": 1785762295.3412626,
+    "ast_hash": "1c0e5d0e669cc043bd0e01857255d0f4",
     "semantic_hash": ""
   },
   "src/main.tsx": {
@@ -725,28 +725,33 @@
     "semantic_hash": ""
   },
   "src/i18n/en.json": {
-    "mtime": 1785752402.7309732,
-    "ast_hash": "fc3f72f243bea6a4d6d747b2ca2b91f9",
+    "mtime": 1785762289.9095273,
+    "ast_hash": "1196b164cf8c3c86ff141362ab9e67fc",
     "semantic_hash": ""
   },
   "src/i18n/es.json": {
-    "mtime": 1785752388.7703607,
-    "ast_hash": "0284c04b804cd866d0beaf07691bc2e0",
+    "mtime": 1785762284.617859,
+    "ast_hash": "bb8164cd0a1b462cfcae6d9d8d05288c",
     "semantic_hash": ""
   },
   "src/i18n/index.test.ts": {
-    "mtime": 1785752649.5740924,
-    "ast_hash": "6ff04af64d04db8ccf7fc60f2fd9bac6",
+    "mtime": 1785761914.0708265,
+    "ast_hash": "a8405196a4949aadc93b777c4ad3ad7b",
     "semantic_hash": ""
   },
   "src/i18n/index.ts": {
-    "mtime": 1785752414.6052468,
-    "ast_hash": "bb2a94b0e668b9bb7882f088d348333a",
+    "mtime": 1785761912.9028962,
+    "ast_hash": "bdb5b582bc9d7f64ca9e0f244c0c70ef",
     "semantic_hash": ""
   },
   "src/pages/SettingsPage.tsx": {
     "mtime": 1785752509.4147434,
     "ast_hash": "47a62337caa944b630213b1ab29439c8",
+    "semantic_hash": ""
+  },
+  "src/pages/CircuitsPage.tsx": {
+    "mtime": 1785762298.3667543,
+    "ast_hash": "7cf6b58cbe46a26b226e33b0e0c402f7",
     "semantic_hash": ""
   }
 }

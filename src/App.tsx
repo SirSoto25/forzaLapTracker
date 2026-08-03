@@ -8,6 +8,7 @@ import {
   t,
   type Locale,
 } from "./i18n";
+import { CircuitsPage } from "./pages/CircuitsPage";
 import { SettingsPage } from "./pages/SettingsPage";
 
 type Route = "circuits" | "register" | "history" | "compare" | "settings";
@@ -20,9 +21,18 @@ const routes: Route[] = [
   "settings",
 ];
 
-function PlaceholderPage({ route }: { route: Exclude<Route, "settings"> }) {
+function PlaceholderPage({
+  route,
+  selectedCircuitId,
+}: {
+  route: Exclude<Route, "settings" | "circuits">;
+  selectedCircuitId: number | null;
+}) {
   return (
-    <section className="page">
+    <section
+      className="page"
+      data-circuit-id={selectedCircuitId ?? undefined}
+    >
       <p className="eyebrow">{t(`nav.${route}`)}</p>
       <h2>{t(`page.${route}.title`)}</h2>
       <p className="placeholder">{t(`page.${route}.placeholder`)}</p>
@@ -34,6 +44,9 @@ type BootState = "loading" | "ready" | "error";
 
 function App() {
   const [route, setRoute] = useState<Route>("circuits");
+  const [selectedCircuitId, setSelectedCircuitId] = useState<number | null>(
+    null,
+  );
   const [locale, setLocale] = useState<Locale>("es");
   const [bootState, setBootState] = useState<BootState>("loading");
   const [bootError, setBootError] = useState<string | null>(null);
@@ -100,8 +113,18 @@ function App() {
       <main>
         {route === "settings" ? (
           <SettingsPage locale={locale} onLocaleChange={changeLocale} />
+        ) : route === "circuits" ? (
+          <CircuitsPage
+            onNavigate={(next, circuitId) => {
+              setSelectedCircuitId(circuitId);
+              setRoute(next);
+            }}
+          />
         ) : (
-          <PlaceholderPage route={route} />
+          <PlaceholderPage
+            route={route}
+            selectedCircuitId={selectedCircuitId}
+          />
         )}
       </main>
     </div>
