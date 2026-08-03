@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { convertFileSrc } from "@tauri-apps/api/core";
 import type { Car, Manufacturer } from "../db/types";
 import { t } from "../i18n";
@@ -37,6 +37,11 @@ export function CarPicker({
   const [manufacturerId, setManufacturerId] = useState<number | null>(null);
   const [thumbPath, setThumbPath] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const carIdRef = useRef(carId);
+
+  useEffect(() => {
+    carIdRef.current = carId;
+  }, [carId]);
 
   useEffect(() => {
     void listManufacturers()
@@ -83,12 +88,13 @@ export function CarPicker({
 
   async function selectCar(id: number) {
     setError(null);
+    carIdRef.current = id;
     onChange(id);
     const car = cars.find((c) => c.id === id);
     setThumbPath(car?.image_path ?? null);
     // Download is best-effort; null → placeholder. Never blocks lap save.
     const path = await ensureCarImage(id);
-    if (path) setThumbPath(path);
+    if (path && carIdRef.current === id) setThumbPath(path);
   }
 
   const selectedManufacturer =
