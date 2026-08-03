@@ -9,6 +9,7 @@ import {
   type Locale,
 } from "./i18n";
 import { CircuitsPage } from "./pages/CircuitsPage";
+import { ComparePage } from "./pages/ComparePage";
 import { HistoryPage } from "./pages/HistoryPage";
 import { RegisterLapPage } from "./pages/RegisterLapPage";
 import { SettingsPage } from "./pages/SettingsPage";
@@ -22,25 +23,6 @@ const routes: Route[] = [
   "compare",
   "settings",
 ];
-
-function PlaceholderPage({
-  route,
-  selectedCircuitId,
-}: {
-  route: Exclude<Route, "settings" | "circuits" | "register" | "history">;
-  selectedCircuitId: number | null;
-}) {
-  return (
-    <section
-      className="page"
-      data-circuit-id={selectedCircuitId ?? undefined}
-    >
-      <p className="eyebrow">{t(`nav.${route}`)}</p>
-      <h2>{t(`page.${route}.title`)}</h2>
-      <p className="placeholder">{t(`page.${route}.placeholder`)}</p>
-    </section>
-  );
-}
 
 type BootState = "loading" | "ready" | "error";
 
@@ -126,12 +108,9 @@ function App() {
           <RegisterLapPage selectedCircuitId={selectedCircuitId} />
         ) : route === "history" ? (
           <HistoryPage selectedCircuitId={selectedCircuitId} />
-        ) : (
-          <PlaceholderPage
-            route={route}
-            selectedCircuitId={selectedCircuitId}
-          />
-        )}
+        ) : route === "compare" ? (
+          <ComparePage selectedCircuitId={selectedCircuitId} />
+        ) : null}
       </main>
     </div>
   );
