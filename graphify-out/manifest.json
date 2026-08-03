@@ -15,13 +15,13 @@
     "semantic_hash": ""
   },
   "src-tauri/capabilities/default.json": {
-    "mtime": 1785765655.5576077,
-    "ast_hash": "c850a6ab712a8f99f4c071b03a9c7338",
+    "mtime": 1785766789.9975772,
+    "ast_hash": "47cd86c359bcb0b91f31c771cd1f9824",
     "semantic_hash": ""
   },
   "src-tauri/src/lib.rs": {
-    "mtime": 1785765652.367654,
-    "ast_hash": "9522f595febc3ff7f7dbc07bbeb98150",
+    "mtime": 1785766788.6095653,
+    "ast_hash": "c9999759bf64d247b8eb0197d183e73c",
     "semantic_hash": ""
   },
   "src-tauri/src/main.rs": {
@@ -30,8 +30,8 @@
     "semantic_hash": ""
   },
   "src-tauri/tauri.conf.json": {
-    "mtime": 1785765655.6320343,
-    "ast_hash": "0c445dac598c9173e6234a8bc0edf9f0",
+    "mtime": 1785766787.7214692,
+    "ast_hash": "81bcb6e0f9daf3319656ac21d7101f50",
     "semantic_hash": ""
   },
   "src/App.tsx": {
@@ -655,13 +655,13 @@
     "semantic_hash": ""
   },
   "src/db/client.test.ts": {
-    "mtime": 1785702262.2115238,
-    "ast_hash": "04cd7033d3aead90613ccd5c93995735",
+    "mtime": 1785768631.4871678,
+    "ast_hash": "c5fb914d76f2e0a51dd044d1be07a8b9",
     "semantic_hash": ""
   },
   "src/db/client.ts": {
-    "mtime": 1785702327.2948647,
-    "ast_hash": "4655c5106768d7d860993509680535eb",
+    "mtime": 1785766786.6517627,
+    "ast_hash": "ab3820914f7c65dc656e4c7ab5e5f81e",
     "semantic_hash": ""
   },
   "src/db/migrations/001_init.sql": {
@@ -725,13 +725,13 @@
     "semantic_hash": ""
   },
   "src/i18n/en.json": {
-    "mtime": 1785763991.9200199,
-    "ast_hash": "3c5a4891bcd078ccd782d135d17173c2",
+    "mtime": 1785766790.3393314,
+    "ast_hash": "57b603fa248f12b855d1f5175ff637a3",
     "semantic_hash": ""
   },
   "src/i18n/es.json": {
-    "mtime": 1785763994.3232656,
-    "ast_hash": "5702a305fe48546652a8749d09cda081",
+    "mtime": 1785766790.804343,
+    "ast_hash": "228600d8d5a4934d6672f05acb06e42e",
     "semantic_hash": ""
   },
   "src/i18n/index.test.ts": {
@@ -755,8 +755,8 @@
     "semantic_hash": ""
   },
   "src/components/CarPicker.tsx": {
-    "mtime": 1785765981.8253925,
-    "ast_hash": "c46add21bca3d0b830872c796f1d9a95",
+    "mtime": 1785766811.417172,
+    "ast_hash": "aa901bdca65a140d178d74b6c83aae8e",
     "semantic_hash": ""
   },
   "src/components/TimeInput.tsx": {
@@ -770,8 +770,8 @@
     "semantic_hash": ""
   },
   "src/pages/HistoryPage.tsx": {
-    "mtime": 1785765205.1218665,
-    "ast_hash": "b42c222c23815039e8aefc5204d68b84",
+    "mtime": 1785766824.5934367,
+    "ast_hash": "11d1aff9728f07e4ec79ed629c508aae",
     "semantic_hash": ""
   },
   "src-tauri/src/images.rs": {

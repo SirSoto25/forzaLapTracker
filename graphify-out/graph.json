@@ -345,7 +345,7 @@
       "norm_label": "check which files from handoff still exist."
     },
     {
-      "label": "Calculate staleness level and provide recommendations. Staleness scoring\u2026",
+      "label": "Calculate staleness level and provide recommendations.      Staleness scoring",
       "file_type": "rationale",
       "source_file": ".agents/skills/session-handoff/scripts/check_staleness.py",
       "source_location": "L150",
@@ -353,7 +353,7 @@
       "id": "agents_skills_session_handoff_scripts_check_staleness_rationale_150",
       "community": 22,
       "community_name": "check_staleness.py",
-      "norm_label": "calculate staleness level and provide recommendations. staleness scoring..."
+      "norm_label": "calculate staleness level and provide recommendations.      staleness scoring"
     },
     {
       "label": "Run staleness check on a handoff file.",
@@ -829,7 +829,7 @@
       "norm_label": "check if referenced files exist."
     },
     {
-      "label": "Calculate overall quality score (0-100). Scoring rationale: - Start at 100,\u2026",
+      "label": "Calculate overall quality score (0-100).      Scoring rationale:     - Start",
       "file_type": "rationale",
       "source_file": ".agents/skills/session-handoff/scripts/validate_handoff.py",
       "source_location": "L150",
@@ -837,7 +837,7 @@
       "id": "agents_skills_session_handoff_scripts_validate_handoff_rationale_150",
       "community": 27,
       "community_name": "validate_handoff.py",
-      "norm_label": "calculate overall quality score (0-100). scoring rationale: - start at 100,..."
+      "norm_label": "calculate overall quality score (0-100).      scoring rationale:     - start"
     },
     {
       "label": "Run all validations on a handoff file.",
@@ -879,8 +879,8 @@
       "source_location": "L153",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_core_normalize",
-      "community": 31,
-      "community_name": "format_ascii_box",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "_normalize()"
     },
     {
@@ -890,8 +890,8 @@
       "source_location": "L161",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_core_bm25",
-      "community": 31,
-      "community_name": "format_ascii_box",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "bm25"
     },
     {
@@ -901,8 +901,8 @@
       "source_location": "L164",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_core_bm25_init",
-      "community": 31,
-      "community_name": "format_ascii_box",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": ".__init__()"
     },
     {
@@ -912,8 +912,8 @@
       "source_location": "L175",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_core_bm25_tokenize",
-      "community": 31,
-      "community_name": "format_ascii_box",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": ".tokenize()"
     },
     {
@@ -923,8 +923,8 @@
       "source_location": "L181",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_core_bm25_fit",
-      "community": 31,
-      "community_name": "format_ascii_box",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": ".fit()"
     },
     {
@@ -934,8 +934,8 @@
       "source_location": "L202",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_core_bm25_score",
-      "community": 31,
-      "community_name": "format_ascii_box",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": ".score()"
     },
     {
@@ -945,8 +945,8 @@
       "source_location": "L224",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_core_bm25_vocabulary",
-      "community": 31,
-      "community_name": "format_ascii_box",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": ".vocabulary()"
     },
     {
@@ -1022,8 +1022,8 @@
       "source_location": "L377",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_core_detect_domain",
-      "community": 32,
-      "community_name": "_palette_is_dark",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "detect_domain()"
     },
     {
@@ -1055,8 +1055,8 @@
       "source_location": "L154",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_core_rationale_154",
-      "community": 31,
-      "community_name": "format_ascii_box",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "apply synonym substitution before tokenizing."
     },
     {
@@ -1066,8 +1066,8 @@
       "source_location": "L162",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_core_rationale_162",
-      "community": 31,
-      "community_name": "format_ascii_box",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "bm25 ranking algorithm for text search"
     },
     {
@@ -1077,8 +1077,8 @@
       "source_location": "L176",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_core_rationale_176",
-      "community": 31,
-      "community_name": "format_ascii_box",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "lowercase, normalize synonyms, split, remove punctuation, filter stopwords"
     },
     {
@@ -1088,8 +1088,8 @@
       "source_location": "L182",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_core_rationale_182",
-      "community": 31,
-      "community_name": "format_ascii_box",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "build bm25 index from documents"
     },
     {
@@ -1099,8 +1099,8 @@
       "source_location": "L203",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_core_rationale_203",
-      "community": 31,
-      "community_name": "format_ascii_box",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "score all documents against query"
     },
     {
@@ -1110,8 +1110,8 @@
       "source_location": "L225",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_core_rationale_225",
-      "community": 31,
-      "community_name": "format_ascii_box",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "all indexed terms, for suggestion/typo-recovery purposes."
     },
     {
@@ -1148,7 +1148,7 @@
       "norm_label": "core search function using bm25. returns (results, bm25_or_none)."
     },
     {
-      "label": "Nearest known vocabulary terms for a query that returned 0 hits, so the caller\u2026",
+      "label": "Nearest known vocabulary terms for a query that returned 0 hits,     so the cal",
       "file_type": "rationale",
       "source_file": ".agents/skills/ui-ux-pro-max/scripts/core.py",
       "source_location": "L293",
@@ -1156,18 +1156,18 @@
       "id": "agents_skills_ui_ux_pro_max_scripts_core_rationale_293",
       "community": 3,
       "community_name": "BM25",
-      "norm_label": "nearest known vocabulary terms for a query that returned 0 hits, so the caller..."
+      "norm_label": "nearest known vocabulary terms for a query that returned 0 hits,     so the cal"
     },
     {
-      "label": "Auto-detect the most relevant domain from query. Matches are weighted by\u2026",
+      "label": "Auto-detect the most relevant domain from query.      Matches are weighted by",
       "file_type": "rationale",
       "source_file": ".agents/skills/ui-ux-pro-max/scripts/core.py",
       "source_location": "L378",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_core_rationale_378",
-      "community": 32,
-      "community_name": "_palette_is_dark",
-      "norm_label": "auto-detect the most relevant domain from query. matches are weighted by..."
+      "community": 3,
+      "community_name": "BM25",
+      "norm_label": "auto-detect the most relevant domain from query.      matches are weighted by"
     },
     {
       "label": "Main search function with auto-domain detection",
@@ -1198,8 +1198,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system",
-      "community": 11,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 45,
+      "community_name": "design_system.py",
       "norm_label": "design_system.py"
     },
     {
@@ -1220,8 +1220,8 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_relative_luminance",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
+      "community": 31,
+      "community_name": "format_ascii_box",
       "norm_label": "_relative_luminance()"
     },
     {
@@ -1231,8 +1231,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_palette_is_dark",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
+      "community": 31,
+      "community_name": "format_ascii_box",
       "norm_label": "_palette_is_dark()"
     },
     {
@@ -1275,8 +1275,8 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_select_palette_for_mode",
-      "community": 77,
-      "community_name": ".generate",
+      "community": 32,
+      "community_name": "_palette_is_dark",
       "norm_label": "_select_palette_for_mode()"
     },
     {
@@ -1440,8 +1440,8 @@
       "source_location": "L636",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_format_markdown",
-      "community": 11,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 45,
+      "community_name": "design_system.py",
       "norm_label": "format_markdown()"
     },
     {
@@ -1451,8 +1451,8 @@
       "source_location": "L776",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_generate_design_system",
-      "community": 11,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "generate_design_system()"
     },
     {
@@ -1462,8 +1462,8 @@
       "source_location": "L818",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_safe_slug",
-      "community": 11,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 45,
+      "community_name": "design_system.py",
       "norm_label": "safe_slug()"
     },
     {
@@ -1473,8 +1473,8 @@
       "source_location": "L829",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_persist_design_system",
-      "community": 11,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "persist_design_system()"
     },
     {
@@ -1484,8 +1484,8 @@
       "source_location": "L900",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_format_master_md",
-      "community": 11,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 45,
+      "community_name": "design_system.py",
       "norm_label": "format_master_md()"
     },
     {
@@ -1495,7 +1495,7 @@
       "source_location": "L1217",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_format_page_override_md",
-      "community": 11,
+      "community": 111,
       "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
       "norm_label": "format_page_override_md()"
     },
@@ -1506,7 +1506,7 @@
       "source_location": "L1326",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_generate_intelligent_overrides",
-      "community": 11,
+      "community": 111,
       "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
       "norm_label": "_generate_intelligent_overrides()"
     },
@@ -1517,7 +1517,7 @@
       "source_location": "L1432",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_detect_page_type",
-      "community": 11,
+      "community": 111,
       "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
       "norm_label": "_detect_page_type()"
     },
@@ -1539,8 +1539,8 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_109",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
+      "community": 31,
+      "community_name": "format_ascii_box",
       "norm_label": "wcag relative luminance of a #rrggbb string, or none if unparseable."
     },
     {
@@ -1550,8 +1550,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_127",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
+      "community": 31,
+      "community_name": "format_ascii_box",
       "norm_label": "true when a colors.csv row's background is a dark surface."
     },
     {
@@ -1588,15 +1588,15 @@
       "norm_label": "resolve the mode the rest of the output has to agree with."
     },
     {
-      "label": "Pick the highest-ranked palette matching the resolved mode. Only the dark case\u2026",
+      "label": "Pick the highest-ranked palette matching the resolved mode.      Only the dark",
       "file_type": "rationale",
       "source_file": ".agents/skills/ui-ux-pro-max/scripts/design_system.py",
       "source_location": "L156",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_156",
-      "community": 77,
-      "community_name": ".generate",
-      "norm_label": "pick the highest-ranked palette matching the resolved mode. only the dark case..."
+      "community": 32,
+      "community_name": "_palette_is_dark",
+      "norm_label": "pick the highest-ranked palette matching the resolved mode.      only the dark"
     },
     {
       "label": "Drop \"avoid dark mode\" advice once dark mode is the resolved answer.",
@@ -1687,7 +1687,7 @@
       "norm_label": "extract results list from search result dict."
     },
     {
-      "label": "Generate complete design system recommendation. variance/motion/density are\u2026",
+      "label": "Generate complete design system recommendation.          variance/motion/densi",
       "file_type": "rationale",
       "source_file": ".agents/skills/ui-ux-pro-max/scripts/design_system.py",
       "source_location": "L311",
@@ -1695,7 +1695,7 @@
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_311",
       "community": 77,
       "community_name": ".generate",
-      "norm_label": "generate complete design system recommendation. variance/motion/density are..."
+      "norm_label": "generate complete design system recommendation.          variance/motion/densi"
     },
     {
       "label": "Convert hex color to ANSI True Color swatch (\u2588\u2588) with fallback.",
@@ -1748,42 +1748,42 @@
       "source_location": "L637",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_637",
-      "community": 11,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 45,
+      "community_name": "design_system.py",
       "norm_label": "format design system as markdown."
     },
     {
-      "label": "Main entry point for design system generation. Args: query: Search query (e.g.,\u2026",
+      "label": "Main entry point for design system generation.      Args:         query: Sear",
       "file_type": "rationale",
       "source_file": ".agents/skills/ui-ux-pro-max/scripts/design_system.py",
       "source_location": "L780",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_780",
-      "community": 11,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
-      "norm_label": "main entry point for design system generation. args: query: search query (e.g.,..."
+      "community": 3,
+      "community_name": "BM25",
+      "norm_label": "main entry point for design system generation.      args:         query: sear"
     },
     {
-      "label": "Slugify a name into a single safe path segment. Only [a-z0-9_-] survives; every\u2026",
+      "label": "Slugify a name into a single safe path segment.      Only [a-z0-9_-] survives;",
       "file_type": "rationale",
       "source_file": ".agents/skills/ui-ux-pro-max/scripts/design_system.py",
       "source_location": "L819",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_819",
-      "community": 11,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
-      "norm_label": "slugify a name into a single safe path segment. only [a-z0-9_-] survives; every..."
+      "community": 45,
+      "community_name": "design_system.py",
+      "norm_label": "slugify a name into a single safe path segment.      only [a-z0-9_-] survives;"
     },
     {
-      "label": "Persist design system to design-system/<project>/ folder using Master +\u2026",
+      "label": "Persist design system to design-system/<project>/ folder using Master + Override",
       "file_type": "rationale",
       "source_file": ".agents/skills/ui-ux-pro-max/scripts/design_system.py",
       "source_location": "L831",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_831",
-      "community": 11,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
-      "norm_label": "persist design system to design-system/<project>/ folder using master +..."
+      "community": 3,
+      "community_name": "BM25",
+      "norm_label": "persist design system to design-system/<project>/ folder using master + override"
     },
     {
       "label": "Format design system as MASTER.md with hierarchical override logic.",
@@ -1792,8 +1792,8 @@
       "source_location": "L901",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_901",
-      "community": 11,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 45,
+      "community_name": "design_system.py",
       "norm_label": "format design system as master.md with hierarchical override logic."
     },
     {
@@ -1803,20 +1803,20 @@
       "source_location": "L1218",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_1218",
-      "community": 11,
+      "community": 111,
       "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
       "norm_label": "format a page-specific override file with intelligent ai-generated content."
     },
     {
-      "label": "Generate intelligent overrides based on page type using layered search. Uses\u2026",
+      "label": "Generate intelligent overrides based on page type using layered search.",
       "file_type": "rationale",
       "source_file": ".agents/skills/ui-ux-pro-max/scripts/design_system.py",
       "source_location": "L1327",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_1327",
-      "community": 11,
+      "community": 111,
       "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
-      "norm_label": "generate intelligent overrides based on page type using layered search. uses..."
+      "norm_label": "generate intelligent overrides based on page type using layered search."
     },
     {
       "label": "Detect page type from context and search results.",
@@ -1825,7 +1825,7 @@
       "source_location": "L1433",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_1433",
-      "community": 11,
+      "community": 111,
       "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
       "norm_label": "detect page type from context and search results."
     },
@@ -1869,8 +1869,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core",
-      "community": 11,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "test_core.py"
     },
     {
@@ -1880,8 +1880,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testtokenizer",
-      "community": 31,
-      "community_name": "format_ascii_box",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "testtokenizer"
     },
     {
@@ -1891,8 +1891,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testtokenizer_test_short_domain_terms_are_kept",
-      "community": 31,
-      "community_name": "format_ascii_box",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": ".test_short_domain_terms_are_kept()"
     },
     {
@@ -1902,8 +1902,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testtokenizer_test_stopwords_removed",
-      "community": 31,
-      "community_name": "format_ascii_box",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": ".test_stopwords_removed()"
     },
     {
@@ -1913,8 +1913,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testtokenizer_test_synonym_normalization",
-      "community": 31,
-      "community_name": "format_ascii_box",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": ".test_synonym_normalization()"
     },
     {
@@ -1990,8 +1990,8 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testdomaindetection",
-      "community": 32,
-      "community_name": "_palette_is_dark",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "testdomaindetection"
     },
     {
@@ -2001,8 +2001,8 @@
       "source_location": "L79",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testdomaindetection_test_style_keywords_route_to_style",
-      "community": 32,
-      "community_name": "_palette_is_dark",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": ".test_style_keywords_route_to_style()"
     },
     {
@@ -2012,8 +2012,8 @@
       "source_location": "L82",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testdomaindetection_test_accessibility_keywords_route_to_ux",
-      "community": 32,
-      "community_name": "_palette_is_dark",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": ".test_accessibility_keywords_route_to_ux()"
     },
     {
@@ -2023,8 +2023,8 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testdomaindetection_test_ambiguous_query_returns_runner_up",
-      "community": 32,
-      "community_name": "_palette_is_dark",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": ".test_ambiguous_query_returns_runner_up()"
     },
     {
@@ -2034,8 +2034,8 @@
       "source_location": "L91",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testdomaindetection_test_empty_query_falls_back_to_style",
-      "community": 32,
-      "community_name": "_palette_is_dark",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": ".test_empty_query_falls_back_to_style()"
     },
     {
@@ -2045,8 +2045,8 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testpersistence",
-      "community": 11,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "testpersistence"
     },
     {
@@ -2056,8 +2056,8 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testpersistence_test_persist_then_skip_then_force",
-      "community": 11,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": ".test_persist_then_skip_then_force()"
     },
     {
@@ -2067,8 +2067,8 @@
       "source_location": "L113",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testpersistence_test_persist_writes_only_under_output_dir",
-      "community": 11,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": ".test_persist_writes_only_under_output_dir()"
     },
     {
@@ -2105,7 +2105,7 @@
       "norm_label": ".test_unknown_category_falls_back_gracefully()"
     },
     {
-      "label": "Known query -> expected top-domain sanity checks (not exact-row pinning, since\u2026",
+      "label": "Known query -> expected top-domain sanity checks (not exact-row pinning,     si",
       "file_type": "rationale",
       "source_file": ".agents/skills/ui-ux-pro-max/scripts/tests/test_core.py",
       "source_location": "L47",
@@ -2113,7 +2113,7 @@
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_rationale_47",
       "community": 3,
       "community_name": "BM25",
-      "norm_label": "known query -> expected top-domain sanity checks (not exact-row pinning, since..."
+      "norm_label": "known query -> expected top-domain sanity checks (not exact-row pinning,     si"
     },
     {
       "label": "test_design_system_mode.py",
@@ -2122,8 +2122,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
+      "community": 45,
+      "community_name": "design_system.py",
       "norm_label": "test_design_system_mode.py"
     },
     {
@@ -2133,8 +2133,8 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testluminance",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
+      "community": 31,
+      "community_name": "format_ascii_box",
       "norm_label": "testluminance"
     },
     {
@@ -2144,8 +2144,8 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testluminance_test_parses_six_and_three_digit_hex",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
+      "community": 31,
+      "community_name": "format_ascii_box",
       "norm_label": ".test_parses_six_and_three_digit_hex()"
     },
     {
@@ -2155,8 +2155,8 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testluminance_test_returns_none_for_unparseable",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
+      "community": 31,
+      "community_name": "format_ascii_box",
       "norm_label": ".test_returns_none_for_unparseable()"
     },
     {
@@ -2166,8 +2166,8 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testluminance_test_classifies_backgrounds_from_the_shipped_data",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
+      "community": 31,
+      "community_name": "format_ascii_box",
       "norm_label": ".test_classifies_backgrounds_from_the_shipped_data()"
     },
     {
@@ -2177,8 +2177,8 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testluminance_test_missing_background_is_not_dark",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
+      "community": 31,
+      "community_name": "format_ascii_box",
       "norm_label": ".test_missing_background_is_not_dark()"
     },
     {
@@ -2243,8 +2243,8 @@
       "source_location": "L93",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testpaletteselection",
-      "community": 77,
-      "community_name": ".generate",
+      "community": 32,
+      "community_name": "_palette_is_dark",
       "norm_label": "testpaletteselection"
     },
     {
@@ -2254,8 +2254,8 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testpaletteselection_test_dark_mode_skips_light_palettes",
-      "community": 77,
-      "community_name": ".generate",
+      "community": 32,
+      "community_name": "_palette_is_dark",
       "norm_label": ".test_dark_mode_skips_light_palettes()"
     },
     {
@@ -2265,8 +2265,8 @@
       "source_location": "L98",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testpaletteselection_test_dark_mode_falls_back_to_top_hit_when_no_dark_ramp_exists",
-      "community": 77,
-      "community_name": ".generate",
+      "community": 32,
+      "community_name": "_palette_is_dark",
       "norm_label": ".test_dark_mode_falls_back_to_top_hit_when_no_dark_ramp_exists()"
     },
     {
@@ -2276,8 +2276,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testpaletteselection_test_light_mode_keeps_the_existing_top_hit_behaviour",
-      "community": 77,
-      "community_name": ".generate",
+      "community": 32,
+      "community_name": "_palette_is_dark",
       "norm_label": ".test_light_mode_keeps_the_existing_top_hit_behaviour()"
     },
     {
@@ -2287,8 +2287,8 @@
       "source_location": "L106",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testpaletteselection_test_empty_results",
-      "community": 77,
-      "community_name": ".generate",
+      "community": 32,
+      "community_name": "_palette_is_dark",
       "norm_label": ".test_empty_results()"
     },
     {
@@ -2419,8 +2419,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_validate_data",
-      "community": 111,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "validate_data.py"
     },
     {
@@ -2430,8 +2430,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_validate_data_read_rows",
-      "community": 111,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "_read_rows()"
     },
     {
@@ -2441,8 +2441,8 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_validate_data_check_file",
-      "community": 111,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "_check_file()"
     },
     {
@@ -2452,8 +2452,8 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_validate_data_main",
-      "community": 111,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 3,
+      "community_name": "BM25",
       "norm_label": "main()"
     },
     {
@@ -3071,17 +3071,6 @@
       "community": 5,
       "community_name": "permissions",
       "norm_label": "sql:allow-execute"
-    },
-    {
-      "label": "fs:default",
-      "file_type": "concept",
-      "source_file": "src-tauri/capabilities/default.json",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "ref_fs_default",
-      "community": 5,
-      "community_name": "permissions",
-      "norm_label": "fs:default"
     },
     {
       "label": "images.rs",
@@ -3780,7 +3769,7 @@
       "label": "getDb()",
       "file_type": "code",
       "source_file": "src/db/client.ts",
-      "source_location": "L55",
+      "source_location": "L56",
       "_origin": "ast",
       "id": "src_db_client_getdb",
       "community": 63,
@@ -18563,18 +18552,6 @@
       "context": "import",
       "_origin": "ast",
       "source": "src_tauri_capabilities_default_permissions",
-      "target": "ref_fs_default",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "extends",
-      "confidence": "EXTRACTED",
-      "source_file": "src-tauri/capabilities/default.json",
-      "source_location": "L6",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "source": "src_tauri_capabilities_default_permissions",
       "target": "ref_opener_default",
       "confidence_score": 1.0
     },
@@ -19522,49 +19499,37 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "src/App.tsx",
       "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app_app",
-      "target": "src_db_client_initdb",
-      "confidence_score": 1.0
+      "target": "src_db_client_initdb"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "src/App.tsx",
       "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app_app",
-      "target": "src_i18n_index_applylocale",
-      "confidence_score": 1.0
+      "target": "src_i18n_index_applylocale"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "src/App.tsx",
       "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app_app",
-      "target": "src_i18n_index_loadlocale",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/App.tsx",
-      "source_location": "L57",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_app_app",
-      "target": "src_i18n_index_persistlocale",
-      "confidence_score": 1.0
+      "target": "src_i18n_index_loadlocale"
     },
     {
       "relation": "calls",
@@ -19582,25 +19547,13 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "src/App.tsx",
       "source_location": "L64",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app_app",
-      "target": "src_i18n_index_t",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_main",
-      "target": "src_app_app",
-      "confidence_score": 1.0
+      "target": "src_i18n_index_t"
     },
     {
       "relation": "contains",
@@ -19716,6 +19669,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_carpicker",
+      "target": "src_lib_api_createcar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/CarPicker.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_carpicker",
       "target": "src_lib_api_ensurecarimage",
       "confidence_score": 1.0
     },
@@ -19784,7 +19749,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/components/CarPicker.tsx",
-      "source_location": "L103",
+      "source_location": "L120",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_carpicker_carpicker",
@@ -19797,7 +19762,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CarPicker.tsx",
-      "source_location": "L109",
+      "source_location": "L126",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_carpicker_carpicker",
@@ -19809,7 +19774,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CarPicker.tsx",
-      "source_location": "L60",
+      "source_location": "L61",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_carpicker_carpicker",
@@ -19821,7 +19786,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CarPicker.tsx",
-      "source_location": "L47",
+      "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_carpicker_carpicker",
@@ -19924,7 +19889,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/db/client.ts",
-      "source_location": "L55",
+      "source_location": "L56",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_db_client",
@@ -19970,7 +19935,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/db/client.ts",
-      "source_location": "L49",
+      "source_location": "L50",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_db_client_initdb",
@@ -19982,7 +19947,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/db/client.ts",
-      "source_location": "L56",
+      "source_location": "L57",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_db_client_getdb",
@@ -20292,18 +20257,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_lib_api",
-      "target": "src_db_types_manufacturer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/pages/HistoryPage.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_pages_historypage",
       "target": "src_db_types_manufacturer",
       "confidence_score": 1.0
     },
@@ -20740,13 +20693,13 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "src/pages/ComparePage.tsx",
       "source_location": "L226",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_pages_comparepage_recentlaps",
-      "target": "src_domain_laptime_formatlaptime",
-      "confidence_score": 1.0
+      "target": "src_domain_laptime_formatlaptime"
     },
     {
       "relation": "imports",
@@ -20766,7 +20719,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/pages/HistoryPage.tsx",
-      "source_location": "L207",
+      "source_location": "L184",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_pages_historypage_historypage",
@@ -21281,13 +21234,13 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "src/pages/ComparePage.tsx",
       "source_location": "L206",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_pages_comparepage_recentlaps",
-      "target": "src_i18n_index_t",
-      "confidence_score": 1.0
+      "target": "src_i18n_index_t"
     },
     {
       "relation": "imports",
@@ -21307,7 +21260,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/pages/HistoryPage.tsx",
-      "source_location": "L82",
+      "source_location": "L76",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_pages_historypage_historypage",
@@ -21631,7 +21584,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/pages/HistoryPage.tsx",
-      "source_location": "L35",
+      "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_pages_historypage_historypage",
@@ -21672,30 +21625,6 @@
       "source": "src_pages_circuitspage",
       "target": "src_lib_api_createcircuit",
       "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/pages/HistoryPage.tsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_pages_historypage",
-      "target": "src_lib_api_listmanufacturers",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/pages/HistoryPage.tsx",
-      "source_location": "L35",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_pages_historypage_historypage",
-      "target": "src_lib_api_listmanufacturers"
     },
     {
       "relation": "imports",
@@ -21751,7 +21680,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/pages/HistoryPage.tsx",
-      "source_location": "L60",
+      "source_location": "L54",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_pages_historypage_historypage",
@@ -21989,7 +21918,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/HistoryPage.tsx",
-      "source_location": "L196",
+      "source_location": "L173",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_pages_historypage_historypage",
@@ -30649,5 +30578,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "ccea7a3b6b43bf3bd96f887aee9ebc4144880456"
+  "built_at_commit": "58ab3635f82d04c54fdd89c54dd369c3f7832118"
 }
