@@ -345,7 +345,7 @@
       "norm_label": "check which files from handoff still exist."
     },
     {
-      "label": "Calculate staleness level and provide recommendations. Staleness scoring\u2026",
+      "label": "Calculate staleness level and provide recommendations.      Staleness scoring",
       "file_type": "rationale",
       "source_file": ".agents/skills/session-handoff/scripts/check_staleness.py",
       "source_location": "L150",
@@ -353,7 +353,7 @@
       "id": "agents_skills_session_handoff_scripts_check_staleness_rationale_150",
       "community": 22,
       "community_name": "check_staleness.py",
-      "norm_label": "calculate staleness level and provide recommendations. staleness scoring..."
+      "norm_label": "calculate staleness level and provide recommendations.      staleness scoring"
     },
     {
       "label": "Run staleness check on a handoff file.",
@@ -829,7 +829,7 @@
       "norm_label": "check if referenced files exist."
     },
     {
-      "label": "Calculate overall quality score (0-100). Scoring rationale: - Start at 100,\u2026",
+      "label": "Calculate overall quality score (0-100).      Scoring rationale:     - Start",
       "file_type": "rationale",
       "source_file": ".agents/skills/session-handoff/scripts/validate_handoff.py",
       "source_location": "L150",
@@ -837,7 +837,7 @@
       "id": "agents_skills_session_handoff_scripts_validate_handoff_rationale_150",
       "community": 27,
       "community_name": "validate_handoff.py",
-      "norm_label": "calculate overall quality score (0-100). scoring rationale: - start at 100,..."
+      "norm_label": "calculate overall quality score (0-100).      scoring rationale:     - start"
     },
     {
       "label": "Run all validations on a handoff file.",
@@ -1148,7 +1148,7 @@
       "norm_label": "core search function using bm25. returns (results, bm25_or_none)."
     },
     {
-      "label": "Nearest known vocabulary terms for a query that returned 0 hits, so the caller\u2026",
+      "label": "Nearest known vocabulary terms for a query that returned 0 hits,     so the cal",
       "file_type": "rationale",
       "source_file": ".agents/skills/ui-ux-pro-max/scripts/core.py",
       "source_location": "L293",
@@ -1156,10 +1156,10 @@
       "id": "agents_skills_ui_ux_pro_max_scripts_core_rationale_293",
       "community": 3,
       "community_name": "BM25",
-      "norm_label": "nearest known vocabulary terms for a query that returned 0 hits, so the caller..."
+      "norm_label": "nearest known vocabulary terms for a query that returned 0 hits,     so the cal"
     },
     {
-      "label": "Auto-detect the most relevant domain from query. Matches are weighted by\u2026",
+      "label": "Auto-detect the most relevant domain from query.      Matches are weighted by",
       "file_type": "rationale",
       "source_file": ".agents/skills/ui-ux-pro-max/scripts/core.py",
       "source_location": "L378",
@@ -1167,7 +1167,7 @@
       "id": "agents_skills_ui_ux_pro_max_scripts_core_rationale_378",
       "community": 3,
       "community_name": "BM25",
-      "norm_label": "auto-detect the most relevant domain from query. matches are weighted by..."
+      "norm_label": "auto-detect the most relevant domain from query.      matches are weighted by"
     },
     {
       "label": "Main search function with auto-domain detection",
@@ -1198,7 +1198,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system",
-      "community": 11,
+      "community": 45,
       "community_name": "design_system.py",
       "norm_label": "design_system.py"
     },
@@ -1209,8 +1209,8 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_resolve_dial",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
+      "community": 117,
+      "community_name": "semver.ts",
       "norm_label": "_resolve_dial()"
     },
     {
@@ -1275,8 +1275,8 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_select_palette_for_mode",
-      "community": 32,
-      "community_name": "_select_palette_for_mode",
+      "community": 116,
+      "community_name": "detect_domain",
       "norm_label": "_select_palette_for_mode()"
     },
     {
@@ -1330,8 +1330,8 @@
       "source_location": "L197",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_designsystemgenerator_multi_domain_search",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
+      "community": 117,
+      "community_name": "semver.ts",
       "norm_label": "._multi_domain_search()"
     },
     {
@@ -1363,8 +1363,8 @@
       "source_location": "L268",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_designsystemgenerator_select_best_match",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
+      "community": 117,
+      "community_name": "semver.ts",
       "norm_label": "._select_best_match()"
     },
     {
@@ -1374,8 +1374,8 @@
       "source_location": "L305",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_designsystemgenerator_extract_results",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
+      "community": 117,
+      "community_name": "semver.ts",
       "norm_label": "._extract_results()"
     },
     {
@@ -1385,8 +1385,8 @@
       "source_location": "L309",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_designsystemgenerator_generate",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
+      "community": 117,
+      "community_name": "semver.ts",
       "norm_label": ".generate()"
     },
     {
@@ -1396,8 +1396,8 @@
       "source_location": "L444",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_hex_to_ansi",
-      "community": 11,
-      "community_name": "design_system.py",
+      "community": 111,
+      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
       "norm_label": "hex_to_ansi()"
     },
     {
@@ -1407,8 +1407,8 @@
       "source_location": "L458",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_ansi_ljust",
-      "community": 11,
-      "community_name": "design_system.py",
+      "community": 111,
+      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
       "norm_label": "ansi_ljust()"
     },
     {
@@ -1418,8 +1418,8 @@
       "source_location": "L466",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_section_header",
-      "community": 11,
-      "community_name": "design_system.py",
+      "community": 111,
+      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
       "norm_label": "section_header()"
     },
     {
@@ -1429,8 +1429,8 @@
       "source_location": "L473",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_format_ascii_box",
-      "community": 11,
-      "community_name": "design_system.py",
+      "community": 111,
+      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
       "norm_label": "format_ascii_box()"
     },
     {
@@ -1440,8 +1440,8 @@
       "source_location": "L636",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_format_markdown",
-      "community": 3,
-      "community_name": "BM25",
+      "community": 11,
+      "community_name": "design_system.py",
       "norm_label": "format_markdown()"
     },
     {
@@ -1451,8 +1451,8 @@
       "source_location": "L776",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_generate_design_system",
-      "community": 3,
-      "community_name": "BM25",
+      "community": 11,
+      "community_name": "design_system.py",
       "norm_label": "generate_design_system()"
     },
     {
@@ -1462,8 +1462,8 @@
       "source_location": "L818",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_safe_slug",
-      "community": 3,
-      "community_name": "BM25",
+      "community": 11,
+      "community_name": "design_system.py",
       "norm_label": "safe_slug()"
     },
     {
@@ -1473,8 +1473,8 @@
       "source_location": "L829",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_persist_design_system",
-      "community": 3,
-      "community_name": "BM25",
+      "community": 11,
+      "community_name": "design_system.py",
       "norm_label": "persist_design_system()"
     },
     {
@@ -1484,8 +1484,8 @@
       "source_location": "L900",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_format_master_md",
-      "community": 3,
-      "community_name": "BM25",
+      "community": 11,
+      "community_name": "design_system.py",
       "norm_label": "format_master_md()"
     },
     {
@@ -1495,8 +1495,8 @@
       "source_location": "L1217",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_format_page_override_md",
-      "community": 11,
-      "community_name": "design_system.py",
+      "community": 118,
+      "community_name": "1. THE THREE DIALS (Core Configuration)",
       "norm_label": "format_page_override_md()"
     },
     {
@@ -1506,8 +1506,8 @@
       "source_location": "L1326",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_generate_intelligent_overrides",
-      "community": 11,
-      "community_name": "design_system.py",
+      "community": 118,
+      "community_name": "1. THE THREE DIALS (Core Configuration)",
       "norm_label": "_generate_intelligent_overrides()"
     },
     {
@@ -1517,8 +1517,8 @@
       "source_location": "L1432",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_detect_page_type",
-      "community": 11,
-      "community_name": "design_system.py",
+      "community": 118,
+      "community_name": "1. THE THREE DIALS (Core Configuration)",
       "norm_label": "_detect_page_type()"
     },
     {
@@ -1528,8 +1528,8 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_70",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
+      "community": 117,
+      "community_name": "semver.ts",
       "norm_label": "bucket a 1-10 dial value into its tier config. returns none if value is none."
     },
     {
@@ -1588,15 +1588,15 @@
       "norm_label": "resolve the mode the rest of the output has to agree with."
     },
     {
-      "label": "Pick the highest-ranked palette matching the resolved mode. Only the dark case\u2026",
+      "label": "Pick the highest-ranked palette matching the resolved mode.      Only the dark",
       "file_type": "rationale",
       "source_file": ".agents/skills/ui-ux-pro-max/scripts/design_system.py",
       "source_location": "L156",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_156",
-      "community": 32,
-      "community_name": "_select_palette_for_mode",
-      "norm_label": "pick the highest-ranked palette matching the resolved mode. only the dark case..."
+      "community": 116,
+      "community_name": "detect_domain",
+      "norm_label": "pick the highest-ranked palette matching the resolved mode.      only the dark"
     },
     {
       "label": "Drop \"avoid dark mode\" advice once dark mode is the resolved answer.",
@@ -1638,8 +1638,8 @@
       "source_location": "L198",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_198",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
+      "community": 117,
+      "community_name": "semver.ts",
       "norm_label": "execute searches across multiple domains."
     },
     {
@@ -1671,8 +1671,8 @@
       "source_location": "L269",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_269",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
+      "community": 117,
+      "community_name": "semver.ts",
       "norm_label": "select best matching result based on priority keywords."
     },
     {
@@ -1682,20 +1682,20 @@
       "source_location": "L306",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_306",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
+      "community": 117,
+      "community_name": "semver.ts",
       "norm_label": "extract results list from search result dict."
     },
     {
-      "label": "Generate complete design system recommendation. variance/motion/density are\u2026",
+      "label": "Generate complete design system recommendation.          variance/motion/densi",
       "file_type": "rationale",
       "source_file": ".agents/skills/ui-ux-pro-max/scripts/design_system.py",
       "source_location": "L311",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_311",
-      "community": 20,
-      "community_name": "DesignSystemGenerator",
-      "norm_label": "generate complete design system recommendation. variance/motion/density are..."
+      "community": 117,
+      "community_name": "semver.ts",
+      "norm_label": "generate complete design system recommendation.          variance/motion/densi"
     },
     {
       "label": "Convert hex color to ANSI True Color swatch (\u2588\u2588) with fallback.",
@@ -1704,8 +1704,8 @@
       "source_location": "L445",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_445",
-      "community": 11,
-      "community_name": "design_system.py",
+      "community": 111,
+      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
       "norm_label": "convert hex color to ansi true color swatch (\u2588\u2588) with fallback."
     },
     {
@@ -1715,8 +1715,8 @@
       "source_location": "L459",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_459",
-      "community": 11,
-      "community_name": "design_system.py",
+      "community": 111,
+      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
       "norm_label": "like str.ljust but accounts for zero-width ansi escape sequences."
     },
     {
@@ -1726,8 +1726,8 @@
       "source_location": "L467",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_467",
-      "community": 11,
-      "community_name": "design_system.py",
+      "community": 111,
+      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
       "norm_label": "create a unicode section separator: \u251c\u2500\u2500\u2500 name \u2500\u2500\u2500...\u2524"
     },
     {
@@ -1737,8 +1737,8 @@
       "source_location": "L474",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_474",
-      "community": 11,
-      "community_name": "design_system.py",
+      "community": 111,
+      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
       "norm_label": "format design system as unicode box with ansi color swatches."
     },
     {
@@ -1748,42 +1748,42 @@
       "source_location": "L637",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_637",
-      "community": 3,
-      "community_name": "BM25",
+      "community": 11,
+      "community_name": "design_system.py",
       "norm_label": "format design system as markdown."
     },
     {
-      "label": "Main entry point for design system generation. Args: query: Search query (e.g.,\u2026",
+      "label": "Main entry point for design system generation.      Args:         query: Sear",
       "file_type": "rationale",
       "source_file": ".agents/skills/ui-ux-pro-max/scripts/design_system.py",
       "source_location": "L780",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_780",
-      "community": 3,
-      "community_name": "BM25",
-      "norm_label": "main entry point for design system generation. args: query: search query (e.g.,..."
+      "community": 11,
+      "community_name": "design_system.py",
+      "norm_label": "main entry point for design system generation.      args:         query: sear"
     },
     {
-      "label": "Slugify a name into a single safe path segment. Only [a-z0-9_-] survives; every\u2026",
+      "label": "Slugify a name into a single safe path segment.      Only [a-z0-9_-] survives;",
       "file_type": "rationale",
       "source_file": ".agents/skills/ui-ux-pro-max/scripts/design_system.py",
       "source_location": "L819",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_819",
-      "community": 3,
-      "community_name": "BM25",
-      "norm_label": "slugify a name into a single safe path segment. only [a-z0-9_-] survives; every..."
+      "community": 11,
+      "community_name": "design_system.py",
+      "norm_label": "slugify a name into a single safe path segment.      only [a-z0-9_-] survives;"
     },
     {
-      "label": "Persist design system to design-system/<project>/ folder using Master +\u2026",
+      "label": "Persist design system to design-system/<project>/ folder using Master + Override",
       "file_type": "rationale",
       "source_file": ".agents/skills/ui-ux-pro-max/scripts/design_system.py",
       "source_location": "L831",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_831",
-      "community": 3,
-      "community_name": "BM25",
-      "norm_label": "persist design system to design-system/<project>/ folder using master +..."
+      "community": 11,
+      "community_name": "design_system.py",
+      "norm_label": "persist design system to design-system/<project>/ folder using master + override"
     },
     {
       "label": "Format design system as MASTER.md with hierarchical override logic.",
@@ -1792,8 +1792,8 @@
       "source_location": "L901",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_901",
-      "community": 3,
-      "community_name": "BM25",
+      "community": 11,
+      "community_name": "design_system.py",
       "norm_label": "format design system as master.md with hierarchical override logic."
     },
     {
@@ -1803,20 +1803,20 @@
       "source_location": "L1218",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_1218",
-      "community": 11,
-      "community_name": "design_system.py",
+      "community": 118,
+      "community_name": "1. THE THREE DIALS (Core Configuration)",
       "norm_label": "format a page-specific override file with intelligent ai-generated content."
     },
     {
-      "label": "Generate intelligent overrides based on page type using layered search. Uses\u2026",
+      "label": "Generate intelligent overrides based on page type using layered search.",
       "file_type": "rationale",
       "source_file": ".agents/skills/ui-ux-pro-max/scripts/design_system.py",
       "source_location": "L1327",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_1327",
-      "community": 11,
-      "community_name": "design_system.py",
-      "norm_label": "generate intelligent overrides based on page type using layered search. uses..."
+      "community": 118,
+      "community_name": "1. THE THREE DIALS (Core Configuration)",
+      "norm_label": "generate intelligent overrides based on page type using layered search."
     },
     {
       "label": "Detect page type from context and search results.",
@@ -1825,8 +1825,8 @@
       "source_location": "L1433",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_1433",
-      "community": 11,
-      "community_name": "design_system.py",
+      "community": 118,
+      "community_name": "1. THE THREE DIALS (Core Configuration)",
       "norm_label": "detect page type from context and search results."
     },
     {
@@ -1869,8 +1869,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core",
-      "community": 3,
-      "community_name": "BM25",
+      "community": 11,
+      "community_name": "design_system.py",
       "norm_label": "test_core.py"
     },
     {
@@ -2045,8 +2045,8 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testpersistence",
-      "community": 3,
-      "community_name": "BM25",
+      "community": 11,
+      "community_name": "design_system.py",
       "norm_label": "testpersistence"
     },
     {
@@ -2056,8 +2056,8 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testpersistence_test_persist_then_skip_then_force",
-      "community": 3,
-      "community_name": "BM25",
+      "community": 11,
+      "community_name": "design_system.py",
       "norm_label": ".test_persist_then_skip_then_force()"
     },
     {
@@ -2067,8 +2067,8 @@
       "source_location": "L113",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testpersistence_test_persist_writes_only_under_output_dir",
-      "community": 3,
-      "community_name": "BM25",
+      "community": 11,
+      "community_name": "design_system.py",
       "norm_label": ".test_persist_writes_only_under_output_dir()"
     },
     {
@@ -2105,7 +2105,7 @@
       "norm_label": ".test_unknown_category_falls_back_gracefully()"
     },
     {
-      "label": "Known query -> expected top-domain sanity checks (not exact-row pinning, since\u2026",
+      "label": "Known query -> expected top-domain sanity checks (not exact-row pinning,     si",
       "file_type": "rationale",
       "source_file": ".agents/skills/ui-ux-pro-max/scripts/tests/test_core.py",
       "source_location": "L47",
@@ -2113,7 +2113,7 @@
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_rationale_47",
       "community": 3,
       "community_name": "BM25",
-      "norm_label": "known query -> expected top-domain sanity checks (not exact-row pinning, since..."
+      "norm_label": "known query -> expected top-domain sanity checks (not exact-row pinning,     si"
     },
     {
       "label": "test_design_system_mode.py",
@@ -2122,8 +2122,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode",
-      "community": 57,
-      "community_name": "test_design_system_mode.py",
+      "community": 45,
+      "community_name": "design_system.py",
       "norm_label": "test_design_system_mode.py"
     },
     {
@@ -2243,8 +2243,8 @@
       "source_location": "L93",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testpaletteselection",
-      "community": 32,
-      "community_name": "_select_palette_for_mode",
+      "community": 116,
+      "community_name": "detect_domain",
       "norm_label": "testpaletteselection"
     },
     {
@@ -2254,8 +2254,8 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testpaletteselection_test_dark_mode_skips_light_palettes",
-      "community": 32,
-      "community_name": "_select_palette_for_mode",
+      "community": 116,
+      "community_name": "detect_domain",
       "norm_label": ".test_dark_mode_skips_light_palettes()"
     },
     {
@@ -2265,8 +2265,8 @@
       "source_location": "L98",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testpaletteselection_test_dark_mode_falls_back_to_top_hit_when_no_dark_ramp_exists",
-      "community": 32,
-      "community_name": "_select_palette_for_mode",
+      "community": 116,
+      "community_name": "detect_domain",
       "norm_label": ".test_dark_mode_falls_back_to_top_hit_when_no_dark_ramp_exists()"
     },
     {
@@ -2276,8 +2276,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testpaletteselection_test_light_mode_keeps_the_existing_top_hit_behaviour",
-      "community": 32,
-      "community_name": "_select_palette_for_mode",
+      "community": 116,
+      "community_name": "detect_domain",
       "norm_label": ".test_light_mode_keeps_the_existing_top_hit_behaviour()"
     },
     {
@@ -2287,8 +2287,8 @@
       "source_location": "L106",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testpaletteselection_test_empty_results",
-      "community": 32,
-      "community_name": "_select_palette_for_mode",
+      "community": 116,
+      "community_name": "detect_domain",
       "norm_label": ".test_empty_results()"
     },
     {
@@ -2353,8 +2353,8 @@
       "source_location": "L128",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testendtoendcoherence",
-      "community": 31,
-      "community_name": "_palette_is_dark",
+      "community": 20,
+      "community_name": "DesignSystemGenerator",
       "norm_label": "testendtoendcoherence"
     },
     {
@@ -2364,8 +2364,8 @@
       "source_location": "L133",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testendtoendcoherence_test_dark_query_gets_a_dark_background",
-      "community": 31,
-      "community_name": "_palette_is_dark",
+      "community": 20,
+      "community_name": "DesignSystemGenerator",
       "norm_label": ".test_dark_query_gets_a_dark_background()"
     },
     {
@@ -2375,8 +2375,8 @@
       "source_location": "L141",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testendtoendcoherence_test_dark_query_foreground_is_lighter_than_background",
-      "community": 31,
-      "community_name": "_palette_is_dark",
+      "community": 20,
+      "community_name": "DesignSystemGenerator",
       "norm_label": ".test_dark_query_foreground_is_lighter_than_background()"
     },
     {
@@ -2386,8 +2386,8 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testendtoendcoherence_test_dark_query_does_not_advise_against_dark_mode",
-      "community": 31,
-      "community_name": "_palette_is_dark",
+      "community": 20,
+      "community_name": "DesignSystemGenerator",
       "norm_label": ".test_dark_query_does_not_advise_against_dark_mode()"
     },
     {
@@ -2408,8 +2408,8 @@
       "source_location": "L129",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_rationale_129",
-      "community": 31,
-      "community_name": "_palette_is_dark",
+      "community": 20,
+      "community_name": "DesignSystemGenerator",
       "norm_label": "the exact reproduction from issue #428."
     },
     {
@@ -3095,6 +3095,39 @@
       "norm_label": "main()"
     },
     {
+      "label": "sdd_review_package.py",
+      "file_type": "code",
+      "source_file": "scripts/sdd_review_package.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_sdd_review_package",
+      "community": 120,
+      "community_name": "sdd_review_package.py",
+      "norm_label": "sdd_review_package.py"
+    },
+    {
+      "label": "run()",
+      "file_type": "code",
+      "source_file": "scripts/sdd_review_package.py",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "scripts_sdd_review_package_run",
+      "community": 120,
+      "community_name": "sdd_review_package.py",
+      "norm_label": "run()"
+    },
+    {
+      "label": "sdd_task_brief.py",
+      "file_type": "code",
+      "source_file": "scripts/sdd_task_brief.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_sdd_task_brief",
+      "community": 121,
+      "community_name": "sdd_task_brief.py",
+      "norm_label": "sdd_task_brief.py"
+    },
+    {
       "label": "build.rs",
       "file_type": "code",
       "source_file": "src-tauri/build.rs",
@@ -3758,7 +3791,7 @@
       "label": "Route",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L18",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "src_app_route",
       "community": 63,
@@ -3769,7 +3802,7 @@
       "label": "routes",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L26",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "src_app_routes",
       "community": 63,
@@ -3780,7 +3813,7 @@
       "label": "BootState",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L35",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "src_app_bootstate",
       "community": 63,
@@ -3791,7 +3824,7 @@
       "label": "App()",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L37",
+      "source_location": "L40",
       "_origin": "ast",
       "id": "src_app_app",
       "community": 63,
@@ -3863,6 +3896,50 @@
       "community": 63,
       "community_name": "api.ts",
       "norm_label": "timeinput()"
+    },
+    {
+      "label": "UpdateBanner.tsx",
+      "file_type": "code",
+      "source_file": "src/components/UpdateBanner.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_components_updatebanner",
+      "community": 63,
+      "community_name": "api.ts",
+      "norm_label": "updatebanner.tsx"
+    },
+    {
+      "label": "Props",
+      "file_type": "code",
+      "source_file": "src/components/UpdateBanner.tsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "src_components_updatebanner_props",
+      "community": 63,
+      "community_name": "api.ts",
+      "norm_label": "props"
+    },
+    {
+      "label": "tf()",
+      "file_type": "code",
+      "source_file": "src/components/UpdateBanner.tsx",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "src_components_updatebanner_tf",
+      "community": 63,
+      "community_name": "api.ts",
+      "norm_label": "tf()"
+    },
+    {
+      "label": "UpdateBanner()",
+      "file_type": "code",
+      "source_file": "src/components/UpdateBanner.tsx",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "src_components_updatebanner_updatebanner",
+      "community": 63,
+      "community_name": "api.ts",
+      "norm_label": "updatebanner()"
     },
     {
       "label": "client.test.ts",
@@ -4558,6 +4635,171 @@
       "norm_label": "asseturl()"
     },
     {
+      "label": "repo.ts",
+      "file_type": "code",
+      "source_file": "src/lib/repo.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_lib_repo",
+      "community": 122,
+      "community_name": "updateCheck.ts",
+      "norm_label": "repo.ts"
+    },
+    {
+      "label": "githubReleasesLatestApiUrl()",
+      "file_type": "code",
+      "source_file": "src/lib/repo.ts",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "src_lib_repo_githubreleaseslatestapiurl",
+      "community": 122,
+      "community_name": "updateCheck.ts",
+      "norm_label": "githubreleaseslatestapiurl()"
+    },
+    {
+      "label": "githubReleasesPageUrl()",
+      "file_type": "code",
+      "source_file": "src/lib/repo.ts",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_lib_repo_githubreleasespageurl",
+      "community": 122,
+      "community_name": "updateCheck.ts",
+      "norm_label": "githubreleasespageurl()"
+    },
+    {
+      "label": "semver.test.ts",
+      "file_type": "code",
+      "source_file": "src/lib/semver.test.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_lib_semver_test",
+      "community": 122,
+      "community_name": "updateCheck.ts",
+      "norm_label": "semver.test.ts"
+    },
+    {
+      "label": "semver.ts",
+      "file_type": "code",
+      "source_file": "src/lib/semver.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_lib_semver",
+      "community": 122,
+      "community_name": "updateCheck.ts",
+      "norm_label": "semver.ts"
+    },
+    {
+      "label": "Semver",
+      "file_type": "code",
+      "source_file": "src/lib/semver.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_lib_semver_semver",
+      "community": 122,
+      "community_name": "updateCheck.ts",
+      "norm_label": "semver"
+    },
+    {
+      "label": "parseSemver()",
+      "file_type": "code",
+      "source_file": "src/lib/semver.ts",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "src_lib_semver_parsesemver",
+      "community": 122,
+      "community_name": "updateCheck.ts",
+      "norm_label": "parsesemver()"
+    },
+    {
+      "label": "compareSemver()",
+      "file_type": "code",
+      "source_file": "src/lib/semver.ts",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "src_lib_semver_comparesemver",
+      "community": 122,
+      "community_name": "updateCheck.ts",
+      "norm_label": "comparesemver()"
+    },
+    {
+      "label": "updateCheck.test.ts",
+      "file_type": "code",
+      "source_file": "src/lib/updateCheck.test.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_lib_updatecheck_test",
+      "community": 122,
+      "community_name": "updateCheck.ts",
+      "norm_label": "updatecheck.test.ts"
+    },
+    {
+      "label": "updateCheck.ts",
+      "file_type": "code",
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_lib_updatecheck",
+      "community": 122,
+      "community_name": "updateCheck.ts",
+      "norm_label": "updatecheck.ts"
+    },
+    {
+      "label": "UpdateInfo",
+      "file_type": "code",
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "src_lib_updatecheck_updateinfo",
+      "community": 63,
+      "community_name": "api.ts",
+      "norm_label": "updateinfo"
+    },
+    {
+      "label": "UpdateCheckResult",
+      "file_type": "code",
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "src_lib_updatecheck_updatecheckresult",
+      "community": 122,
+      "community_name": "updateCheck.ts",
+      "norm_label": "updatecheckresult"
+    },
+    {
+      "label": "shouldNotifyUpdate()",
+      "file_type": "code",
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "src_lib_updatecheck_shouldnotifyupdate",
+      "community": 122,
+      "community_name": "updateCheck.ts",
+      "norm_label": "shouldnotifyupdate()"
+    },
+    {
+      "label": "fetchLatestRelease()",
+      "file_type": "code",
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "src_lib_updatecheck_fetchlatestrelease",
+      "community": 122,
+      "community_name": "updateCheck.ts",
+      "norm_label": "fetchlatestrelease()"
+    },
+    {
+      "label": "checkForAppUpdate()",
+      "file_type": "code",
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "src_lib_updatecheck_checkforappupdate",
+      "community": 122,
+      "community_name": "updateCheck.ts",
+      "norm_label": "checkforappupdate()"
+    },
+    {
       "label": "main.tsx",
       "file_type": "code",
       "source_file": "src/main.tsx",
@@ -4825,7 +5067,7 @@
       "label": "SettingsPageProps",
       "file_type": "code",
       "source_file": "src/pages/SettingsPage.tsx",
-      "source_location": "L3",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "src_pages_settingspage_settingspageprops",
       "community": 63,
@@ -4833,10 +5075,32 @@
       "norm_label": "settingspageprops"
     },
     {
+      "label": "ManualUpdateStatus",
+      "file_type": "code",
+      "source_file": "src/pages/SettingsPage.tsx",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "src_pages_settingspage_manualupdatestatus",
+      "community": 63,
+      "community_name": "api.ts",
+      "norm_label": "manualupdatestatus"
+    },
+    {
+      "label": "tf()",
+      "file_type": "code",
+      "source_file": "src/pages/SettingsPage.tsx",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "src_pages_settingspage_tf",
+      "community": 63,
+      "community_name": "api.ts",
+      "norm_label": "tf()"
+    },
+    {
       "label": "SettingsPage()",
       "file_type": "code",
       "source_file": "src/pages/SettingsPage.tsx",
-      "source_location": "L8",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "src_pages_settingspage_settingspage",
       "community": 63,
@@ -5730,8 +5994,8 @@
       "source_location": "L552",
       "_origin": "ast",
       "id": "agents_skills_design_taste_frontend_skill_7_dial_definitions_technical_reference",
-      "community": 111,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 119,
+      "community_name": "validate_data.py",
       "norm_label": "7. dial definitions (technical reference)"
     },
     {
@@ -5741,8 +6005,8 @@
       "source_location": "L554",
       "_origin": "ast",
       "id": "agents_skills_design_taste_frontend_skill_design_variance_level_1_10",
-      "community": 111,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 119,
+      "community_name": "validate_data.py",
       "norm_label": "design_variance (level 1-10)"
     },
     {
@@ -5752,8 +6016,8 @@
       "source_location": "L560",
       "_origin": "ast",
       "id": "agents_skills_design_taste_frontend_skill_motion_intensity_level_1_10",
-      "community": 111,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 119,
+      "community_name": "validate_data.py",
       "norm_label": "motion_intensity (level 1-10)"
     },
     {
@@ -5763,8 +6027,8 @@
       "source_location": "L565",
       "_origin": "ast",
       "id": "agents_skills_design_taste_frontend_skill_visual_density_level_1_10",
-      "community": 111,
-      "community_name": "7. DIAL DEFINITIONS (Technical Reference)",
+      "community": 119,
+      "community_name": "validate_data.py",
       "norm_label": "visual_density (level 1-10)"
     },
     {
@@ -7974,8 +8238,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_session_handoff_evals_model_expectations",
-      "community": 21,
-      "community_name": "Expected Behaviors by Scenario",
+      "community": 4,
+      "community_name": "Evaluation Test Scenarios",
       "norm_label": "model-expectations.md"
     },
     {
@@ -13006,10 +13270,21 @@
       "norm_label": "development"
     },
     {
-      "label": "Specs",
+      "label": "Releases",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L22",
+      "_origin": "ast",
+      "id": "readme_releases",
+      "community": 103,
+      "community_name": "compare.ts",
+      "norm_label": "releases"
+    },
+    {
+      "label": "Specs",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "readme_specs",
       "community": 103,
@@ -13020,7 +13295,7 @@
       "label": "Agent council",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L28",
+      "source_location": "L44",
       "_origin": "ast",
       "id": "readme_agent_council",
       "community": 103,
@@ -13031,7 +13306,7 @@
       "label": "Skills",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L32",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "readme_skills",
       "community": 103,
@@ -13042,7 +13317,7 @@
       "label": "Continuity",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L36",
+      "source_location": "L52",
       "_origin": "ast",
       "id": "readme_continuity",
       "community": 103,
@@ -13053,7 +13328,7 @@
       "label": "Status",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L43",
+      "source_location": "L59",
       "_origin": "ast",
       "id": "readme_status",
       "community": 103,
@@ -13633,6 +13908,160 @@
       "norm_label": "post-mvp (do not implement in this plan)"
     },
     {
+      "label": "2026-08-03-github-releases-update-notice.md",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_superpowers_plans_2026_08_03_github_releases_update_notice",
+      "community": 115,
+      "community_name": "File map",
+      "norm_label": "2026-08-03-github-releases-update-notice.md"
+    },
+    {
+      "label": "GitHub Releases + In-App Update Notice Implementation Plan",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_github_releases_in_app_update_notice_implementation_plan",
+      "community": 115,
+      "community_name": "File map",
+      "norm_label": "github releases + in-app update notice implementation plan"
+    },
+    {
+      "label": "Global Constraints",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_global_constraints",
+      "community": 115,
+      "community_name": "File map",
+      "norm_label": "global constraints"
+    },
+    {
+      "label": "File map",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_file_map",
+      "community": 115,
+      "community_name": "File map",
+      "norm_label": "file map"
+    },
+    {
+      "label": "Task 1: Semver helpers (TDD)",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_task_1_semver_helpers_tdd",
+      "community": 115,
+      "community_name": "File map",
+      "norm_label": "task 1: semver helpers (tdd)"
+    },
+    {
+      "label": "Task 2: GitHub latest-release check (TDD)",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_task_2_github_latest_release_check_tdd",
+      "community": 115,
+      "community_name": "File map",
+      "norm_label": "task 2: github latest-release check (tdd)"
+    },
+    {
+      "label": "Task 3: Tauri CSP + opener allowlist for GitHub",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L327",
+      "_origin": "ast",
+      "id": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_task_3_tauri_csp_opener_allowlist_for_github",
+      "community": 115,
+      "community_name": "File map",
+      "norm_label": "task 3: tauri csp + opener allowlist for github"
+    },
+    {
+      "label": "Task 4: UpdateBanner UI + App boot wiring",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L386",
+      "_origin": "ast",
+      "id": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_task_4_updatebanner_ui_app_boot_wiring",
+      "community": 115,
+      "community_name": "File map",
+      "norm_label": "task 4: updatebanner ui + app boot wiring"
+    },
+    {
+      "label": "Task 5: Settings \u2014 manual update check",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L546",
+      "_origin": "ast",
+      "id": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_task_5_settings_manual_update_check",
+      "community": 115,
+      "community_name": "File map",
+      "norm_label": "task 5: settings \u2014 manual update check"
+    },
+    {
+      "label": "Task 6: GitHub Actions release workflow",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L594",
+      "_origin": "ast",
+      "id": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_task_6_github_actions_release_workflow",
+      "community": 115,
+      "community_name": "File map",
+      "norm_label": "task 6: github actions release workflow"
+    },
+    {
+      "label": "Task 7: README release docs",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L711",
+      "_origin": "ast",
+      "id": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_task_7_readme_release_docs",
+      "community": 115,
+      "community_name": "File map",
+      "norm_label": "task 7: readme release docs"
+    },
+    {
+      "label": "Task 8: Verification + graphify",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L737",
+      "_origin": "ast",
+      "id": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_task_8_verification_graphify",
+      "community": 115,
+      "community_name": "File map",
+      "norm_label": "task 8: verification + graphify"
+    },
+    {
+      "label": "Spec coverage checklist",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L774",
+      "_origin": "ast",
+      "id": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_spec_coverage_checklist",
+      "community": 115,
+      "community_name": "File map",
+      "norm_label": "spec coverage checklist"
+    },
+    {
+      "label": "Placeholder / consistency self-review",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L791",
+      "_origin": "ast",
+      "id": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_placeholder_consistency_self_review",
+      "community": 115,
+      "community_name": "File map",
+      "norm_label": "placeholder / consistency self-review"
+    },
+    {
       "label": "2026-08-02-agentic-council-design.md",
       "file_type": "document",
       "source_file": "docs/superpowers/specs/2026-08-02-agentic-council-design.md",
@@ -13895,6 +14324,226 @@
       "community": 35,
       "community_name": "Forza Horizon 6 Lap Tracker \u2014 Design Spec",
       "norm_label": "10. open follow-ups (post-mvp, do not build now)"
+    },
+    {
+      "label": "2026-08-03-github-releases-update-notice-design.md",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "2026-08-03-github-releases-update-notice-design.md"
+    },
+    {
+      "label": "Design: GitHub Releases + in-app update notice",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_design_github_releases_in_app_update_notice",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "design: github releases + in-app update notice"
+    },
+    {
+      "label": "Goal",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_goal",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "goal"
+    },
+    {
+      "label": "Decisions (locked)",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_decisions_locked",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "decisions (locked)"
+    },
+    {
+      "label": "Part 1 \u2014 CI release workflow",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_part_1_ci_release_workflow",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "part 1 \u2014 ci release workflow"
+    },
+    {
+      "label": "File",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_file",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "file"
+    },
+    {
+      "label": "Triggers",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_triggers",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "triggers"
+    },
+    {
+      "label": "Jobs / matrix",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_jobs_matrix",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "jobs / matrix"
+    },
+    {
+      "label": "Steps (each matrix cell)",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_steps_each_matrix_cell",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "steps (each matrix cell)"
+    },
+    {
+      "label": "Permissions",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_permissions",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "permissions"
+    },
+    {
+      "label": "Version alignment",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_version_alignment",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "version alignment"
+    },
+    {
+      "label": "Failure behavior",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_failure_behavior",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "failure behavior"
+    },
+    {
+      "label": "Part 2 \u2014 In-app update notice",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_part_2_in_app_update_notice",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "part 2 \u2014 in-app update notice"
+    },
+    {
+      "label": "Behavior",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_behavior",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "behavior"
+    },
+    {
+      "label": "Non-goals",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_non_goals",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "non-goals"
+    },
+    {
+      "label": "Implementation sketch",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L93",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_implementation_sketch",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "implementation sketch"
+    },
+    {
+      "label": "Semver rules",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_semver_rules",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "semver rules"
+    },
+    {
+      "label": "Part 3 \u2014 Docs",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_part_3_docs",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "part 3 \u2014 docs"
+    },
+    {
+      "label": "Testing",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_testing",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "testing"
+    },
+    {
+      "label": "Risks / notes",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L118",
+      "_origin": "ast",
+      "id": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_risks_notes",
+      "community": 32,
+      "community_name": "_select_palette_for_mode",
+      "norm_label": "risks / notes"
     }
   ],
   "links": [
@@ -19060,6 +19709,17 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/sdd_review_package.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_sdd_review_package",
+      "target": "scripts_sdd_review_package_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src-tauri/build.rs",
       "source_location": "L1",
       "weight": 1.0,
@@ -19831,7 +20491,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L37",
+      "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -19842,7 +20502,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L35",
+      "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -19853,7 +20513,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L18",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -19864,7 +20524,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L26",
+      "source_location": "L29",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -19880,7 +20540,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
-      "target": "src_db_client",
+      "target": "src_components_updatebanner",
       "confidence_score": 1.0
     },
     {
@@ -19892,7 +20552,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
-      "target": "src_db_client_initdb",
+      "target": "src_components_updatebanner_updatebanner",
       "confidence_score": 1.0
     },
     {
@@ -19901,6 +20561,30 @@
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
       "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app",
+      "target": "src_db_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app",
+      "target": "src_db_client_initdb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -19912,7 +20596,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -19924,7 +20608,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -19936,7 +20620,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -19948,7 +20632,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -19960,7 +20644,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -19972,7 +20656,55 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L11",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app",
+      "target": "src_lib_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app",
+      "target": "src_lib_api_setsetting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app",
+      "target": "src_lib_updatecheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app",
+      "target": "src_lib_updatecheck_updateinfo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -19984,7 +20716,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L11",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -19996,7 +20728,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L12",
+      "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -20008,7 +20740,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L12",
+      "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -20020,7 +20752,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L13",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -20032,7 +20764,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L13",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -20044,7 +20776,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L14",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -20056,7 +20788,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L14",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -20068,7 +20800,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L15",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -20080,7 +20812,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L15",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -20092,7 +20824,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L16",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -20104,7 +20836,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L16",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -20127,49 +20859,13 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "src/App.tsx",
-      "source_location": "L51",
+      "source_location": "L56",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app_app",
-      "target": "src_db_client_initdb",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/App.tsx",
-      "source_location": "L47",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_app_app",
-      "target": "src_i18n_index_applylocale",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/App.tsx",
-      "source_location": "L52",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_app_app",
-      "target": "src_i18n_index_loadlocale",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/App.tsx",
-      "source_location": "L65",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_app_app",
-      "target": "src_i18n_index_persistlocale",
-      "confidence_score": 1.0
+      "target": "src_db_client_initdb"
     },
     {
       "relation": "calls",
@@ -20177,7 +20873,31 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/App.tsx",
-      "source_location": "L54",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app_app",
+      "target": "src_i18n_index_applylocale"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/App.tsx",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app_app",
+      "target": "src_i18n_index_loadlocale"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/App.tsx",
+      "source_location": "L59",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app_app",
@@ -20187,25 +20907,75 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "src/App.tsx",
-      "source_location": "L72",
+      "source_location": "L100",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app_app",
-      "target": "src_i18n_index_t",
+      "target": "src_i18n_index_t"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "deferred": true,
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app_app",
+      "target": "src_lib_api",
       "confidence_score": 1.0
     },
     {
-      "relation": "imports",
-      "context": "import",
+      "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "src/main.tsx",
-      "source_location": "L3",
+      "confidence_score": 1.0,
+      "source_file": "src/App.tsx",
+      "source_location": "L80",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "src_main",
-      "target": "src_app_app",
+      "source": "src_app_app",
+      "target": "src_lib_api_getsetting"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/App.tsx",
+      "source_location": "L139",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app_app",
+      "target": "src_lib_api_setsetting"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "deferred": true,
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app_app",
+      "target": "src_lib_updatecheck",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/App.tsx",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app_app",
+      "target": "src_lib_updatecheck_checkforappupdate"
     },
     {
       "relation": "contains",
@@ -20537,6 +21307,147 @@
       "_origin": "ast",
       "source": "src_pages_registerlappage",
       "target": "src_components_timeinput_timeinput",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/UpdateBanner.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_updatebanner",
+      "target": "src_components_updatebanner_props",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/UpdateBanner.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_updatebanner",
+      "target": "src_components_updatebanner_tf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/UpdateBanner.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_updatebanner",
+      "target": "src_components_updatebanner_updatebanner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/UpdateBanner.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_updatebanner",
+      "target": "src_i18n_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/UpdateBanner.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_updatebanner",
+      "target": "src_i18n_index_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/UpdateBanner.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_updatebanner",
+      "target": "src_lib_updatecheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/UpdateBanner.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_updatebanner",
+      "target": "src_lib_updatecheck_updateinfo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SettingsPage.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_settingspage",
+      "target": "src_components_updatebanner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/UpdateBanner.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_updatebanner_tf",
+      "target": "src_i18n_index_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/UpdateBanner.tsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_updatebanner_updatebanner",
+      "target": "src_components_updatebanner_tf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/UpdateBanner.tsx",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_updatebanner_updatebanner",
+      "target": "src_i18n_index_t"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SettingsPage.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_settingspage",
+      "target": "src_components_updatebanner_updatebanner",
       "confidence_score": 1.0
     },
     {
@@ -21593,13 +22504,13 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "src/pages/ComparePage.tsx",
       "source_location": "L226",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_pages_comparepage_recentlaps",
-      "target": "src_domain_laptime_formatlaptime",
-      "confidence_score": 1.0
+      "target": "src_domain_laptime_formatlaptime"
     },
     {
       "relation": "imports",
@@ -22051,7 +22962,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/SettingsPage.tsx",
-      "source_location": "L1",
+      "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_pages_settingspage",
@@ -22063,7 +22974,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/SettingsPage.tsx",
-      "source_location": "L1",
+      "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_pages_settingspage",
@@ -22170,13 +23081,13 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "src/pages/ComparePage.tsx",
       "source_location": "L206",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_pages_comparepage_recentlaps",
-      "target": "src_i18n_index_t",
-      "confidence_score": 1.0
+      "target": "src_i18n_index_t"
     },
     {
       "relation": "imports",
@@ -22231,7 +23142,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/SettingsPage.tsx",
-      "source_location": "L1",
+      "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_pages_settingspage",
@@ -22244,11 +23155,23 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/pages/SettingsPage.tsx",
-      "source_location": "L14",
+      "source_location": "L65",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_pages_settingspage_settingspage",
       "target": "src_i18n_index_t"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SettingsPage.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_settingspage_tf",
+      "target": "src_i18n_index_t",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -22552,6 +23475,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_pages_registerlappage",
+      "target": "src_lib_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SettingsPage.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_settingspage",
       "target": "src_lib_api",
       "confidence_score": 1.0
     },
@@ -22928,6 +23863,42 @@
       "target": "src_lib_api_bestlap"
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SettingsPage.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_settingspage",
+      "target": "src_lib_api_getsetting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SettingsPage.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_settingspage",
+      "target": "src_lib_api_setsetting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/SettingsPage.tsx",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_settingspage_settingspage",
+      "target": "src_lib_api_setsetting"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lib/assets.ts",
@@ -22973,6 +23944,380 @@
       "_origin": "ast",
       "source": "src_pages_catalogpage_catalogpage",
       "target": "src_lib_assets_asseturl"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/repo.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_repo",
+      "target": "src_lib_repo_githubreleaseslatestapiurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/repo.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_repo",
+      "target": "src_lib_repo_githubreleasespageurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck",
+      "target": "src_lib_repo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck",
+      "target": "src_lib_repo_githubreleaseslatestapiurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck_fetchlatestrelease",
+      "target": "src_lib_repo_githubreleaseslatestapiurl"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/semver.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_semver_test",
+      "target": "src_lib_semver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/semver.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_semver_test",
+      "target": "src_lib_semver_comparesemver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/semver.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_semver_test",
+      "target": "src_lib_semver_parsesemver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/semver.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_semver",
+      "target": "src_lib_semver_comparesemver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/semver.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_semver",
+      "target": "src_lib_semver_parsesemver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/semver.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_semver",
+      "target": "src_lib_semver_semver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck",
+      "target": "src_lib_semver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/semver.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_semver_comparesemver",
+      "target": "src_lib_semver_parsesemver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck",
+      "target": "src_lib_semver_parsesemver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck_checkforappupdate",
+      "target": "src_lib_semver_parsesemver"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck_shouldnotifyupdate",
+      "target": "src_lib_semver_parsesemver"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck",
+      "target": "src_lib_semver_comparesemver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck_shouldnotifyupdate",
+      "target": "src_lib_semver_comparesemver"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/updateCheck.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck_test",
+      "target": "src_lib_updatecheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/updateCheck.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck_test",
+      "target": "src_lib_updatecheck_checkforappupdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/updateCheck.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck_test",
+      "target": "src_lib_updatecheck_fetchlatestrelease",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/updateCheck.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck_test",
+      "target": "src_lib_updatecheck_shouldnotifyupdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck",
+      "target": "src_lib_updatecheck_checkforappupdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck",
+      "target": "src_lib_updatecheck_fetchlatestrelease",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck",
+      "target": "src_lib_updatecheck_shouldnotifyupdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck",
+      "target": "src_lib_updatecheck_updatecheckresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck",
+      "target": "src_lib_updatecheck_updateinfo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SettingsPage.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_settingspage",
+      "target": "src_lib_updatecheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SettingsPage.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_settingspage",
+      "target": "src_lib_updatecheck_updateinfo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck_checkforappupdate",
+      "target": "src_lib_updatecheck_shouldnotifyupdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/updateCheck.ts",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_updatecheck_checkforappupdate",
+      "target": "src_lib_updatecheck_fetchlatestrelease",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SettingsPage.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_settingspage",
+      "target": "src_lib_updatecheck_checkforappupdate",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -23213,7 +24558,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/SettingsPage.tsx",
-      "source_location": "L8",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_settingspage",
+      "target": "src_pages_settingspage_manualupdatestatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SettingsPage.tsx",
+      "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_pages_settingspage",
@@ -23224,11 +24580,34 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/SettingsPage.tsx",
-      "source_location": "L3",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_pages_settingspage",
       "target": "src_pages_settingspage_settingspageprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SettingsPage.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_settingspage",
+      "target": "src_pages_settingspage_tf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/SettingsPage.tsx",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_settingspage_settingspage",
+      "target": "src_pages_settingspage_tf",
       "confidence_score": 1.0
     },
     {
@@ -30874,7 +32253,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L39",
+      "source_location": "L55",
       "weight": 1.0,
       "_origin": "ast",
       "source": "readme",
@@ -30885,7 +32264,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L24",
+      "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast",
       "source": "readme",
@@ -30896,7 +32275,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L34",
+      "source_location": "L50",
       "weight": 1.0,
       "_origin": "ast",
       "source": "readme",
@@ -30918,7 +32297,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L28",
+      "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
       "source": "readme_forza_lap_tracker",
@@ -30929,7 +32308,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L36",
+      "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast",
       "source": "readme_forza_lap_tracker",
@@ -30951,7 +32330,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L32",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_forza_lap_tracker",
+      "target": "readme_releases",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast",
       "source": "readme_forza_lap_tracker",
@@ -30962,7 +32352,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L22",
+      "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast",
       "source": "readme_forza_lap_tracker",
@@ -30973,7 +32363,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L43",
+      "source_location": "L59",
       "weight": 1.0,
       "_origin": "ast",
       "source": "readme_forza_lap_tracker",
@@ -31588,6 +32978,149 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_plans_2026_08_03_github_releases_update_notice",
+      "target": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_github_releases_in_app_update_notice_implementation_plan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_github_releases_in_app_update_notice_implementation_plan",
+      "target": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_file_map",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_github_releases_in_app_update_notice_implementation_plan",
+      "target": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_global_constraints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L791",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_github_releases_in_app_update_notice_implementation_plan",
+      "target": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_placeholder_consistency_self_review",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L774",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_github_releases_in_app_update_notice_implementation_plan",
+      "target": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_spec_coverage_checklist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_file_map",
+      "target": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_task_1_semver_helpers_tdd",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_file_map",
+      "target": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_task_2_github_latest_release_check_tdd",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L327",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_file_map",
+      "target": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_task_3_tauri_csp_opener_allowlist_for_github",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L386",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_file_map",
+      "target": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_task_4_updatebanner_ui_app_boot_wiring",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L546",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_file_map",
+      "target": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_task_5_settings_manual_update_check",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L594",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_file_map",
+      "target": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_task_6_github_actions_release_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L711",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_file_map",
+      "target": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_task_7_readme_release_docs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md",
+      "source_location": "L737",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_file_map",
+      "target": "docs_superpowers_plans_2026_08_03_github_releases_update_notice_task_8_verification_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/superpowers/specs/2026-08-02-agentic-council-design.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -31837,8 +33370,217 @@
       "source": "docs_superpowers_specs_2026_08_02_forza_lap_tracker_design_3_domain_model",
       "target": "docs_superpowers_specs_2026_08_02_forza_lap_tracker_design_3_3_catalog",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design",
+      "target": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_design_github_releases_in_app_update_notice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_design_github_releases_in_app_update_notice",
+      "target": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_decisions_locked",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_design_github_releases_in_app_update_notice",
+      "target": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_goal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_design_github_releases_in_app_update_notice",
+      "target": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_part_1_ci_release_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_design_github_releases_in_app_update_notice",
+      "target": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_part_2_in_app_update_notice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_design_github_releases_in_app_update_notice",
+      "target": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_part_3_docs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L118",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_design_github_releases_in_app_update_notice",
+      "target": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_risks_notes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_design_github_releases_in_app_update_notice",
+      "target": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_testing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_part_1_ci_release_workflow",
+      "target": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_failure_behavior",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_part_1_ci_release_workflow",
+      "target": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_part_1_ci_release_workflow",
+      "target": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_jobs_matrix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_part_1_ci_release_workflow",
+      "target": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_permissions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_part_1_ci_release_workflow",
+      "target": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_steps_each_matrix_cell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_part_1_ci_release_workflow",
+      "target": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_triggers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_part_1_ci_release_workflow",
+      "target": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_version_alignment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_part_2_in_app_update_notice",
+      "target": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_behavior",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_part_2_in_app_update_notice",
+      "target": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_implementation_sketch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_part_2_in_app_update_notice",
+      "target": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_non_goals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_part_2_in_app_update_notice",
+      "target": "docs_superpowers_specs_2026_08_03_github_releases_update_notice_design_semver_rules",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4ee364611f4ef0f60b5fbc4993986b908fdec5e6"
+  "built_at_commit": "d3805a98c3fe89dba036fc5155ab80b86437f855"
 }

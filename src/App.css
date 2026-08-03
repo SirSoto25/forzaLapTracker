@@ -97,8 +97,60 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
+.app-content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content > main {
+  flex: 1;
+}
+
 main {
   padding: clamp(32px, 8vw, 96px);
+}
+
+.update-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 20px;
+  padding: 12px 20px;
+  background: #191f26;
+  border-bottom: 1px solid #2c343e;
+}
+
+.update-banner p {
+  margin: 0;
+  color: #e9edf2;
+  font-size: 0.95rem;
+}
+
+.update-banner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.update-banner-actions button {
+  padding: 8px 14px;
+  color: #11151a;
+  background: #f4b942;
+  border: 1px solid #f4b942;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.update-banner-actions button.ghost {
+  color: #e9edf2;
+  background: transparent;
+  border: 1px solid #39434e;
+}
+
+.update-banner-actions button:hover {
+  filter: brightness(1.05);
 }
 
 .page {
