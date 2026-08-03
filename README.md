@@ -7,11 +7,17 @@ Native Win/Linux lap timer for Forza Horizon 6 (Tauri 2 + React + SQLite). Local
 ## Development
 
 ```bash
-npm install
+git clone https://github.com/SirSoto25/forzaLapTracker
+cd forzaLapTracker
+npm i
 npm run tauri dev
 ```
 
+Run tests with `npm test`.
+
 Build the frontend with `npm run build` or the desktop app with `npm run tauri build`.
+
+**Windows:** Native builds need [Visual Studio Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/) (MSVC + Windows SDK). Install the “Desktop development with C++” workload before `npm run tauri build`.
 
 ## Specs
 
