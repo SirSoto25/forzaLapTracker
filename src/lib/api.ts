@@ -65,6 +65,11 @@ export async function createCar(
   return result.lastInsertId!;
 }
 
+/** Stub until Task 10 wires Tauri download; never blocks lap save. */
+export async function ensureCarImage(_carId: number): Promise<string | null> {
+  return null;
+}
+
 export async function insertLap(lap: NewLap): Promise<number> {
   if (!Number.isInteger(lap.timeMs) || lap.timeMs < 0) {
     throw new Error("timeMs must be a non-negative integer");

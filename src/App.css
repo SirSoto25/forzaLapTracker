@@ -252,6 +252,143 @@ main {
   color: #ffb4b4;
 }
 
+.form-success {
+  margin: 12px 0 0;
+  color: #9fd89f;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 32px;
+  max-width: 520px;
+}
+
+.register-form label,
+.car-picker-model {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #8f9aa6;
+  font-size: 0.85rem;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #8f9aa6;
+  font-size: 0.85rem;
+}
+
+.register-form input,
+.register-form select,
+.register-form textarea,
+.car-picker-model select {
+  padding: 10px 12px;
+  color: #e9edf2;
+  background: #191f26;
+  border: 1px solid #39434e;
+  border-radius: 7px;
+  font: inherit;
+}
+
+.register-form button[type="submit"] {
+  align-self: flex-start;
+  padding: 10px 16px;
+  color: #11151a;
+  background: #f4b942;
+  border: 1px solid #f4b942;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.register-form button[type="submit"]:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.pi-class {
+  margin-top: 4px;
+  color: #e9edf2;
+  font-size: 0.9rem;
+}
+
+.car-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.car-picker-brands {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.car-picker-brands legend {
+  margin-bottom: 8px;
+  color: #8f9aa6;
+  font-size: 0.85rem;
+}
+
+.car-picker-brand-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.car-picker-brand-grid button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  color: #aeb7c2;
+  background: #191f26;
+  border: 1px solid #39434e;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.car-picker-brand-grid button img {
+  display: block;
+  object-fit: contain;
+}
+
+.car-picker-brand-grid button:hover,
+.car-picker-brand-grid button.active {
+  color: #11151a;
+  background: #f4b942;
+  border-color: #f4b942;
+}
+
+.car-picker-preview {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.car-picker-preview p {
+  margin: 0;
+  color: #e9edf2;
+}
+
+.car-thumb {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #191f26;
+  border: 1px solid #39434e;
+}
+
+.car-thumb.placeholder {
+  display: grid;
+  place-items: center;
+  color: #8f9aa6;
+  font-weight: 700;
+}
+
 .locale-picker {
   display: flex;
   gap: 10px;
