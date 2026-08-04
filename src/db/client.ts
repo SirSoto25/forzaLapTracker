@@ -135,6 +135,13 @@ export function initDb(): Promise<void> {
   return initPromise;
 }
 
+/** Re-upsert seed catalog after a replace import so builtins return. */
+export async function runSeedUpsert(): Promise<void> {
+  const db = await getDb();
+  await upsertSeed(db);
+  await setSettingValue(db, SEED_VERSION_KEY, SEED_VERSION);
+}
+
 export async function getDb(): Promise<Database> {
   await initDb();
   return dbPromise!;

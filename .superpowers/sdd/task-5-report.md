@@ -1,20 +1,30 @@
-# Task 5 report: App shell + i18n ES/EN
+# Task 5 Report: API + file I/O wiring
 
-## Implemented
+## Status
+**DONE**
 
-- Replaced the Vite starter screen with a responsive app shell and state-based navigation for Circuits, Register, History, Compare, and Settings.
-- Added Spanish and English catalogs with Spanish as the default locale.
-- Added `t`, `loadLocale`, and `setLocale`; locale changes persist through `setting.locale`.
-- Initialized SQLite on app startup and restored the saved locale after initialization.
-- Added placeholder route bodies and a functional, accessible locale picker in Settings.
-- Added focused tests for default locale, stored locale loading, translation, and persistence.
+## Summary
+Wired backup export/import through Tauri dialog + filesystem plugins. Export selects DB rows (natural-key joins), builds a validated payload, and writes via save dialog. Import opens a file, fail-closed parses with Zod, applies replace/merge, and reseeds builtins after replace.
 
-## Verification
+## Changes
+- **Added** `src/lib/backup/io.ts`
+  - `exportBackup()` → `"saved" | "cancelled"`
+  - `importBackup(mode)` → `"imported" | "cancelled" | { error }`
+  - `importBackupText(text, mode)` pure helper for parse/apply (dialogs stay on public surface)
+  - `selectBackupSourceRows(db)` SQL matching `BackupSourceRows`
+  - Filters: `[{ name: "Forza Lap Tracker Backup", extensions: ["fltbackup.json", "json"] }]`
+- **Added** `src/lib/backup/io.test.ts` — smoke tests: invalid JSON/schema never call `applyBackup`; replace reseeds; merge does not; apply throw → `{ error }`
+- **Modified** `src/db/client.ts` — exported `runSeedUpsert()` (`upsertSeed` + `seed_version` write)
+- **Modified** `src/lib/api.ts` — re-exports `exportBackup` / `importBackup` (+ result types)
 
-- `npm test`: 6 files passed, 26 tests passed.
-- `tsc --noEmit`: passed.
-- `graphify update .`: completed; tracked graph metadata refreshed.
+## Tests
+`npm test` — 12 files / 61 tests passed  
+`npx tsc --noEmit` — clean
+
+## Commit
+`feat: wire backup export and import file dialogs`
 
 ## Concerns
-
-- No Tauri GUI smoke test was run; navigation and locale behavior were verified through type-checking and the i18n tests.
+- Dialog cancel/save paths are not unit-tested against live Tauri plugins (mocked only through `importBackupText`).
+- Suggested save name uses UTC date from `toISOString().slice(0, 10)`.
+- No Settings UI yet (Task 6).

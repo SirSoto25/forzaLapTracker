@@ -321,3 +321,9 @@ export async function setSetting(key: string, value: string): Promise<void> {
     [key, value],
   );
 }
+
+export { exportBackup, importBackup } from "./backup/io";
+export type {
+  ExportBackupResult,
+  ImportBackupResult,
+} from "./backup/io";

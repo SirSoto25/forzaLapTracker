@@ -1,16 +1,16 @@
 # Graph Report - forzaLapTracker  (2026-08-04)
 
 ## Corpus Check
-- 157 files · ~169,461 words
+- 159 files · ~170,304 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1401 nodes · 1801 edges · 125 communities (107 shown, 18 thin omitted)
+- 1413 nodes · 1841 edges · 125 communities (106 shown, 19 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 16 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e9f15c99`
+- Built from commit: `5773ade8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -134,8 +134,8 @@
 
 ## God Nodes (most connected - your core abstractions)
 1. `DesignSystemGenerator` - 29 edges
-2. `t()` - 24 edges
-3. `getDb()` - 21 edges
+2. `getDb()` - 25 edges
+3. `t()` - 24 edges
 4. `BM25` - 17 edges
 5. `compilerOptions` - 16 edges
 6. `tasteskill: Anti-Slop Frontend Skill` - 16 edges
@@ -159,7 +159,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (125 total, 18 thin omitted)
+## Communities (125 total, 19 thin omitted)
 
 ### Community 0 - "compilerOptions"
 Cohesion: 0.09
@@ -387,7 +387,7 @@ Nodes (6): ADR shape, Layout, Living project docs (template), Project specializa
 
 ### Community 63 - "api.ts"
 Cohesion: 0.06
-Nodes (79): App(), BootState, Route, routes, CarPicker(), CarPickerProps, TimeInput(), TimeInputProps (+71 more)
+Nodes (80): App(), BootState, Route, routes, CarPicker(), CarPickerProps, TimeInput(), TimeInputProps (+72 more)
 
 ### Community 64 - "Context continuity (Forza Lap Tracker)"
 Cohesion: 0.29
@@ -526,8 +526,8 @@ Cohesion: 0.14
 Nodes (13): File map, GitHub Releases + In-App Update Notice Implementation Plan, Global Constraints, Placeholder / consistency self-review, Spec coverage checklist, Task 1: Semver helpers (TDD), Task 2: GitHub latest-release check (TDD), Task 3: Tauri CSP + opener allowlist for GitHub (+5 more)
 
 ### Community 116 - "detect_domain"
-Cohesion: 0.09
-Nodes (33): applyBackup(), ApplyDb, ApplyMode, ApplyOp, executeApplyOps(), executeOp(), ExistingSnapshot, LapDedupeFields (+25 more)
+Cohesion: 0.06
+Nodes (49): getSettingValue(), initDb(), manufacturerIdMap(), pruneObsoleteBuiltins(), runSeedUpsert(), SEED_VERSION, setSettingValue(), upsertSeed() (+41 more)
 
 ### Community 117 - "semver.ts"
 Cohesion: 0.13
@@ -549,14 +549,10 @@ Nodes (3): detect_domain(), Auto-detect the most relevant domain from query.    
 Cohesion: 0.83
 Nodes (3): _check_file(), main(), _read_rows()
 
-### Community 124 - "updateCheck.ts"
-Cohesion: 0.31
-Nodes (8): githubReleasesLatestApiUrl(), compareSemver(), parseSemver(), Semver, checkForAppUpdate(), fetchLatestRelease(), shouldNotifyUpdate(), UpdateCheckResult
-
 ## Knowledge Gaps
 - **746 isolated node(s):** `fs`, `path`, `name`, `private`, `version` (+741 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **18 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **19 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -564,9 +560,9 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `DesignSystemGenerator` connect `DesignSystemGenerator` to `BM25`, `design_system.py`, `design_system.py`, `semver.ts`, `test_design_system_mode.py`, `updateCheck.ts`, `_palette_is_dark`?**
   _High betweenness centrality (0.005) - this node is a cross-community bridge._
 - **Why does `tasteskill: Anti-Slop Frontend Skill` connect `tasteskill: Anti-Slop Frontend Skill` to `0. BRIEF INFERENCE (Read the Room Before Anything Else)`, `12. THE BLOCK LIBRARY (Contract - Implementations Land Here Iteratively)`, `5. CONTEXT-AWARE PROACTIVITY`, `8. DARK MODE PROTOCOL`, `4. DESIGN ENGINEERING DIRECTIVES (Bias Correction)`, `10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know)`, `Appendix B - Canonical Sources (read these before reinventing)`, `9. AI TELLS (Forbidden Patterns)`, `validate_data.py`, `11. REDESIGN PROTOCOL`, `3. DEFAULT ARCHITECTURE & CONVENTIONS`, `6. PERFORMANCE & ACCESSIBILITY GUARDRAILS`?**
-  _High betweenness centrality (0.005) - this node is a cross-community bridge._
-- **Why does `Session Handoff Skill` connect `Session Handoff Skill` to `Evaluation Test Scenarios`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
+- **Why does `Session Handoff Skill` connect `Session Handoff Skill` to `Evaluation Test Scenarios`?**
+  _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **Are the 10 inferred relationships involving `DesignSystemGenerator` (e.g. with `TestDomainDetection` and `TestPersistence`) actually correct?**
   _`DesignSystemGenerator` has 10 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 5 inferred relationships involving `BM25` (e.g. with `TestDomainDetection` and `TestPersistence`) actually correct?**

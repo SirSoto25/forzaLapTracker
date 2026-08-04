@@ -660,8 +660,8 @@
     "semantic_hash": ""
   },
   "src/db/client.ts": {
-    "mtime": 1785861011.5574465,
-    "ast_hash": "65669e12f6a3ade46eb3bdfbfe4ae373",
+    "mtime": 1785864024.5711849,
+    "ast_hash": "53aae1e8ac28fb134cfa76a7b2d16db3",
     "semantic_hash": ""
   },
   "src/db/migrations/001_init.sql": {
@@ -710,8 +710,8 @@
     "semantic_hash": ""
   },
   "src/lib/api.ts": {
-    "mtime": 1785861011.5684588,
-    "ast_hash": "fc439ee0b7a847043d4c35bfffa8b31a",
+    "mtime": 1785864044.711506,
+    "ast_hash": "70628026f14f27d31f53ef1e70e147b7",
     "semantic_hash": ""
   },
   "vitest.config.ts": {
@@ -1347,6 +1347,16 @@
   "src/lib/backup/applyBackup.ts": {
     "mtime": 1785863330.2053373,
     "ast_hash": "d81a0205135e653c12ea5a74e6aefb0e",
+    "semantic_hash": ""
+  },
+  "src/lib/backup/io.test.ts": {
+    "mtime": 1785864036.6113124,
+    "ast_hash": "4905a10cf85f354cbce289df6de2fa90",
+    "semantic_hash": ""
+  },
+  "src/lib/backup/io.ts": {
+    "mtime": 1785864030.355207,
+    "ast_hash": "2cae6b0c38767758bf5d8efd90094717",
     "semantic_hash": ""
   }
 }

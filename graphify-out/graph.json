@@ -4069,8 +4069,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_db_client",
-      "community": 63,
-      "community_name": "api.ts",
+      "community": 116,
+      "community_name": "detect_domain",
       "norm_label": "client.ts"
     },
     {
@@ -4080,8 +4080,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "src_db_client_seed_version",
-      "community": 63,
-      "community_name": "api.ts",
+      "community": 116,
+      "community_name": "detect_domain",
       "norm_label": "seed_version"
     },
     {
@@ -4091,8 +4091,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "src_db_client_getsettingvalue",
-      "community": 63,
-      "community_name": "api.ts",
+      "community": 116,
+      "community_name": "detect_domain",
       "norm_label": "getsettingvalue()"
     },
     {
@@ -4102,8 +4102,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "src_db_client_setsettingvalue",
-      "community": 63,
-      "community_name": "api.ts",
+      "community": 116,
+      "community_name": "detect_domain",
       "norm_label": "setsettingvalue()"
     },
     {
@@ -4113,8 +4113,8 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "src_db_client_manufactureridmap",
-      "community": 63,
-      "community_name": "api.ts",
+      "community": 116,
+      "community_name": "detect_domain",
       "norm_label": "manufactureridmap()"
     },
     {
@@ -4124,8 +4124,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "src_db_client_upsertseed",
-      "community": 63,
-      "community_name": "api.ts",
+      "community": 116,
+      "community_name": "detect_domain",
       "norm_label": "upsertseed()"
     },
     {
@@ -4135,8 +4135,8 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "src_db_client_pruneobsoletebuiltins",
-      "community": 63,
-      "community_name": "api.ts",
+      "community": 116,
+      "community_name": "detect_domain",
       "norm_label": "pruneobsoletebuiltins()"
     },
     {
@@ -4146,15 +4146,26 @@
       "source_location": "L122",
       "_origin": "ast",
       "id": "src_db_client_initdb",
-      "community": 63,
-      "community_name": "api.ts",
+      "community": 116,
+      "community_name": "detect_domain",
       "norm_label": "initdb()"
+    },
+    {
+      "label": "runSeedUpsert()",
+      "file_type": "code",
+      "source_file": "src/db/client.ts",
+      "source_location": "L139",
+      "_origin": "ast",
+      "id": "src_db_client_runseedupsert",
+      "community": 116,
+      "community_name": "detect_domain",
+      "norm_label": "runseedupsert()"
     },
     {
       "label": "getDb()",
       "file_type": "code",
       "source_file": "src/db/client.ts",
-      "source_location": "L138",
+      "source_location": "L145",
       "_origin": "ast",
       "id": "src_db_client_getdb",
       "community": 63,
@@ -5031,6 +5042,127 @@
       "norm_label": "buildbackuppayload()"
     },
     {
+      "label": "io.test.ts",
+      "file_type": "code",
+      "source_file": "src/lib/backup/io.test.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_lib_backup_io_test",
+      "community": 124,
+      "community_name": "updateCheck.ts",
+      "norm_label": "io.test.ts"
+    },
+    {
+      "label": "{ applyBackup, getDb, runSeedUpsert }",
+      "file_type": "code",
+      "source_file": "src/lib/backup/io.test.ts",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "src_lib_backup_io_test_applybackup_getdb_runseedupsert",
+      "community": 124,
+      "community_name": "updateCheck.ts",
+      "norm_label": "{ applybackup, getdb, runseedupsert }"
+    },
+    {
+      "label": "io.ts",
+      "file_type": "code",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_lib_backup_io",
+      "community": 116,
+      "community_name": "detect_domain",
+      "norm_label": "io.ts"
+    },
+    {
+      "label": "BACKUP_FILTERS",
+      "file_type": "code",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "src_lib_backup_io_backup_filters",
+      "community": 116,
+      "community_name": "detect_domain",
+      "norm_label": "backup_filters"
+    },
+    {
+      "label": "QueryDb",
+      "file_type": "code",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "src_lib_backup_io_querydb",
+      "community": 116,
+      "community_name": "detect_domain",
+      "norm_label": "querydb"
+    },
+    {
+      "label": "ExportBackupResult",
+      "file_type": "code",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "src_lib_backup_io_exportbackupresult",
+      "community": 116,
+      "community_name": "detect_domain",
+      "norm_label": "exportbackupresult"
+    },
+    {
+      "label": "ImportBackupResult",
+      "file_type": "code",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "src_lib_backup_io_importbackupresult",
+      "community": 116,
+      "community_name": "detect_domain",
+      "norm_label": "importbackupresult"
+    },
+    {
+      "label": "selectBackupSourceRows()",
+      "file_type": "code",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "src_lib_backup_io_selectbackupsourcerows",
+      "community": 116,
+      "community_name": "detect_domain",
+      "norm_label": "selectbackupsourcerows()"
+    },
+    {
+      "label": "importBackupText()",
+      "file_type": "code",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L91",
+      "_origin": "ast",
+      "id": "src_lib_backup_io_importbackuptext",
+      "community": 116,
+      "community_name": "detect_domain",
+      "norm_label": "importbackuptext()"
+    },
+    {
+      "label": "exportBackup()",
+      "file_type": "code",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L114",
+      "_origin": "ast",
+      "id": "src_lib_backup_io_exportbackup",
+      "community": 116,
+      "community_name": "detect_domain",
+      "norm_label": "exportbackup()"
+    },
+    {
+      "label": "importBackup()",
+      "file_type": "code",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L129",
+      "_origin": "ast",
+      "id": "src_lib_backup_io_importbackup",
+      "community": 116,
+      "community_name": "detect_domain",
+      "norm_label": "importbackup()"
+    },
+    {
       "label": "schema.test.ts",
       "file_type": "code",
       "source_file": "src/lib/backup/schema.test.ts",
@@ -5202,8 +5334,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_lib_repo",
-      "community": 124,
-      "community_name": "updateCheck.ts",
+      "community": 63,
+      "community_name": "api.ts",
       "norm_label": "repo.ts"
     },
     {
@@ -5213,8 +5345,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "src_lib_repo_githubreleaseslatestapiurl",
-      "community": 124,
-      "community_name": "updateCheck.ts",
+      "community": 63,
+      "community_name": "api.ts",
       "norm_label": "githubreleaseslatestapiurl()"
     },
     {
@@ -5224,8 +5356,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "src_lib_repo_githubreleasespageurl",
-      "community": 124,
-      "community_name": "updateCheck.ts",
+      "community": 63,
+      "community_name": "api.ts",
       "norm_label": "githubreleasespageurl()"
     },
     {
@@ -5235,8 +5367,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_lib_semver_test",
-      "community": 124,
-      "community_name": "updateCheck.ts",
+      "community": 63,
+      "community_name": "api.ts",
       "norm_label": "semver.test.ts"
     },
     {
@@ -5246,8 +5378,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_lib_semver",
-      "community": 124,
-      "community_name": "updateCheck.ts",
+      "community": 63,
+      "community_name": "api.ts",
       "norm_label": "semver.ts"
     },
     {
@@ -5257,8 +5389,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_lib_semver_semver",
-      "community": 124,
-      "community_name": "updateCheck.ts",
+      "community": 63,
+      "community_name": "api.ts",
       "norm_label": "semver"
     },
     {
@@ -5268,8 +5400,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "src_lib_semver_parsesemver",
-      "community": 124,
-      "community_name": "updateCheck.ts",
+      "community": 63,
+      "community_name": "api.ts",
       "norm_label": "parsesemver()"
     },
     {
@@ -5279,8 +5411,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_lib_semver_comparesemver",
-      "community": 124,
-      "community_name": "updateCheck.ts",
+      "community": 63,
+      "community_name": "api.ts",
       "norm_label": "comparesemver()"
     },
     {
@@ -5290,8 +5422,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_lib_updatecheck_test",
-      "community": 124,
-      "community_name": "updateCheck.ts",
+      "community": 63,
+      "community_name": "api.ts",
       "norm_label": "updatecheck.test.ts"
     },
     {
@@ -5301,8 +5433,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_lib_updatecheck",
-      "community": 124,
-      "community_name": "updateCheck.ts",
+      "community": 63,
+      "community_name": "api.ts",
       "norm_label": "updatecheck.ts"
     },
     {
@@ -5323,8 +5455,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "src_lib_updatecheck_updatecheckresult",
-      "community": 124,
-      "community_name": "updateCheck.ts",
+      "community": 63,
+      "community_name": "api.ts",
       "norm_label": "updatecheckresult"
     },
     {
@@ -5334,8 +5466,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_lib_updatecheck_shouldnotifyupdate",
-      "community": 124,
-      "community_name": "updateCheck.ts",
+      "community": 63,
+      "community_name": "api.ts",
       "norm_label": "shouldnotifyupdate()"
     },
     {
@@ -5345,8 +5477,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "src_lib_updatecheck_fetchlatestrelease",
-      "community": 124,
-      "community_name": "updateCheck.ts",
+      "community": 63,
+      "community_name": "api.ts",
       "norm_label": "fetchlatestrelease()"
     },
     {
@@ -5356,8 +5488,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "src_lib_updatecheck_checkforappupdate",
-      "community": 124,
-      "community_name": "updateCheck.ts",
+      "community": 63,
+      "community_name": "api.ts",
       "norm_label": "checkforappupdate()"
     },
     {
@@ -22439,7 +22571,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/db/client.ts",
-      "source_location": "L138",
+      "source_location": "L145",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_db_client",
@@ -22494,6 +22626,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/db/client.ts",
+      "source_location": "L139",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_db_client",
+      "target": "src_db_client_runseedupsert",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/db/client.ts",
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
@@ -22536,6 +22679,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_db_client",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -22556,6 +22711,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_db_client_initdb",
+      "target": "src_db_client_setsettingvalue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/db/client.ts",
+      "source_location": "L142",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_db_client_runseedupsert",
       "target": "src_db_client_setsettingvalue",
       "confidence_score": 1.0
     },
@@ -22588,6 +22755,18 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/db/client.ts",
+      "source_location": "L141",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_db_client_runseedupsert",
+      "target": "src_db_client_upsertseed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/db/client.ts",
       "source_location": "L130",
       "weight": 1.0,
       "_origin": "ast",
@@ -22600,12 +22779,48 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/db/client.ts",
-      "source_location": "L139",
+      "source_location": "L146",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_db_client_getdb",
       "target": "src_db_client_initdb",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/db/client.ts",
+      "source_location": "L140",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_db_client_runseedupsert",
+      "target": "src_db_client_getdb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_db_client_runseedupsert",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io_importbackuptext",
+      "target": "src_db_client_runseedupsert"
     },
     {
       "relation": "imports",
@@ -22833,6 +23048,42 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_lib_api_updatemanufacturer",
+      "target": "src_db_client_getdb"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_db_client_getdb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io_exportbackup",
+      "target": "src_db_client_getdb"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io_importbackuptext",
       "target": "src_db_client_getdb"
     },
     {
@@ -23596,6 +23847,18 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_domain_piclass",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/pages/HistoryPage.tsx",
       "source_location": "L5",
       "weight": 1.0,
@@ -23637,6 +23900,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_lib_backup_buildbackup",
+      "target": "src_domain_piclass_carclass",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
       "target": "src_domain_piclass_carclass",
       "confidence_score": 1.0
     },
@@ -24465,6 +24740,66 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L325",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_api",
+      "target": "src_lib_backup_io",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L325",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_api",
+      "target": "src_lib_backup_io_exportbackup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L326",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_api",
+      "target": "src_lib_backup_io_exportbackupresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L325",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_api",
+      "target": "src_lib_backup_io_importbackup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L326",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_api",
+      "target": "src_lib_backup_io_importbackupresult",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -25278,6 +25613,30 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_lib_backup_applybackup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_lib_backup_applybackup_applymode",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "references",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -25396,6 +25755,30 @@
       "source": "src_lib_backup_applybackup_applybackup",
       "target": "src_lib_backup_applybackup_executeapplyops",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_lib_backup_applybackup_applybackup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io_importbackuptext",
+      "target": "src_lib_backup_applybackup_applybackup"
     },
     {
       "relation": "imports_from",
@@ -25605,6 +25988,30 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_lib_backup_buildbackup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_lib_backup_buildbackup_backupsourcerows",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -25615,6 +26022,201 @@
       "source": "src_lib_backup_buildbackup_buildbackuppayload",
       "target": "src_lib_backup_buildbackup_asbuiltin",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_lib_backup_buildbackup_buildbackuppayload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L118",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io_exportbackup",
+      "target": "src_lib_backup_buildbackup_buildbackuppayload"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io_test",
+      "target": "src_lib_backup_io_test_applybackup_getdb_runseedupsert",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_lib_backup_io_backup_filters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_lib_backup_io_exportbackup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_lib_backup_io_exportbackupresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L129",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_lib_backup_io_importbackup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_lib_backup_io_importbackupresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_lib_backup_io_importbackuptext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_lib_backup_io_querydb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_lib_backup_io_selectbackupsourcerows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_lib_backup_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io",
+      "target": "src_lib_backup_schema_parsebackupjson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io_selectbackupsourcerows",
+      "target": "src_lib_backup_io_querydb"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L117",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io_exportbackup",
+      "target": "src_lib_backup_io_selectbackupsourcerows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L138",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io_importbackup",
+      "target": "src_lib_backup_io_importbackuptext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/backup/io.ts",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_backup_io_importbackuptext",
+      "target": "src_lib_backup_schema_parsebackupjson"
     },
     {
       "relation": "imports_from",
@@ -35767,5 +36369,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "e9f15c992f1aa7a8a8a9683d8ce33b0c3a75f538"
+  "built_at_commit": "5773ade8f793beb34977708ea79bc7aca7b34f4a"
 }
