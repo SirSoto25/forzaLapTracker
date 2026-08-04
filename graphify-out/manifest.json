@@ -65,8 +65,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1785785181.1469367,
-    "ast_hash": "1ddbdde1aec1e439f11a551d74549238",
+    "mtime": 1785864836.5204375,
+    "ast_hash": "85b0db4f10fbe9c1b9993fd83a849e39",
     "semantic_hash": ""
   },
   "index.html": {
@@ -725,13 +725,13 @@
     "semantic_hash": ""
   },
   "src/i18n/en.json": {
-    "mtime": 1785861011.5000076,
-    "ast_hash": "cb16d8f13245b283d26135172f36bd41",
+    "mtime": 1785864527.7971,
+    "ast_hash": "1c6b36aa37397372f42eb44f1638dbe2",
     "semantic_hash": ""
   },
   "src/i18n/es.json": {
-    "mtime": 1785861011.571456,
-    "ast_hash": "72060d7d3ef238591c64c1a58082dc65",
+    "mtime": 1785864526.8857608,
+    "ast_hash": "146a4556ba574c0dd797d32bd976f904",
     "semantic_hash": ""
   },
   "src/i18n/index.test.ts": {
@@ -745,8 +745,8 @@
     "semantic_hash": ""
   },
   "src/pages/SettingsPage.tsx": {
-    "mtime": 1785785181.1830628,
-    "ast_hash": "997557dd76fec8b5053ed75446262a08",
+    "mtime": 1785864525.8574042,
+    "ast_hash": "c4c8021042da94d12e71e96b080dab4f",
     "semantic_hash": ""
   },
   "src/pages/CircuitsPage.tsx": {

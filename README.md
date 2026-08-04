@@ -19,6 +19,8 @@ Build the frontend with `npm run build` or the desktop app with `npm run tauri b
 
 **Windows:** Native builds need [Visual Studio Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/) (MSVC + Windows SDK). Install the “Desktop development with C++” workload before `npm run tauri build`.
 
+**Backup:** Export and import lap data from Settings. Files use Zod-validated `.fltbackup.json`. Import offers Replace (wipe local data first) or Merge (upsert by natural keys). Payload is data only — car image cache is not included.
+
 ## Releases
 
 Download installers from [GitHub Releases](https://github.com/SirSoto25/forzaLapTracker/releases).
