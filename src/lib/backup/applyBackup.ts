@@ -1,3 +1,4 @@
+import { invoke } from "@tauri-apps/api/core";
 import { piToClass, type CarClass } from "../../domain/piClass";
 import type { BackupFileV1 } from "./schema";
 
@@ -92,6 +93,8 @@ export type ApplyDb = {
   ): Promise<{ rowsAffected: number; lastInsertId?: number }>;
   select<T>(query: string, bindValues?: unknown[]): Promise<T>;
 };
+
+export type ApplyOpsExecutor = (db: ApplyDb, ops: ApplyOp[]) => Promise<void>;
 
 type LapDedupeFields = {
   circuit_name: string;
@@ -226,13 +229,27 @@ export function planMerge(
   return ops;
 }
 
+async function requireInsert(
+  db: ApplyDb,
+  kind: string,
+  query: string,
+  bindValues?: unknown[],
+): Promise<void> {
+  const result = await db.execute(query, bindValues);
+  if (result.rowsAffected === 0) {
+    throw new Error(`${kind} affected 0 rows`);
+  }
+}
+
 async function executeOp(db: ApplyDb, op: ApplyOp): Promise<void> {
   switch (op.kind) {
     case "deleteAll":
       await db.execute(`DELETE FROM ${op.table}`);
       return;
     case "insertManufacturer":
-      await db.execute(
+      await requireInsert(
+        db,
+        op.kind,
         `INSERT INTO manufacturer (name, icon_path, is_builtin)
         VALUES ($1, $2, $3)`,
         [op.name, op.icon_path, op.is_builtin],
@@ -249,7 +266,9 @@ async function executeOp(db: ApplyDb, op: ApplyOp): Promise<void> {
       );
       return;
     case "insertCar":
-      await db.execute(
+      await requireInsert(
+        db,
+        op.kind,
         `INSERT INTO car (manufacturer_id, model, is_builtin, image_url)
         SELECT id, $1, $2, $3 FROM manufacturer WHERE name = $4`,
         [op.model, op.is_builtin, op.image_url, op.manufacturer_name],
@@ -268,7 +287,9 @@ async function executeOp(db: ApplyDb, op: ApplyOp): Promise<void> {
       );
       return;
     case "insertCircuit":
-      await db.execute(
+      await requireInsert(
+        db,
+        op.kind,
         `INSERT INTO circuit (name, is_builtin) VALUES ($1, $2)`,
         [op.name, op.is_builtin],
       );
@@ -281,7 +302,9 @@ async function executeOp(db: ApplyDb, op: ApplyOp): Promise<void> {
       );
       return;
     case "insertLap":
-      await db.execute(
+      await requireInsert(
+        db,
+        op.kind,
         `INSERT INTO lap (
           circuit_id, car_id, pi, class, time_ms, notes, recorded_at
         )
@@ -312,7 +335,9 @@ async function executeOp(db: ApplyDb, op: ApplyOp): Promise<void> {
   }
 }
 
-async function loadExistingSnapshot(db: ApplyDb): Promise<ExistingSnapshot> {
+export async function loadExistingSnapshot(
+  db: ApplyDb,
+): Promise<ExistingSnapshot> {
   const manufacturers = await db.select<ExistingSnapshot["manufacturers"]>(
     `SELECT name, icon_path, is_builtin FROM manufacturer`,
   );
@@ -341,6 +366,10 @@ async function loadExistingSnapshot(db: ApplyDb): Promise<ExistingSnapshot> {
   return { manufacturers, cars, circuits, laps, settings };
 }
 
+/**
+ * Testable ApplyDb executor (mock DB). Not atomic under plugin-sql pooling —
+ * production uses `apply_backup_ops` via invoke instead.
+ */
 export async function executeApplyOps(
   db: ApplyDb,
   ops: ApplyOp[],
@@ -361,15 +390,23 @@ export async function executeApplyOps(
   }
 }
 
-/** Apply a validated backup inside a SQLite transaction. */
+/** Production executor: single-connection transaction in Rust. */
+export async function applyBackupOpsNative(ops: ApplyOp[]): Promise<void> {
+  await invoke("apply_backup_ops", { ops });
+}
+
+/** Apply a validated backup. Production uses Rust; tests inject executeApplyOps. */
 export async function applyBackup(
   db: ApplyDb,
   backup: BackupFileV1,
   mode: ApplyMode,
+  executeOps: ApplyOpsExecutor = async (_db, ops) => {
+    await applyBackupOpsNative(ops);
+  },
 ): Promise<void> {
   const ops =
     mode === "replace"
       ? planReplace(backup)
       : planMerge(backup, await loadExistingSnapshot(db));
-  await executeApplyOps(db, ops);
+  await executeOps(db, ops);
 }

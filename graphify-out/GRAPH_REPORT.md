@@ -1,16 +1,16 @@
 # Graph Report - forzaLapTracker  (2026-08-04)
 
 ## Corpus Check
-- 159 files · ~170,634 words
+- 160 files · ~172,126 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1415 nodes · 1845 edges · 126 communities (107 shown, 19 thin omitted)
+- 1439 nodes · 1906 edges · 127 communities (108 shown, 19 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 16 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7a8f555c`
+- Built from commit: `ae2de74a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -132,6 +132,7 @@
 - validate_data.py
 - updateCheck.ts
 - updateCheck.ts
+- backup.rs
 
 ## God Nodes (most connected - your core abstractions)
 1. `DesignSystemGenerator` - 29 edges
@@ -160,7 +161,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (126 total, 19 thin omitted)
+## Communities (127 total, 19 thin omitted)
 
 ### Community 0 - "compilerOptions"
 Cohesion: 0.09
@@ -388,7 +389,7 @@ Nodes (6): ADR shape, Layout, Living project docs (template), Project specializa
 
 ### Community 63 - "api.ts"
 Cohesion: 0.06
-Nodes (73): App(), BootState, Route, routes, CarPicker(), CarPickerProps, TimeInput(), TimeInputProps (+65 more)
+Nodes (74): App(), BootState, Route, routes, CarPicker(), CarPickerProps, TimeInput(), TimeInputProps (+66 more)
 
 ### Community 64 - "Context continuity (Forza Lap Tracker)"
 Cohesion: 0.29
@@ -480,7 +481,7 @@ Nodes (6): Automated smoke (run on any host), Deferred, Host limitation (this CI
 
 ### Community 101 - "1. THE THREE DIALS (Core Configuration)"
 Cohesion: 0.38
-Nodes (11): AppHandle, Option, PathBuf, Result, cars_dir(), ensure_car_image(), ensure_car_image_inner(), find_cached() (+3 more)
+Nodes (11): cars_dir(), ensure_car_image(), ensure_car_image_inner(), find_cached(), pick_extension(), AppHandle, Option, Path (+3 more)
 
 ### Community 102 - "Agentic Council — Orchestrator Map (RESTRICTED)"
 Cohesion: 0.25
@@ -528,7 +529,7 @@ Nodes (13): File map, GitHub Releases + In-App Update Notice Implementation Plan
 
 ### Community 116 - "detect_domain"
 Cohesion: 0.06
-Nodes (49): getSettingValue(), initDb(), manufacturerIdMap(), pruneObsoleteBuiltins(), runSeedUpsert(), SEED_VERSION, setSettingValue(), upsertSeed() (+41 more)
+Nodes (55): closeDb(), getSettingValue(), initDb(), manufacturerIdMap(), pruneObsoleteBuiltins(), runSeedUpsert(), SEED_VERSION, setSettingValue() (+47 more)
 
 ### Community 117 - "semver.ts"
 Cohesion: 0.13
@@ -554,8 +555,12 @@ Nodes (3): _check_file(), main(), _read_rows()
 Cohesion: 0.31
 Nodes (8): githubReleasesLatestApiUrl(), compareSemver(), parseSemver(), Semver, checkForAppUpdate(), fetchLatestRelease(), shouldNotifyUpdate(), UpdateCheckResult
 
+### Community 126 - "backup.rs"
+Cohesion: 0.31
+Nodes (15): Connection, apply_backup_ops(), apply_ops_on_connection(), ApplyOp, db_path(), execute_op(), insert_car_zero_rows_errors_and_rolls_back(), require_rows() (+7 more)
+
 ## Knowledge Gaps
-- **747 isolated node(s):** `fs`, `path`, `name`, `private`, `version` (+742 more)
+- **748 isolated node(s):** `fs`, `path`, `name`, `private`, `version` (+743 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **19 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -565,14 +570,14 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `DesignSystemGenerator` connect `DesignSystemGenerator` to `BM25`, `design_system.py`, `design_system.py`, `semver.ts`, `test_design_system_mode.py`, `updateCheck.ts`, `_palette_is_dark`?**
   _High betweenness centrality (0.005) - this node is a cross-community bridge._
 - **Why does `tasteskill: Anti-Slop Frontend Skill` connect `tasteskill: Anti-Slop Frontend Skill` to `0. BRIEF INFERENCE (Read the Room Before Anything Else)`, `12. THE BLOCK LIBRARY (Contract - Implementations Land Here Iteratively)`, `5. CONTEXT-AWARE PROACTIVITY`, `8. DARK MODE PROTOCOL`, `4. DESIGN ENGINEERING DIRECTIVES (Bias Correction)`, `10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know)`, `Appendix B - Canonical Sources (read these before reinventing)`, `9. AI TELLS (Forbidden Patterns)`, `validate_data.py`, `11. REDESIGN PROTOCOL`, `3. DEFAULT ARCHITECTURE & CONVENTIONS`, `6. PERFORMANCE & ACCESSIBILITY GUARDRAILS`?**
-  _High betweenness centrality (0.004) - this node is a cross-community bridge._
-- **Why does `Session Handoff Skill` connect `Session Handoff Skill` to `Evaluation Test Scenarios`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
+- **Why does `search()` connect `semver.ts` to `updateCheck.ts`, `design_system.py`, `_palette_is_dark`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Are the 10 inferred relationships involving `DesignSystemGenerator` (e.g. with `TestDomainDetection` and `TestPersistence`) actually correct?**
   _`DesignSystemGenerator` has 10 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 5 inferred relationships involving `BM25` (e.g. with `TestDomainDetection` and `TestPersistence`) actually correct?**
   _`BM25` has 5 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `fs`, `path`, `name` to the rest of the system?**
-  _747 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _748 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._

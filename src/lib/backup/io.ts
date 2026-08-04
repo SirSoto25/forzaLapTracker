@@ -1,14 +1,18 @@
 import { getVersion } from "@tauri-apps/api/app";
 import { open, save } from "@tauri-apps/plugin-dialog";
 import { readTextFile, writeTextFile } from "@tauri-apps/plugin-fs";
-import { getDb, runSeedUpsert } from "../../db/client";
+import { closeDb, getDb, runSeedUpsert } from "../../db/client";
 import type { CarClass } from "../../domain/piClass";
-import { applyBackup, type ApplyMode } from "./applyBackup";
+import {
+  applyBackup,
+  applyBackupOpsNative,
+  type ApplyMode,
+} from "./applyBackup";
 import {
   buildBackupPayload,
   type BackupSourceRows,
 } from "./buildBackup";
-import { parseBackupJson } from "./schema";
+import { parseBackupJson, type BackupFileV1 } from "./schema";
 
 const BACKUP_FILTERS = [
   {
@@ -26,6 +30,11 @@ export type ImportBackupResult =
   | "imported"
   | "cancelled"
   | { error: string };
+
+export type OpenBackupResult =
+  | "cancelled"
+  | { error: string }
+  | { backup: BackupFileV1 };
 
 /** Load portable backup rows from the live DB (joins natural keys). */
 export async function selectBackupSourceRows(
@@ -84,6 +93,50 @@ export async function selectBackupSourceRows(
   };
 }
 
+/** Open a backup file and Zod-validate; no DB writes. */
+export async function openBackupForImport(): Promise<OpenBackupResult> {
+  const path = await open({
+    filters: BACKUP_FILTERS,
+    multiple: false,
+  });
+  if (path === null) return "cancelled";
+  const text = await readTextFile(path);
+  const parsed = parseBackupJson(text);
+  if (!parsed.ok) {
+    return { error: parsed.message };
+  }
+  return { backup: parsed.data };
+}
+
+/**
+ * Apply an already-validated backup (Replace/Merge after open+validate).
+ * Closes plugin-sql before the Rust single-connection transaction.
+ */
+export async function applyParsedBackup(
+  backup: BackupFileV1,
+  mode: ApplyMode,
+): Promise<"imported" | { error: string }> {
+  const db = await getDb();
+  try {
+    await applyBackup(db, backup, mode, async (_db, ops) => {
+      await closeDb();
+      try {
+        await applyBackupOpsNative(ops);
+      } finally {
+        await getDb();
+      }
+    });
+    if (mode === "replace") {
+      await runSeedUpsert();
+    }
+    return "imported";
+  } catch (err) {
+    return {
+      error: err instanceof Error ? err.message : String(err),
+    };
+  }
+}
+
 /**
  * Parse + apply backup text without file dialogs (unit-testable).
  * Fail-closed: invalid JSON/schema never calls applyBackup.
@@ -96,19 +149,7 @@ export async function importBackupText(
   if (!parsed.ok) {
     return { error: parsed.message };
   }
-
-  const db = await getDb();
-  try {
-    await applyBackup(db, parsed.data, mode);
-    if (mode === "replace") {
-      await runSeedUpsert();
-    }
-    return "imported";
-  } catch (err) {
-    return {
-      error: err instanceof Error ? err.message : String(err),
-    };
-  }
+  return applyParsedBackup(parsed.data, mode);
 }
 
 export async function exportBackup(): Promise<ExportBackupResult> {
@@ -126,14 +167,12 @@ export async function exportBackup(): Promise<ExportBackupResult> {
   return "saved";
 }
 
+/** @deprecated Prefer openBackupForImport + applyParsedBackup (spec UX order). */
 export async function importBackup(
   mode: ApplyMode,
 ): Promise<ImportBackupResult> {
-  const path = await open({
-    filters: BACKUP_FILTERS,
-    multiple: false,
-  });
-  if (path === null) return "cancelled";
-  const text = await readTextFile(path);
-  return importBackupText(text, mode);
+  const opened = await openBackupForImport();
+  if (opened === "cancelled") return "cancelled";
+  if ("error" in opened) return { error: opened.error };
+  return applyParsedBackup(opened.backup, mode);
 }

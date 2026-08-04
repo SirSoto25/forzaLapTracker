@@ -2,7 +2,14 @@ import { useState } from "react";
 import { getVersion } from "@tauri-apps/api/app";
 import { UpdateBanner } from "../components/UpdateBanner";
 import { t, type Locale } from "../i18n";
-import { exportBackup, getSetting, importBackup, setSetting } from "../lib/api";
+import {
+  applyParsedBackup,
+  exportBackup,
+  getSetting,
+  openBackupForImport,
+  setSetting,
+} from "../lib/api";
+import type { BackupFileV1 } from "../lib/backup/schema";
 import { checkForAppUpdate, type UpdateInfo } from "../lib/updateCheck";
 
 type SettingsPageProps = {
@@ -27,7 +34,7 @@ function tf(key: string, vars: Record<string, string>): string {
   );
 }
 
-/** Map importBackup `{ error }` to i18n: parse/schema → invalid; else apply. */
+/** Map import `{ error }` to i18n: parse/schema → invalid; else apply. */
 function backupImportErrorKey(error: string): string {
   if (
     error === "invalid_json" ||
@@ -48,7 +55,7 @@ export function SettingsPage({
   const [status, setStatus] = useState<ManualUpdateStatus>("idle");
   const [manualInfo, setManualInfo] = useState<UpdateInfo | null>(null);
   const [localVersion, setLocalVersion] = useState<string | null>(null);
-  const [choosingImportMode, setChoosingImportMode] = useState(false);
+  const [pendingBackup, setPendingBackup] = useState<BackupFileV1 | null>(null);
   const [backupStatus, setBackupStatus] = useState<string | null>(null);
 
   async function handleCheckForUpdates() {
@@ -89,27 +96,46 @@ export function SettingsPage({
     }
   }
 
-  async function handleImportBackup(mode: ApplyMode) {
+  async function handleOpenImport() {
+    setBackupStatus(null);
+    setPendingBackup(null);
+    try {
+      const result = await openBackupForImport();
+      if (result === "cancelled") {
+        setBackupStatus(t("backup.cancelled"));
+        return;
+      }
+      if ("error" in result) {
+        setBackupStatus(t(backupImportErrorKey(result.error)));
+        return;
+      }
+      setPendingBackup(result.backup);
+    } catch {
+      setBackupStatus(t("backup.errorApply"));
+    }
+  }
+
+  async function handleApplyImport(mode: ApplyMode) {
+    if (!pendingBackup) return;
+
     if (mode === "replace" && !window.confirm(t("backup.replaceConfirm"))) {
       setBackupStatus(t("backup.cancelled"));
-      setChoosingImportMode(false);
+      setPendingBackup(null);
       return;
     }
 
     setBackupStatus(null);
     try {
-      const result = await importBackup(mode);
+      const result = await applyParsedBackup(pendingBackup, mode);
       if (result === "imported") {
         setBackupStatus(t("backup.imported"));
-      } else if (result === "cancelled") {
-        setBackupStatus(t("backup.cancelled"));
       } else {
         setBackupStatus(t(backupImportErrorKey(result.error)));
       }
     } catch {
       setBackupStatus(t("backup.errorApply"));
     } finally {
-      setChoosingImportMode(false);
+      setPendingBackup(null);
     }
   }
 
@@ -178,23 +204,23 @@ export function SettingsPage({
         <button type="button" onClick={() => void handleExportBackup()}>
           {t("backup.export")}
         </button>
-        {choosingImportMode ? (
+        {pendingBackup ? (
           <>
             <button
               type="button"
-              onClick={() => void handleImportBackup("replace")}
+              onClick={() => void handleApplyImport("replace")}
             >
               {t("backup.replace")}
             </button>
             <button
               type="button"
-              onClick={() => void handleImportBackup("merge")}
+              onClick={() => void handleApplyImport("merge")}
             >
               {t("backup.merge")}
             </button>
           </>
         ) : (
-          <button type="button" onClick={() => setChoosingImportMode(true)}>
+          <button type="button" onClick={() => void handleOpenImport()}>
             {t("backup.import")}
           </button>
         )}

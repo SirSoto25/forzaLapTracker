@@ -1,6 +1,7 @@
 import { expect, it, vi } from "vitest";
 import {
   applyBackup,
+  executeApplyOps,
   lapDedupeKey,
   planMerge,
   planReplace,
@@ -270,7 +271,12 @@ it("applyBackup replace runs deletes then inserts inside a transaction", async (
   const execute = vi.fn().mockResolvedValue({ rowsAffected: 1, lastInsertId: 1 });
   const select = vi.fn();
 
-  await applyBackup({ execute, select }, sampleBackup(), "replace");
+  await applyBackup(
+    { execute, select },
+    sampleBackup(),
+    "replace",
+    executeApplyOps,
+  );
 
   const sql = execute.mock.calls.map((c) => String(c[0]));
   expect(sql[0]).toBe("BEGIN IMMEDIATE");
@@ -297,4 +303,29 @@ it("applyBackup replace runs deletes then inserts inside a transaction", async (
     "Special",
     "My Track",
   ]);
+});
+
+it("executeApplyOps fails hard when a required insert affects 0 rows", async () => {
+  const execute = vi.fn().mockImplementation(async (sql: string) => {
+    if (String(sql).startsWith("BEGIN") || String(sql) === "COMMIT") {
+      return { rowsAffected: 0 };
+    }
+    if (String(sql).includes("INSERT INTO manufacturer")) {
+      return { rowsAffected: 0, lastInsertId: 0 };
+    }
+    return { rowsAffected: 1, lastInsertId: 1 };
+  });
+
+  await expect(
+    executeApplyOps({ execute, select: vi.fn() }, [
+      {
+        kind: "insertManufacturer",
+        name: "X",
+        icon_path: "x.svg",
+        is_builtin: 0,
+      },
+    ]),
+  ).rejects.toThrow(/insertManufacturer affected 0 rows/);
+
+  expect(execute.mock.calls.map((c) => String(c[0]))).toContain("ROLLBACK");
 });

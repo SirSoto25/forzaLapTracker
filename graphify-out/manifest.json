@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "src-tauri/src/lib.rs": {
-    "mtime": 1785861950.3554702,
-    "ast_hash": "4b4c414d44987e088cd8fc051adb74e9",
+    "mtime": 1785865562.1967683,
+    "ast_hash": "ed93417a5f643fdb621b548e81233f2b",
     "semantic_hash": ""
   },
   "src-tauri/src/main.rs": {
@@ -660,8 +660,8 @@
     "semantic_hash": ""
   },
   "src/db/client.ts": {
-    "mtime": 1785864024.5711849,
-    "ast_hash": "53aae1e8ac28fb134cfa76a7b2d16db3",
+    "mtime": 1785865564.8809721,
+    "ast_hash": "2f4190a321c68c71f3c444ba848855d7",
     "semantic_hash": ""
   },
   "src/db/migrations/001_init.sql": {
@@ -710,8 +710,8 @@
     "semantic_hash": ""
   },
   "src/lib/api.ts": {
-    "mtime": 1785864044.711506,
-    "ast_hash": "70628026f14f27d31f53ef1e70e147b7",
+    "mtime": 1785865610.8854127,
+    "ast_hash": "c5ee71f7fe47dae1ba2c5f496f261f5e",
     "semantic_hash": ""
   },
   "vitest.config.ts": {
@@ -745,8 +745,8 @@
     "semantic_hash": ""
   },
   "src/pages/SettingsPage.tsx": {
-    "mtime": 1785864525.8574042,
-    "ast_hash": "c4c8021042da94d12e71e96b080dab4f",
+    "mtime": 1785865610.4400296,
+    "ast_hash": "848a1d1146dd27395e05273322177a18",
     "semantic_hash": ""
   },
   "src/pages/CircuitsPage.tsx": {
@@ -1340,23 +1340,28 @@
     "semantic_hash": ""
   },
   "src/lib/backup/applyBackup.test.ts": {
-    "mtime": 1785863393.8877666,
-    "ast_hash": "9c2ea001f2d243588d24206e0ab72ba0",
+    "mtime": 1785865630.3332798,
+    "ast_hash": "ce000789f9e08dae1ded8728b5c9de2c",
     "semantic_hash": ""
   },
   "src/lib/backup/applyBackup.ts": {
-    "mtime": 1785863330.2053373,
-    "ast_hash": "d81a0205135e653c12ea5a74e6aefb0e",
+    "mtime": 1785865594.4401882,
+    "ast_hash": "a753f525285f9be7434f730cd709a63a",
     "semantic_hash": ""
   },
   "src/lib/backup/io.test.ts": {
-    "mtime": 1785864036.6113124,
-    "ast_hash": "4905a10cf85f354cbce289df6de2fa90",
+    "mtime": 1785865649.626041,
+    "ast_hash": "d00c1b12c20866164d59de937a0f2159",
     "semantic_hash": ""
   },
   "src/lib/backup/io.ts": {
-    "mtime": 1785864030.355207,
-    "ast_hash": "2cae6b0c38767758bf5d8efd90094717",
+    "mtime": 1785865601.53551,
+    "ast_hash": "66969e88f17a6d9dfb99e0f89e92af86",
+    "semantic_hash": ""
+  },
+  "src-tauri/src/backup.rs": {
+    "mtime": 1785865857.3368099,
+    "ast_hash": "bd2cd1176668013bbf674b4342e23d7b",
     "semantic_hash": ""
   }
 }

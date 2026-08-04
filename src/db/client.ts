@@ -146,3 +146,12 @@ export async function getDb(): Promise<Database> {
   await initDb();
   return dbPromise!;
 }
+
+/** Close the plugin-sql pool so another process/connection can write the file. */
+export async function closeDb(): Promise<void> {
+  if (!dbPromise) return;
+  const db = await dbPromise;
+  await db.close();
+  dbPromise = undefined;
+  initPromise = undefined;
+}
