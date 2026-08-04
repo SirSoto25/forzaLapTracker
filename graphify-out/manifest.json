@@ -5,8 +5,8 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1785780241.578987,
-    "ast_hash": "73e6c588cbde53f95f593d7cccb14867",
+    "mtime": 1785861902.4870522,
+    "ast_hash": "aa3a64aa2c37d14a954849de914414c5",
     "semantic_hash": ""
   },
   "src-tauri/build.rs": {
@@ -15,13 +15,13 @@
     "semantic_hash": ""
   },
   "src-tauri/capabilities/default.json": {
-    "mtime": 1785780241.6889653,
-    "ast_hash": "47cd86c359bcb0b91f31c771cd1f9824",
+    "mtime": 1785861951.1567204,
+    "ast_hash": "c6671dc206b7b97bfb2b636519c4fecd",
     "semantic_hash": ""
   },
   "src-tauri/src/lib.rs": {
-    "mtime": 1785780241.7175033,
-    "ast_hash": "c9999759bf64d247b8eb0197d183e73c",
+    "mtime": 1785861950.3554702,
+    "ast_hash": "4b4c414d44987e088cd8fc051adb74e9",
     "semantic_hash": ""
   },
   "src-tauri/src/main.rs": {
@@ -30,12 +30,12 @@
     "semantic_hash": ""
   },
   "src-tauri/tauri.conf.json": {
-    "mtime": 1785781979.4314985,
+    "mtime": 1785785181.1648228,
     "ast_hash": "c33026cd9ad1dced1dc6cfc05bdb1cca",
     "semantic_hash": ""
   },
   "src/App.tsx": {
-    "mtime": 1785783764.5312848,
+    "mtime": 1785861011.558459,
     "ast_hash": "ebc2b8cd89ebc519e21e1562b98fdad0",
     "semantic_hash": ""
   },
@@ -65,7 +65,7 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1785782992.415048,
+    "mtime": 1785785181.1469367,
     "ast_hash": "1ddbdde1aec1e439f11a551d74549238",
     "semantic_hash": ""
   },
@@ -655,12 +655,12 @@
     "semantic_hash": ""
   },
   "src/db/client.test.ts": {
-    "mtime": 1785780241.7286825,
+    "mtime": 1785861011.5391607,
     "ast_hash": "88977ae975945417931cec227f2f15ff",
     "semantic_hash": ""
   },
   "src/db/client.ts": {
-    "mtime": 1785780241.7296917,
+    "mtime": 1785861011.5574465,
     "ast_hash": "65669e12f6a3ade46eb3bdfbfe4ae373",
     "semantic_hash": ""
   },
@@ -705,12 +705,12 @@
     "semantic_hash": ""
   },
   "src/lib/api.test.ts": {
-    "mtime": 1785780241.7432206,
+    "mtime": 1785861011.509598,
     "ast_hash": "bf2490b3af97db84d25ec204322632da",
     "semantic_hash": ""
   },
   "src/lib/api.ts": {
-    "mtime": 1785780241.7446177,
+    "mtime": 1785861011.5684588,
     "ast_hash": "fc439ee0b7a847043d4c35bfffa8b31a",
     "semantic_hash": ""
   },
@@ -725,12 +725,12 @@
     "semantic_hash": ""
   },
   "src/i18n/en.json": {
-    "mtime": 1785782248.2083437,
+    "mtime": 1785861011.5000076,
     "ast_hash": "cb16d8f13245b283d26135172f36bd41",
     "semantic_hash": ""
   },
   "src/i18n/es.json": {
-    "mtime": 1785782246.5702133,
+    "mtime": 1785861011.571456,
     "ast_hash": "72060d7d3ef238591c64c1a58082dc65",
     "semantic_hash": ""
   },
@@ -745,17 +745,17 @@
     "semantic_hash": ""
   },
   "src/pages/SettingsPage.tsx": {
-    "mtime": 1785783762.9607105,
+    "mtime": 1785785181.1830628,
     "ast_hash": "997557dd76fec8b5053ed75446262a08",
     "semantic_hash": ""
   },
   "src/pages/CircuitsPage.tsx": {
-    "mtime": 1785780241.7470126,
+    "mtime": 1785861011.5574465,
     "ast_hash": "0a2a6c9cb8214d93b5e2c1bbc79e83fa",
     "semantic_hash": ""
   },
   "src/components/CarPicker.tsx": {
-    "mtime": 1785780241.7271717,
+    "mtime": 1785861011.5574465,
     "ast_hash": "154cba2bbba637b6bbc15d49630776f5",
     "semantic_hash": ""
   },
@@ -1250,58 +1250,103 @@
     "semantic_hash": ""
   },
   "scripts/sdd_review_package.py": {
-    "mtime": 1785781334.999576,
+    "mtime": 1785861011.5110705,
     "ast_hash": "e5ae1a0002f0550fc1f8ea44a59665d2",
     "semantic_hash": ""
   },
   "scripts/sdd_task_brief.py": {
-    "mtime": 1785781328.8239038,
+    "mtime": 1785861011.558459,
     "ast_hash": "ad4b55432afe2bcc0816886a8d525769",
     "semantic_hash": ""
   },
   "src/lib/semver.test.ts": {
-    "mtime": 1785781373.781094,
+    "mtime": 1785785181.178417,
     "ast_hash": "af6e2e4b5eb6787ea9d4f6193177a85e",
     "semantic_hash": ""
   },
   "src/lib/semver.ts": {
-    "mtime": 1785781409.44808,
+    "mtime": 1785785181.1797397,
     "ast_hash": "33a482016d40c40759a8ee343b575fe4",
     "semantic_hash": ""
   },
   "docs/superpowers/plans/2026-08-03-github-releases-update-notice.md": {
-    "mtime": 1785781102.856078,
+    "mtime": 1785785181.1484532,
     "ast_hash": "ad0f75fe51ed283444f98a3cabef4273",
     "semantic_hash": ""
   },
   "docs/superpowers/specs/2026-08-03-github-releases-update-notice-design.md": {
-    "mtime": 1785780551.3260417,
+    "mtime": 1785785181.1504664,
     "ast_hash": "c122cfaf6bce449ba6a667a312e1a510",
     "semantic_hash": ""
   },
   "src/lib/repo.ts": {
-    "mtime": 1785781688.7155044,
+    "mtime": 1785785181.1759417,
     "ast_hash": "cfe18426010086db3c89eb2050d39f69",
     "semantic_hash": ""
   },
   "src/lib/updateCheck.test.ts": {
-    "mtime": 1785783757.0780058,
+    "mtime": 1785785181.1802492,
     "ast_hash": "674088f36e7354e5005137a7ce40381d",
     "semantic_hash": ""
   },
   "src/lib/updateCheck.ts": {
-    "mtime": 1785783752.382359,
+    "mtime": 1785785181.1816757,
     "ast_hash": "0f2ef085fe4d2530e669ce483659d7cc",
     "semantic_hash": ""
   },
   "src/components/UpdateBanner.tsx": {
-    "mtime": 1785783198.2671192,
+    "mtime": 1785785181.1724322,
     "ast_hash": "0d197421d5b00eb0bd621644f829fa22",
     "semantic_hash": ""
   },
   ".github/workflows/release.yml": {
-    "mtime": 1785782801.195795,
+    "mtime": 1785785181.1418645,
     "ast_hash": "adb5eb695f6c3bc37729d8a004ed43b2",
+    "semantic_hash": ""
+  },
+  "src/lib/backup/schema.test.ts": {
+    "mtime": 1785862455.932578,
+    "ast_hash": "5ea67d6933123282a78f0218beefd216",
+    "semantic_hash": ""
+  },
+  "src/lib/backup/schema.ts": {
+    "mtime": 1785862498.7258985,
+    "ast_hash": "5109efa74daa98a76ba0fc0b17db668f",
+    "semantic_hash": ""
+  },
+  "src/lib/backup/types.ts": {
+    "mtime": 1785863397.6070752,
+    "ast_hash": "3ead34f2f02d7f157ee26dd316a069e5",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-08-04-export-import-backup.md": {
+    "mtime": 1785861831.927266,
+    "ast_hash": "584154ebac28429415b6d178f4339f7e",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/specs/2026-08-04-export-import-backup-design.md": {
+    "mtime": 1785861599.819003,
+    "ast_hash": "70d94daf781bc46cef52ff7bab3b6a83",
+    "semantic_hash": ""
+  },
+  "src/lib/backup/buildBackup.test.ts": {
+    "mtime": 1785862883.8702211,
+    "ast_hash": "6259e8ab3043bb6c0c501cf6b3bc0b02",
+    "semantic_hash": ""
+  },
+  "src/lib/backup/buildBackup.ts": {
+    "mtime": 1785862932.6511514,
+    "ast_hash": "246654a2bb1ec7d7d0e2332c42a3bb44",
+    "semantic_hash": ""
+  },
+  "src/lib/backup/applyBackup.test.ts": {
+    "mtime": 1785863393.8877666,
+    "ast_hash": "9c2ea001f2d243588d24206e0ab72ba0",
+    "semantic_hash": ""
+  },
+  "src/lib/backup/applyBackup.ts": {
+    "mtime": 1785863330.2053373,
+    "ast_hash": "d81a0205135e653c12ea5a74e6aefb0e",
     "semantic_hash": ""
   }
 }
