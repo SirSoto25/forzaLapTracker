@@ -9,8 +9,12 @@ import {
   t,
   type Locale,
 } from "./i18n";
-import { setSetting } from "./lib/api";
-import type { UpdateInfo } from "./lib/updateCheck";
+import { getVersion } from "@tauri-apps/api/app";
+import { getSetting, setSetting } from "./lib/api";
+import {
+  checkForAppUpdate,
+  type UpdateInfo,
+} from "./lib/updateCheck";
 import { CatalogPage } from "./pages/CatalogPage";
 import { CircuitsPage } from "./pages/CircuitsPage";
 import { ComparePage } from "./pages/ComparePage";
@@ -70,12 +74,6 @@ function App() {
     if (bootState !== "ready") return;
     void (async () => {
       try {
-        const [{ getVersion }, { checkForAppUpdate }, { getSetting }] =
-          await Promise.all([
-            import("@tauri-apps/api/app"),
-            import("./lib/updateCheck"),
-            import("./lib/api"),
-          ]);
         const localVersion = await getVersion();
         const dismissed = await getSetting("update_dismissed_version");
         const result = await checkForAppUpdate({

@@ -1,6 +1,6 @@
 [package]
 name = "forza-lap-tracker"
-version = "0.2.0"
+version = "0.2.1"
 description = "Local Forza Horizon 6 lap tracker"
 authors = ["you"]
 edition = "2021"
