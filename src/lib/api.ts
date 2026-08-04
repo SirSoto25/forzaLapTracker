@@ -321,3 +321,15 @@ export async function setSetting(key: string, value: string): Promise<void> {
     [key, value],
   );
 }
+
+export {
+  applyParsedBackup,
+  exportBackup,
+  importBackup,
+  openBackupForImport,
+} from "./backup/io";
+export type {
+  ExportBackupResult,
+  ImportBackupResult,
+  OpenBackupResult,
+} from "./backup/io";

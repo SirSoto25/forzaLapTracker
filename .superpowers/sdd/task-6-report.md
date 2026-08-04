@@ -1,43 +1,23 @@
-# Task 6 report: Circuits page
+# Task 6 Report: Settings UI for backup export/import
 
-## Implemented
+## Status
+**DONE**
 
-- Added `src/pages/CircuitsPage.tsx`: lists builtin + custom circuits, add form via `createCircuit`, click shows summary with `bestLap` (time + car via `formatLapTime`).
-- Wired Circuits into `App.tsx` (replaced circuits placeholder). `selectedCircuitId` lifted in App; summary actions navigate to Register / History / Compare with that preselect (placeholders expose `data-circuit-id` until those pages exist).
-- i18n keys in `es.json` / `en.json` (`circuits.*`); dropped unused `page.circuits.placeholder`.
-- Minimal list/add/summary styles in `App.css`.
+## Summary
+Added a Backup fieldset on Settings with Export and Import (Replace / Merge mode choice). Replace asks for `window.confirm` before applying. Status line uses the exact `backup.*` i18n keys in Spanish and English.
 
-## Verification
+## Changes
+- **Modified** `src/pages/SettingsPage.tsx`: third `locale-picker` fieldset; `exportBackup` / `importBackup` from `../lib/api`; import mode buttons after Import; status messages for saved/cancelled/imported/errors
+- **Modified** `src/i18n/es.json`, `src/i18n/en.json`: all required `backup.*` keys
+- **App.css**: unchanged (reused `.locale-picker` / `.muted`)
 
-- `npm test`: 6 files passed, 27 tests passed.
-- `tsc --noEmit`: passed.
-- `graphify update .`: completed.
-
-## Concerns
-
-- Register / History / Compare still placeholders; preselect is stored and stamped on the placeholder section only.
-- No dedicated CircuitsPage unit test (API coverage already exists for `listCircuits` / `createCircuit` / `bestLap`).
-- No Tauri GUI smoke test.
+## Tests
+- `npm test` — 12 files, 61 tests passed
+- `npx tsc --noEmit` — clean
 
 ## Commit
+`feat: add backup export/import controls in settings`
 
-- `d16f786c84d9e7377851847962f7c6f2a2c666b4` — `feat: circuits list and summary` on `feat/mvp`
-
----
-
-## Task 6 review fixes (2026-08-03)
-
-### Changes
-
-1. **bestLap reject no longer sticks on Loading**: on `bestLap` failure, summary sets `best` to `null` (shows empty/no-laps state) while the page-level error alert still surfaces the message.
-2. **Stale bestLap race on circuit switch**: `useEffect` cleanup sets an `active` flag so outdated responses are ignored when `selectedId` changes quickly.
-
-### Verification
-
-- `npm test`: 6 files passed, 27 tests passed.
-- `tsc --noEmit`: passed.
-- `graphify update .`: completed.
-
-### Commit
-
-- `9d96950` — `fix: CircuitsPage bestLap reject and stale fetch` on `feat/mvp`
+## Concerns
+- Import error mapping uses parse codes (`invalid_json` / `invalid_schema`) and Zod-style `path: message` → `backup.errorInvalid`; everything else → `backup.errorApply`. Rare apply errors that look like Zod paths could be misclassified.
+- No dedicated SettingsPage component test (dialogs require Tauri); covered by existing backup unit tests + typecheck.

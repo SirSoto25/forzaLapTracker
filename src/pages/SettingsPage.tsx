@@ -2,7 +2,14 @@ import { useState } from "react";
 import { getVersion } from "@tauri-apps/api/app";
 import { UpdateBanner } from "../components/UpdateBanner";
 import { t, type Locale } from "../i18n";
-import { getSetting, setSetting } from "../lib/api";
+import {
+  applyParsedBackup,
+  exportBackup,
+  getSetting,
+  openBackupForImport,
+  setSetting,
+} from "../lib/api";
+import type { BackupFileV1 } from "../lib/backup/schema";
 import { checkForAppUpdate, type UpdateInfo } from "../lib/updateCheck";
 
 type SettingsPageProps = {
@@ -18,11 +25,26 @@ type ManualUpdateStatus =
   | "available"
   | "failed";
 
+type ApplyMode = "replace" | "merge";
+
 function tf(key: string, vars: Record<string, string>): string {
   return Object.entries(vars).reduce(
     (s, [k, v]) => s.split(`{${k}}`).join(v),
     t(key),
   );
+}
+
+/** Map import `{ error }` to i18n: parse/schema → invalid; else apply. */
+function backupImportErrorKey(error: string): string {
+  if (
+    error === "invalid_json" ||
+    error === "invalid_schema" ||
+    error.startsWith(": ") ||
+    /^[a-zA-Z_][\w.[\]]*:\s/.test(error)
+  ) {
+    return "backup.errorInvalid";
+  }
+  return "backup.errorApply";
 }
 
 export function SettingsPage({
@@ -33,6 +55,8 @@ export function SettingsPage({
   const [status, setStatus] = useState<ManualUpdateStatus>("idle");
   const [manualInfo, setManualInfo] = useState<UpdateInfo | null>(null);
   const [localVersion, setLocalVersion] = useState<string | null>(null);
+  const [pendingBackup, setPendingBackup] = useState<BackupFileV1 | null>(null);
+  const [backupStatus, setBackupStatus] = useState<string | null>(null);
 
   async function handleCheckForUpdates() {
     setStatus("checking");
@@ -57,6 +81,61 @@ export function SettingsPage({
     } catch {
       setManualInfo(null);
       setStatus("failed");
+    }
+  }
+
+  async function handleExportBackup() {
+    setBackupStatus(null);
+    try {
+      const result = await exportBackup();
+      setBackupStatus(
+        result === "saved" ? t("backup.exported") : t("backup.cancelled"),
+      );
+    } catch {
+      setBackupStatus(t("backup.errorApply"));
+    }
+  }
+
+  async function handleOpenImport() {
+    setBackupStatus(null);
+    setPendingBackup(null);
+    try {
+      const result = await openBackupForImport();
+      if (result === "cancelled") {
+        setBackupStatus(t("backup.cancelled"));
+        return;
+      }
+      if ("error" in result) {
+        setBackupStatus(t(backupImportErrorKey(result.error)));
+        return;
+      }
+      setPendingBackup(result.backup);
+    } catch {
+      setBackupStatus(t("backup.errorApply"));
+    }
+  }
+
+  async function handleApplyImport(mode: ApplyMode) {
+    if (!pendingBackup) return;
+
+    if (mode === "replace" && !window.confirm(t("backup.replaceConfirm"))) {
+      setBackupStatus(t("backup.cancelled"));
+      setPendingBackup(null);
+      return;
+    }
+
+    setBackupStatus(null);
+    try {
+      const result = await applyParsedBackup(pendingBackup, mode);
+      if (result === "imported") {
+        setBackupStatus(t("backup.imported"));
+      } else {
+        setBackupStatus(t(backupImportErrorKey(result.error)));
+      }
+    } catch {
+      setBackupStatus(t("backup.errorApply"));
+    } finally {
+      setPendingBackup(null);
     }
   }
 
@@ -119,6 +198,34 @@ export function SettingsPage({
           }}
         />
       ) : null}
+
+      <fieldset className="locale-picker">
+        <legend>{t("backup.title")}</legend>
+        <button type="button" onClick={() => void handleExportBackup()}>
+          {t("backup.export")}
+        </button>
+        {pendingBackup ? (
+          <>
+            <button
+              type="button"
+              onClick={() => void handleApplyImport("replace")}
+            >
+              {t("backup.replace")}
+            </button>
+            <button
+              type="button"
+              onClick={() => void handleApplyImport("merge")}
+            >
+              {t("backup.merge")}
+            </button>
+          </>
+        ) : (
+          <button type="button" onClick={() => void handleOpenImport()}>
+            {t("backup.import")}
+          </button>
+        )}
+      </fieldset>
+      {backupStatus ? <p className="muted">{backupStatus}</p> : null}
     </section>
   );
 }
